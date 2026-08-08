@@ -1241,11 +1241,12 @@ const BRIEF_FALLBACK = {
   "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
 };
 // 外部托管：自动化每日写入 GitHub，网页免重部署自更新。
-// 多源容错：jsDelivr(国内可访问、application/json) 主源，raw.githubusercontent 兜底；同源 brief.json 仅作最后兜底，避免 GitHub Pages(Jekyll) 对同源 .json 的缓存/路由干扰导致拉到旧数据。
+// 多源容错 + 取最新：同源 brief.json(与页面同 CDN，推送后最快生效) 优先；jsDelivr(国内可达) 兜底；raw 最后兜底。
+// 三者并行拉取，按 date+updated 选「最新有效」数据，避免任一 CDN 缓存滞后导致看到旧版。
 const BRIEF_SOURCES = [
+  "brief.json",
   "https://cdn.jsdelivr.net/gh/chen6808hong/finance-brief-data@main/brief.json",
-  "https://raw.githubusercontent.com/chen6808hong/finance-brief-data/main/brief.json",
-  "brief.json"
+  "https://raw.githubusercontent.com/chen6808hong/finance-brief-data/main/brief.json"
 ];
 let BRIEF = BRIEF_FALLBACK;
 let BRIEF_SRC = "内置快照(08-05)";
@@ -1256,11 +1257,24 @@ function fetchBrief(url){
     .then(function(d){ if(d && d.date){ return d; } throw new Error('invalid payload'); });
 }
 function loadBrief(){
-  let chain = Promise.reject(new Error('init'));
-  BRIEF_SOURCES.forEach(function(u){ chain = chain.catch(function(){ return fetchBrief(u); }); });
-  return chain
-    .then(function(d){ BRIEF = d; BRIEF_SRC = "线上最新"; return d; })
-    .catch(function(e){ BRIEF = BRIEF_FALLBACK; BRIEF_SRC = "内置快照(08-05)，线上拉取失败"; return BRIEF; });
+  const tasks = BRIEF_SOURCES.map(function(u){
+    return fetchBrief(u).then(function(d){ return {ok:true,d:d}; })
+      .catch(function(){ return {ok:false}; });
+  });
+  return Promise.all(tasks).then(function(arr){
+    const good = arr.filter(function(r){ return r.ok && r.d && r.d.date; });
+    if(!good.length){
+      BRIEF = BRIEF_FALLBACK; BRIEF_SRC = "内置快照("+BRIEF.date+")，线上拉取失败";
+      return BRIEF;
+    }
+    good.sort(function(a,b){
+      const ka=(a.d.date||'')+' '+(a.d.updated||'');
+      const kb=(b.d.date||'')+' '+(b.d.updated||'');
+      return kb.localeCompare(ka); // 新 → 旧
+    });
+    BRIEF = good[0].d; BRIEF_SRC = "线上最新";
+    return BRIEF;
+  });
 }
 /* ============ BRIEF_DATA_END ============ */
 
@@ -1286,10 +1300,10 @@ function toast(m){ const t=document.getElementById('toast'); t.textContent=m; t.
 /* ---------- 头部 ---------- */
 function renderHead(){
   document.getElementById('hdSub').textContent =
-    BRIEF.date + " " + BRIEF.weekday + " · 共 " + BRIEF.items.length + " 条核心资讯 · 更新于 " + BRIEF.updated;
-  document.getElementById('mkTime').textContent = "截至 " + BRIEF.updated;
-  document.getElementById('srcLine').textContent = BRIEF.sources;
-  document.title = "财经简报 " + BRIEF.date;
+    (BRIEF.date||'') + " " + (BRIEF.weekday||'') + " · 共 " + (BRIEF.items?BRIEF.items.length:0) + " 条核心资讯 · 更新于 " + (BRIEF.updated||'');
+  document.getElementById('mkTime').textContent = "截至 " + (BRIEF.updated||'');
+  document.getElementById('srcLine').textContent = BRIEF.sources||'';
+  document.title = "财经简报 " + (BRIEF.date||'');
   updateSrcHint();
 }
 function updateSrcHint(){
@@ -1319,31 +1333,42 @@ function renderMarket(){
 
 /* ---------- 今日必看 ---------- */
 function renderFocus(){
-  document.getElementById('focusBox').innerHTML = BRIEF.focus.map((f,i)=>
+  document.getElementById('focusBox').innerHTML = (BRIEF.focus||[]).map((f,i)=>
     '<div class="fi"><div class="num">'+(i+1)+'</div><div class="bd"><div class="t">'+esc(f.t)+'</div><div class="d">'+esc(f.d)+'</div></div></div>'
   ).join('');
 }
 
 /* ---------- 板块条形图（内联 SVG 手写） ---------- */
+// 兼容两种 sectors.v 格式：数值(如 10.74) 与 字符串百分比(如 "+2.85%")
+function numVal(v){
+  if(typeof v==='number') return v;
+  var m=String(v).match(/-?\d+(\.\d+)?/);
+  return m?parseFloat(m[0]):0;
+}
 function renderChart(){
-  const up = BRIEF.sectors.up, dn = BRIEF.sectors.down;
-  const rows = up.concat(dn);
-  const max = Math.max.apply(null, rows.map(r=>Math.abs(r.v)));
-  const W=680, LW=96, RW=54, PL=LW, PR=W-RW;
-  const axis=(PL+PR)/2, half=(PR-PL)/2-4;
-  const rh=25, gap=6, H=rows.length*(rh+gap)+30;
-  let s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="行业涨跌幅">';
+  var sec=BRIEF.sectors||{};
+  var up=sec.up||[], dn=sec.down||[];
+  var rows=up.concat(dn);
+  if(!rows.length){ document.getElementById('chartBox').innerHTML='<div class="empty">暂无行业涨跌数据</div>'; return; }
+  var vals=rows.map(function(r){ return numVal(r.v); });
+  var max=Math.max.apply(null, vals.map(Math.abs))||1;
+  var W=680, LW=96, RW=54, PL=LW, PR=W-RW;
+  var axis=(PL+PR)/2, half=(PR-PL)/2-4;
+  var rh=25, gap=6, H=rows.length*(rh+gap)+30;
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="行业涨跌幅">';
   s+='<line x1="'+axis+'" y1="6" x2="'+axis+'" y2="'+(H-22)+'" stroke="#dfe4ec" stroke-width="1"/>';
-  rows.forEach((r,i)=>{
-    const y=6+i*(rh+gap), w=Math.abs(r.v)/max*half;
-    const pos=r.v>=0;
-    const x=pos?axis:axis-w;
-    const col=pos?'#d9382d':'#0f8a52';
-    const bg =pos?'#fdeceb':'#e8f6ef';
+  rows.forEach(function(r,i){
+    var val=numVal(r.v);
+    var y=6+i*(rh+gap), w=Math.abs(val)/max*half;
+    var pos=val>=0;
+    var x=pos?axis:axis-w;
+    var col=pos?'#d9382d':'#0f8a52';
+    var bg=pos?'#fdeceb':'#e8f6ef';
+    var label=typeof r.v==='string'?String(r.v):((val>=0?'+':'')+val.toFixed(2));
     s+='<rect x="'+(axis-half)+'" y="'+y+'" width="'+(half*2)+'" height="'+rh+'" rx="5" fill="'+bg+'" opacity=".45"/>';
-    s+='<rect x="'+x+'" y="'+y+'" width="'+Math.max(w,2)+'" height="'+rh+'" rx="5" fill="'+col+'"/>';
+    s+='<rect x="'+x.toFixed(1)+'" y="'+y+'" width="'+Math.max(w,2).toFixed(1)+'" height="'+rh+'" rx="5" fill="'+col+'"/>';
     s+='<text x="'+(LW-10)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" fill="#5a6478" font-family="-apple-system,sans-serif">'+esc(r.n)+'</text>';
-    s+='<text x="'+(W-8)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" font-weight="600" fill="'+col+'" font-family="-apple-system,sans-serif">'+(pos?'+':'')+r.v.toFixed(2)+'</text>';
+    s+='<text x="'+(W-8)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" font-weight="600" fill="'+col+'" font-family="-apple-system,sans-serif">'+esc(label)+'</text>';
   });
   s+='<text x="'+axis+'" y="'+(H-6)+'" text-anchor="middle" font-size="11" fill="#8a93a6" font-family="-apple-system,sans-serif">红涨绿跌 · 申万行业指数</text>';
   s+='</svg>';
@@ -1353,7 +1378,7 @@ function renderChart(){
 /* ---------- Tab ---------- */
 function renderTabs(){
   document.getElementById('tabs').innerHTML = CATS.map(c=>{
-    const n = c.k==='all' ? BRIEF.items.length : BRIEF.items.filter(i=>i.c===c.k).length;
+    const n = c.k==='all' ? (BRIEF.items?BRIEF.items.length:0) : (BRIEF.items||[]).filter(i=>i.c===c.k).length;
     return '<button class="tab'+(state.cat===c.k?' on':'')+'" onclick="setCat(\''+c.k+'\')">'+c.n+'<span class="b">'+n+'</span></button>';
   }).join('');
 }
@@ -1408,7 +1433,7 @@ function putScroll(m){
 function render(){
   const sp = grabScroll();
   const q = (document.getElementById('q').value||'').trim().toLowerCase();
-  let arr = BRIEF.items.filter(i=>{
+  let arr = (BRIEF.items||[]).filter(i=>{
     if(state.cat!=='all' && i.c!==state.cat) return false;
     if(state.favOnly && !state.fav[i.id]) return false;
     if(q){
@@ -1452,13 +1477,13 @@ function gotoTop(){
 
 /* ---------- 投资机会 / 风险 ---------- */
 function renderOpp(){
-  document.getElementById('oppBox').innerHTML = BRIEF.opps.map(o=>
+  document.getElementById('oppBox').innerHTML = (BRIEF.opps||[]).map(o=>
     '<div class="oc"><h4>'+esc(o.t)+'<span class="lv '+o.lvc+'">'+esc(o.lv)+'</span></h4>'
     + '<p>'+esc(o.d)+'</p>'
     + '<div class="tags">'+(o.tags||[]).map(t=>'<span class="pill p-sc">'+esc(t)+'</span>').join('')+'</div>'
     + '<p style="color:#b8791a;font-size:12.5px">风险：'+esc(o.risk)+'</p></div>'
   ).join('');
-  document.getElementById('riskList').innerHTML = BRIEF.risks.map(r=>'<li>'+esc(r)+'</li>').join('');
+  document.getElementById('riskList').innerHTML = (BRIEF.risks||[]).map(r=>'<li>'+esc(r)+'</li>').join('');
 }
 
 /* ---------- 导入导出 ---------- */
