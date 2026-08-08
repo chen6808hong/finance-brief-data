@@ -177,6 +177,15 @@ header{
 .oc p{margin:7px 0 0;font-size:13px;color:var(--tx2)}
 .oc .tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
 
+/* ---------- 信息差·认知差 ---------- */
+.ins{background:var(--card);border:1px solid var(--line);border-left:3px solid #6d5aa8;border-radius:12px;padding:11px 12px;box-shadow:var(--sh)}
+.ins .ty{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:700;margin-right:7px;vertical-align:middle;white-space:nowrap}
+.ty-i{background:#eaf1fb;color:#3a6ba8}
+.ty-c{background:#f3eefb;color:#6d5aa8}
+.ins .ins-t{font-size:14.5px;font-weight:600;line-height:1.45}
+.ins .ins-d{font-size:13px;color:var(--tx2);margin-top:7px;line-height:1.62}
+.ins .ins-s{font-size:11px;color:var(--tx3);margin-top:8px}
+
 /* ---------- Risk ---------- */
 .risk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px;box-shadow:var(--sh)}
 .risk ol{margin:0;padding-left:20px;font-size:13px;color:var(--tx2)}
@@ -283,6 +292,12 @@ footer{margin:22px 0 0;padding:14px 0 8px;border-top:1px solid var(--line);font-
     <div class="tabs" id="tabs"></div>
     <input class="search" id="q" type="search" placeholder="搜索关键词，如 存储 / 央行 / 回购" oninput="render()">
     <div class="list" id="list"></div>
+  </div>
+
+  <!-- 信息差·认知差 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>信息差 · 认知差</b><span class="cnt">市场没说透的</span></div>
+    <div id="insBox" class="opp"></div>
   </div>
 
   <!-- 投资机会 -->
@@ -1210,6 +1225,11 @@ const BRIEF_FALLBACK = {
     "特朗普拟禁止中国光收发器进口，光模块出口链海外政策风险升温，叠加A股板块高位回调形成双击。",
     "8月中报密集披露期，前期高涨幅个股面临业绩兑现检验，警惕预期差引发补跌。"
   ],
+  "insights": [
+    { "t": "非农单月负增长容易制造恐慌，但更应看「前两月修正」", "typ": "信息差", "d": "市场常聚焦当月数值，忽视前两月下修才是趋势拐点信号；下修幅度越大，越说明前期就业被高估，美元与美债的反应往往滞后。", "src": "美国劳工部" },
+    { "t": "「政策喊话=必然落地」是常见认知差", "typ": "认知差", "d": "行业自律、倡议书与行政强制存在本质区别，无罚则的「不降价」承诺执行度常打折扣，盈利修复节奏易被提前定价。", "src": "公开资讯" },
+    { "t": "指数急涨叠加新开户激增，常是情绪过热的反向信号", "typ": "信息差", "d": "散户开户数与成交量同步冲高，往往对应阶段性赚钱效应扩散的尾声，而非趋势起点，需警惕量价背离。", "src": "交易所/券商" }
+  ],
   "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
 };
 // 外部托管：自动化每日写入 GitHub，网页免重部署自更新。
@@ -1458,6 +1478,20 @@ function renderOpp(){
   document.getElementById('riskList').innerHTML = (BRIEF.risks||[]).map(r=>'<li>'+esc(r)+'</li>').join('');
 }
 
+/* ---------- 信息差·认知差 ---------- */
+function renderInsights(){
+  const box = document.getElementById('insBox');
+  const arr = BRIEF.insights||[];
+  if(!arr.length){ box.innerHTML='<div class="empty">暂无信息差/认知差内容</div>'; return; }
+  box.innerHTML = arr.map(x=>{
+    const isCog = x.typ==='认知差';
+    const ty = '<span class="ty '+(isCog?'ty-c':'ty-i')+'">'+(isCog?'认知差':'信息差')+'</span>';
+    return '<div class="ins">'+ty+'<span class="ins-t">'+esc(x.t)+'</span>'
+      + '<div class="ins-d">'+esc(x.d)+'</div>'
+      + (x.src?'<div class="ins-s">来源：'+esc(x.src)+'</div>':'')+'</div>';
+  }).join('');
+}
+
 /* ---------- 导入导出 ---------- */
 function exportJSON(){
   const payload = { app:"wb_finbrief", version:1, exportedAt:new Date().toISOString(),
@@ -1500,7 +1534,7 @@ function importJSON(e){
     try{
       const d=JSON.parse(r.result);
       if(d.marks){ state.read=d.marks.read||{}; state.fav=d.marks.fav||{}; save("read",state.read); save("fav",state.fav); }
-      if(d.brief && d.brief.items){ Object.assign(BRIEF, d.brief); renderHead(); renderMarket(); renderFocus(); renderChart(); renderOpp(); renderTabs(); }
+      if(d.brief && d.brief.items){ Object.assign(BRIEF, d.brief); renderHead(); renderMarket(); renderFocus(); renderChart(); renderOpp(); renderInsights(); renderTabs(); }
       render(); toast("导入成功");
     }catch(err){ toast("文件格式不正确"); }
     e.target.value="";
@@ -1529,7 +1563,7 @@ function backupHint(){
 /* ---------- 启动 ---------- */
 function refreshBrief(){
   return loadBrief().then(function(){
-    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); render(); updateSrcHint();
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderInsights(); render(); updateSrcHint();
     return BRIEF;
   });
 }
@@ -1537,7 +1571,7 @@ refreshBrief().then(backupHint);
 // 线上自动刷新：每5分钟静默重新拉取最新数据并重渲染（保留已读/收藏），实现打开后持续自更新
 setInterval(function(){
   loadBrief().then(function(){
-    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); render(); updateSrcHint();
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderInsights(); render(); updateSrcHint();
   });
 }, 5*60*1000);
 </script>
