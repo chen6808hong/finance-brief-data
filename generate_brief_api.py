@@ -227,7 +227,20 @@ brief = {
     "sources": "数据源：东方财富行情接口、Yahoo Finance；本版为云端定时脚本自动生成的行情快照，AI 精编版将覆盖此内容。",
 }
 
+# ---------- 兜底防覆盖：若本地 AI 精编版当天已更新，则不覆盖 ----------
+TODAY = brief["date"]
+try:
+    with open("brief.json", "r", encoding="utf-8") as _f:
+        _existing = json.load(_f)
+    _ex_date = _existing.get("date")
+    _ex_upd = _existing.get("updated", "")
+    if _ex_date == TODAY and ("云端快照" not in _ex_upd):
+        print("检测到本地 AI 精编版(%s)当天已更新，云端兜底跳过覆盖。" % _ex_upd, flush=True)
+        sys.exit(0)
+except Exception:
+    pass  # 文件不存在或解析失败则正常生成
+
 with open("brief.json", "w", encoding="utf-8") as f:
     json.dump(brief, f, ensure_ascii=False, indent=2)
-print("已生成 brief.json，date=%s items=%d sectors=%d/%d" % (
+print("已生成 brief.json(云端快照)，date=%s items=%d sectors=%d/%d" % (
     brief["date"], len(items), len(sectors["up"]), len(sectors["down"])), flush=True)
