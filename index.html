@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#1b4a8a">
+<title>财经晨昏简报</title>
+<style>
+:root{
+  --bg:#f4f6fa; --card:#ffffff; --line:#e4e8f0; --line2:#eef1f6;
+  --tx:#1a2333; --tx2:#5a6478; --tx3:#8a93a6;
+  --brand:#1b4a8a; --brand2:#2f6bbd; --brandbg:#eaf1fb;
+  --up:#d9382d; --upbg:#fdeceb;      /* 国内习惯：涨/利好 红 */
+  --down:#0f8a52; --downbg:#e8f6ef;  /* 跌/利空 绿 */
+  --neu:#7a839a; --neubg:#f0f2f6;
+  --warn:#b8791a; --warnbg:#fdf4e3;
+  --r:14px; --sh:0 1px 3px rgba(20,35,70,.06),0 6px 18px rgba(20,35,70,.05);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+  padding-bottom:calc(84px + env(safe-area-inset-bottom));
+}
+.wrap{max-width:900px;margin:0 auto;padding:0 12px}
+a{color:var(--brand2);text-decoration:none}
+
+/* ---------- Header ---------- */
+header{
+  background:linear-gradient(160deg,#173f78 0%,#1b4a8a 45%,#27599c 100%);
+  color:#fff;padding:calc(16px + env(safe-area-inset-top)) 0 18px;
+}
+.hd-top{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.hd-t{font-size:20px;font-weight:700;letter-spacing:.5px;display:flex;align-items:center;gap:8px}
+.hd-t svg{opacity:.9}
+.hd-sub{font-size:12.5px;opacity:.82;margin-top:5px}
+.hd-acts{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}
+.hbtn{
+  background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.24);color:#fff;
+  border-radius:9px;padding:0 12px;height:36px;min-width:44px;font-size:13px;cursor:pointer;
+  display:inline-flex;align-items:center;gap:5px;font-family:inherit
+}
+.hbtn:active{background:rgba(255,255,255,.28)}
+
+/* ---------- Notice ---------- */
+.notice{
+  background:var(--warnbg);border:1px solid #f0dfba;color:#7d5410;
+  border-radius:10px;padding:9px 12px;font-size:12.5px;margin-top:12px;
+  display:flex;gap:8px;align-items:flex-start
+}
+
+/* ---------- Section ---------- */
+.sec{margin-top:16px}
+.sec-h{display:flex;align-items:center;gap:8px;margin:0 2px 9px}
+.sec-h b{font-size:16px;font-weight:700}
+.sec-h .bar{width:3px;height:15px;border-radius:2px;background:var(--brand)}
+.sec-h .cnt{font-size:11.5px;color:var(--tx3);font-weight:400;margin-left:auto}
+
+/* ---------- Market cards ---------- */
+.mk{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}
+.mkc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 10px 9px;box-shadow:var(--sh)}
+.mkc .n{font-size:11.5px;color:var(--tx2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mkc .v{font-size:16px;font-weight:700;margin-top:3px;font-variant-numeric:tabular-nums;letter-spacing:-.3px}
+.mkc .c{font-size:12px;font-weight:600;margin-top:1px;font-variant-numeric:tabular-nums}
+.r{color:var(--up)} .g{color:var(--down)} .n0{color:var(--neu)}
+.mkGrid{display:flex;flex-direction:column;gap:10px;margin-top:2px}
+.mkg{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:11px 11px 12px}
+.mkg-h{display:flex;align-items:center;gap:7px;margin:0 2px 9px}
+.mkg-h b{font-size:13.5px;font-weight:700}
+.mkg-h .n{font-size:11px;color:var(--brand);background:var(--brandbg);padding:1px 7px;border-radius:9px;font-weight:600;margin-left:auto}
+
+/* ---------- Focus ---------- */
+.focus{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);overflow:hidden}
+.fi{display:flex;gap:10px;padding:12px 13px;border-bottom:1px solid var(--line2)}
+.fi:last-child{border-bottom:0}
+.fi .num{
+  flex:0 0 22px;height:22px;border-radius:7px;background:var(--brand);color:#fff;
+  font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px
+}
+.fi .bd{flex:1;min-width:0}
+.fi .t{font-size:14.5px;font-weight:600;line-height:1.45}
+.fi .d{font-size:13px;color:var(--tx2);margin-top:4px}
+
+/* ---------- Tabs ---------- */
+.tabs{display:flex;gap:6px;overflow-x:auto;padding:2px 2px 4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{
+  flex:0 0 auto;height:36px;padding:0 14px;border-radius:18px;border:1px solid var(--line);
+  background:var(--card);color:var(--tx2);font-size:13.5px;cursor:pointer;font-family:inherit;
+  display:inline-flex;align-items:center;gap:5px
+}
+.tab.on{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+.tab .b{font-size:11px;opacity:.7}
+
+.search{
+  width:100%;height:42px;border:1px solid var(--line);border-radius:11px;background:var(--card);
+  padding:0 12px;font-size:16px;color:var(--tx);font-family:inherit;margin-top:8px
+}
+.search:focus{outline:none;border-color:var(--brand2)}
+
+/* ---------- Group (板块分组) ---------- */
+.grp{margin-top:14px}
+.grp:first-child{margin-top:10px}
+.grp-h{display:flex;align-items:center;gap:7px;margin:0 2px 8px}
+.grp-h .dot{width:6px;height:6px;border-radius:50%;background:var(--brand);flex:0 0 6px}
+.grp-h b{font-size:14px;font-weight:700}
+.grp-h .n{font-size:11.5px;color:var(--tx3);background:var(--brandbg);color:var(--brand);
+  padding:1px 7px;border-radius:9px;font-weight:600}
+.grp-col{display:flex;flex-direction:column;gap:9px}
+
+/* ---------- 横向滑动区 ---------- */
+.sw-hint{
+  display:flex;align-items:center;gap:6px;margin:9px 2px 6px;
+  font-size:12px;color:var(--tx3)
+}
+.sw-hint svg{flex:0 0 13px;opacity:.75}
+.sw-hint .sp{margin-left:auto}
+.sw-more{
+  height:26px;padding:0 10px;border-radius:13px;border:1px solid var(--line);
+  background:var(--card);color:var(--brand);font-size:12px;font-family:inherit;
+  cursor:pointer;font-weight:600
+}
+.swipe{
+  display:flex;gap:9px;overflow-x:auto;padding:2px 2px 10px;
+  scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;scrollbar-color:#cfd6e2 transparent
+}
+.swipe::-webkit-scrollbar{height:5px}
+.swipe::-webkit-scrollbar-thumb{background:#cfd6e2;border-radius:3px}
+.swipe::-webkit-scrollbar-track{background:transparent}
+.swipe .it{flex:0 0 86%;max-width:430px;scroll-snap-align:start}
+@media (min-width:769px){ .swipe .it{flex:0 0 44%} }
+
+/* ---------- News list ---------- */
+.list{margin-top:10px;display:flex;flex-direction:column;gap:9px}
+.list.grouped{gap:0;margin-top:2px}
+.it{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 13px;box-shadow:var(--sh);position:relative}
+.it.read{opacity:.62}
+.it-h{display:flex;align-items:flex-start;gap:8px}
+.imp{display:inline-flex;gap:1px;align-self:center;margin-right:5px;flex:0 0 auto}
+.imp svg{width:12px;height:12px;display:block}
+.it-n{
+  flex:0 0 auto;min-width:22px;height:20px;padding:0 5px;border-radius:6px;background:var(--brandbg);
+  color:var(--brand);font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:2px;
+  font-variant-numeric:tabular-nums
+}
+.it-t{flex:1;font-size:14.5px;font-weight:600;line-height:1.45;min-width:0}
+.star{flex:0 0 34px;height:34px;margin:-6px -6px 0 0;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0}
+.star svg{width:17px;height:17px}
+.it-d{font-size:13px;color:var(--tx2);margin-top:6px;padding-left:30px}
+.it-f{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;padding-left:30px;align-items:center}
+.pill{font-size:11px;padding:2px 7px;border-radius:6px;font-weight:600;line-height:1.6}
+.p-up{background:var(--upbg);color:var(--up)}
+.p-dn{background:var(--downbg);color:var(--down)}
+.p-nu{background:var(--neubg);color:var(--neu)}
+.p-lv{background:#eef3fb;color:#3a6ba8}
+.p-sc{background:#f5f2fb;color:#6d5aa8}
+.p-src{font-size:11px;color:var(--tx3);margin-left:auto}
+.rdbtn{
+  margin-top:9px;margin-left:30px;height:28px;padding:0 11px;border-radius:8px;border:1px solid var(--line);
+  background:#fafbfd;color:var(--tx2);font-size:12px;cursor:pointer;font-family:inherit
+}
+.rdbtn:active{background:#eef1f6}
+
+/* ---------- Opportunity ---------- */
+.opp{display:flex;flex-direction:column;gap:9px}
+.oc{background:var(--card);border:1px solid var(--line);border-left:3px solid var(--brand2);border-radius:12px;padding:12px 13px;box-shadow:var(--sh)}
+.oc h4{margin:0;font-size:14.5px;display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.oc .lv{font-size:11px;padding:2px 7px;border-radius:6px;font-weight:600}
+.lv-a{background:var(--upbg);color:var(--up)}
+.lv-b{background:#fdf4e3;color:var(--warn)}
+.lv-c{background:var(--neubg);color:var(--neu)}
+.oc p{margin:7px 0 0;font-size:13px;color:var(--tx2)}
+.oc .tags{margin-top:8px;display:flex;flex-wrap:wrap;gap:5px}
+
+/* ---------- Risk ---------- */
+.risk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px;box-shadow:var(--sh)}
+.risk ol{margin:0;padding-left:20px;font-size:13px;color:var(--tx2)}
+.risk li{margin:5px 0}
+
+/* ---------- Chart ---------- */
+.chartbox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:13px;box-shadow:var(--sh)}
+.chartbox svg{width:100%;height:auto;display:block}
+
+/* ---------- Footer ---------- */
+footer{margin:22px 0 0;padding:14px 0 8px;border-top:1px solid var(--line);font-size:11.5px;color:var(--tx3);line-height:1.7}
+.foot-acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 16px}
+.foot-acts .lbl{width:100%;font-size:12.5px;color:var(--tx3);font-weight:600}
+.fbtn{background:#fff;border:1px solid var(--line);color:var(--tx2);border-radius:9px;padding:0 13px;height:40px;min-width:44px;font-size:13px;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-family:inherit}
+.fbtn:active{background:#f0f3f8}
+.fbtn svg{width:14px;height:14px}
+
+/* ---------- Bottom bar ---------- */
+.bbar{
+  position:fixed;left:0;right:0;bottom:0;background:rgba(255,255,255,.96);
+  backdrop-filter:saturate(1.6) blur(10px);border-top:1px solid var(--line);
+  padding:7px 10px calc(7px + env(safe-area-inset-bottom));z-index:40
+}
+.bbar-in{max-width:900px;margin:0 auto;display:flex;gap:7px}
+.bb{
+  flex:1;height:46px;border-radius:11px;border:1px solid var(--line);background:#fafbfd;
+  color:var(--tx2);font-size:12px;cursor:pointer;font-family:inherit;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px
+}
+.bb.pri{background:var(--brand);border-color:var(--brand);color:#fff}
+.bb svg{width:17px;height:17px}
+.bb:active{filter:brightness(.94)}
+
+/* ---------- Modal ---------- */
+.mask{position:fixed;inset:0;background:rgba(16,24,40,.5);display:none;align-items:center;justify-content:center;z-index:60;padding:18px}
+.mask.on{display:flex}
+.modal{background:#fff;border-radius:16px;padding:18px;max-width:400px;width:100%;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.modal h3{margin:0 0 8px;font-size:16px}
+.modal p{margin:0 0 14px;font-size:13.5px;color:var(--tx2)}
+.mrow{display:flex;gap:8px}
+.mbtn{flex:1;height:44px;border-radius:11px;border:1px solid var(--line);background:#fff;font-size:14px;cursor:pointer;font-family:inherit;color:var(--tx)}
+.mbtn.danger{background:var(--up);border-color:var(--up);color:#fff}
+.mbtn.pri{background:var(--brand);border-color:var(--brand);color:#fff}
+
+.toast{
+  position:fixed;left:50%;transform:translateX(-50%);bottom:96px;background:rgba(26,35,51,.94);color:#fff;
+  padding:10px 16px;border-radius:10px;font-size:13.5px;z-index:80;opacity:0;pointer-events:none;transition:opacity .22s
+}
+.toast.on{opacity:1}
+.empty{text-align:center;color:var(--tx3);font-size:13.5px;padding:30px 0}
+
+@media (max-width:768px){
+  .mk{grid-template-columns:repeat(3,1fr);gap:7px}
+  .mkc{padding:9px 8px 8px}
+  .mkc .v{font-size:15px}
+  .mkc .c{font-size:11.5px}
+  .hd-t{font-size:18px}
+  .it-d,.it-f,.rdbtn{padding-left:0;margin-left:0}
+}
+@media (min-width:769px){
+  .wrap{padding:0 16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="hd-top">
+      <div>
+        <div class="hd-t">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+          财经晨昏简报
+        </div>
+        <div class="hd-sub" id="hdSub">加载中…</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <div class="wrap">
+
+  <!-- 市场速览 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>市场速览</b><span class="cnt" id="mkTime"></span></div>
+    <div id="mkGrid" class="mkGrid"></div>
+  </div>
+
+  <!-- 今日焦点 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>今日必看</b><span class="cnt">最高优先级</span></div>
+    <div class="focus" id="focusBox"></div>
+  </div>
+
+  <!-- 板块涨跌 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>A股行业涨跌前后五</b><span class="cnt">单位 %</span></div>
+    <div class="chartbox" id="chartBox"></div>
+  </div>
+
+  <!-- 资讯 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>核心资讯</b><span class="cnt" id="listCnt"></span></div>
+    <div class="tabs" id="tabs"></div>
+    <input class="search" id="q" type="search" placeholder="搜索关键词，如 存储 / 央行 / 回购" oninput="render()">
+    <div class="list" id="list"></div>
+  </div>
+
+  <!-- 投资机会 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>投资机会分析</b><span class="cnt">仅供参考</span></div>
+    <div class="opp" id="oppBox"></div>
+  </div>
+
+  <!-- 风险 -->
+  <div class="sec">
+    <div class="sec-h"><span class="bar"></span><b>风险提示</b></div>
+    <div class="risk"><ol id="riskList"></ol></div>
+  </div>
+
+  <div class="foot-acts">
+    <div class="lbl">数据备份与恢复</div>
+    <button class="fbtn" onclick="exportJSON()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>导出 JSON 备份</button>
+    <button class="fbtn" onclick="document.getElementById('impFile').click()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>导入恢复</button>
+    <button class="fbtn" onclick="exportMD()"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>导出文本</button>
+    <input type="file" id="impFile" accept=".json" style="display:none" onchange="importJSON(event)">
+  </div>
+
+  <div class="notice">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="flex:0 0 15px;margin-top:2px"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    <span id="noticeTx">本页数据在你手机本地保存，已读/收藏不会丢失。建议定期导出备份。</span>
+  </div>
+
+  <footer>
+    <div id="srcLine"></div>
+    <div style="margin-top:6px">免责声明：本简报由公开信息自动汇编整理，不构成任何投资建议。市场有风险，决策需谨慎，据此操作风险自担。</div>
+  </footer>
+</div>
+
+<div class="bbar">
+  <div class="bbar-in">
+    <button class="bb pri" onclick="gotoTop()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>回顶部</button>
+    <button class="bb" onclick="toggleFav()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.5 3.2 14 8.3l5.6.8-4 3.9 1 5.6-5.1-2.7L6.4 18.6l1-5.6-4-3.9 5.6-.8z"/></svg><span id="favTx">只看收藏</span></button>
+    <button class="bb" onclick="markAllRead()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>全部已读</button>
+    <button class="bb" onclick="askClear()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 14h10l1-14"/></svg>清空记录</button>
+  </div>
+</div>
+
+<div class="mask" id="mask"><div class="modal">
+  <h3 id="mTitle">确认</h3><p id="mBody"></p>
+  <div class="mrow">
+    <button class="mbtn" onclick="closeModal()">取消</button>
+    <button class="mbtn danger" id="mOk">确定</button>
+  </div>
+</div></div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+/* ============ BRIEF_DATA_START ============ */
+/* ============ BRIEF_DATA_START ============ */
+// 数据已外置：页面打开时从 BRIEF_DATA_URL 拉取最新简报；失败则回退到内置快照 BRIEF_FALLBACK
+const BRIEF_FALLBACK = {
+  "date": "2026-08-05",
+  "updated": "2026-08-05 10:00",
+  "weekday": "星期三",
+  "marketGroups": [
+    {
+      "name": "A股",
+      "items": [
+        {
+          "n": "上证指数",
+          "v": "3822.28",
+          "c": "+0.33%",
+          "d": 1
+        },
+        {
+          "n": "深证成指",
+          "v": "13885.71",
+          "c": "+3.25%",
+          "d": 1
+        },
+        {
+          "n": "创业板指",
+          "v": "3488.97",
+          "c": "+5.64%",
+          "d": 1
+        },
+        {
+          "n": "科创50",
+          "v": "1616.36",
+          "c": "+4.09%",
+          "d": 1
+        },
+        {
+          "n": "沪深300",
+          "v": "4600.93",
+          "c": "+1.27%",
+          "d": 1
+        },
+        {
+          "n": "两市成交",
+          "v": "2.21万亿",
+          "c": "放量2162亿",
+          "d": 1
+        }
+      ]
+    },
+    {
+      "name": "港股",
+      "items": [
+        {
+          "n": "恒生指数",
+          "v": "25852.92",
+          "c": "-0.60%",
+          "d": -1
+        },
+        {
+          "n": "恒生科技",
+          "v": "4885.61",
+          "c": "+0.21%",
+          "d": 1
+        },
+        {
+          "n": "恒生互联网",
+          "v": "2451.13",
+          "c": "+0.09%",
+          "d": 1
+        }
+      ]
+    },
+    {
+      "name": "美股",
+      "items": [
+        {
+          "n": "道琼斯",
+          "v": "54085.88",
+          "c": "+1.71% 新高",
+          "d": 1
+        },
+        {
+          "n": "纳斯达克",
+          "v": "26584.99",
+          "c": "+2.59%",
+          "d": 1
+        },
+        {
+          "n": "纳斯达克100",
+          "v": "29733.16",
+          "c": "+3.32%",
+          "d": 1
+        },
+        {
+          "n": "标普500",
+          "v": "7736.52",
+          "c": "+1.79% 新高",
+          "d": 1
+        },
+        {
+          "n": "费城半导体",
+          "v": "12179.26",
+          "c": "+6.55%",
+          "d": 1
+        },
+        {
+          "n": "VIX",
+          "v": "15.86",
+          "c": "-0.81%",
+          "d": -1
+        }
+      ]
+    },
+    {
+      "name": "外汇/利率",
+      "items": [
+        {
+          "n": "美元指数",
+          "v": "99.89",
+          "c": "-0.13%",
+          "d": -1
+        },
+        {
+          "n": "人民币中间价",
+          "v": "6.7889",
+          "c": "调升28点",
+          "d": 1
+        },
+        {
+          "n": "10年期美债",
+          "v": "4.68%",
+          "c": "-5BP",
+          "d": -1
+        }
+      ]
+    },
+    {
+      "name": "商品",
+      "items": [
+        {
+          "n": "WTI原油",
+          "v": "75.77",
+          "c": "-5.69%",
+          "d": -1
+        },
+        {
+          "n": "布伦特原油",
+          "v": "79.36",
+          "c": "-5.26%",
+          "d": -1
+        },
+        {
+          "n": "现货黄金",
+          "v": "4150.70",
+          "c": "+1.15%",
+          "d": 1
+        }
+      ]
+    }
+  ],
+  "sectors": {
+    "up": [
+      {
+        "n": "通信设备",
+        "v": 10.74
+      },
+      {
+        "n": "元件",
+        "v": 8.47
+      },
+      {
+        "n": "医疗服务",
+        "v": 7.44
+      },
+      {
+        "n": "电子化学品",
+        "v": 7.05
+      },
+      {
+        "n": "玻璃玻纤",
+        "v": 6.19
+      }
+    ],
+    "down": [
+      {
+        "n": "保险",
+        "v": -2.82
+      },
+      {
+        "n": "银行",
+        "v": -2.75
+      },
+      {
+        "n": "食品饮料",
+        "v": -1.71
+      },
+      {
+        "n": "交通运输",
+        "v": -1.56
+      },
+      {
+        "n": "钢铁",
+        "v": -1.23
+      }
+    ]
+  },
+  "focus": [
+    {
+      "t": "A股放量大涨后8月5日低开，科技成长与CPO高位剧烈分化",
+      "d": "8月4日A股放量大涨（创业板指+5.64%、两市成交2.21万亿），但8月5日早盘受海外科技回调与光模块拥挤交易影响低开，创业板指低开3.35%、中际旭创跌13.89%，稀土小金属逆势走强，市场风格快速切换。"
+    },
+    {
+      "t": "美股8月4日集体创新高，费城半导体暴涨6.55%",
+      "d": "道指涨1.71%报54085.88、标普500涨1.79%报7736.52均创收盘新高，纳指100涨3.32%、费城半导体涨6.55%，AI芯片与大型科技领涨，全球风险偏好回暖。"
+    },
+    {
+      "t": "央行5000亿买断式逆回购净投放2000亿，流动性呵护延续",
+      "d": "央行开展5000亿元3个月期买断式逆回购、净投放2000亿元，资金利率低位运行，适度宽松基调未变，为权益市场提供友好流动性环境。"
+    },
+    {
+      "t": "国际油价隔夜暴跌逾5%，供应宽松与地缘反复交织",
+      "d": "WTI跌5.69%报75.77、布伦特跌5.26%报79.36，OPEC+增产与需求担忧压制油价；美伊霍尔木兹谈判消息反复，油价对地缘高度敏感。"
+    },
+    {
+      "t": "自动驾驶强制国标落地，L3/L4将于2027年7月实施",
+      "d": "工信部发布组合驾驶辅助系统强制性国家标准，明确L3/L4级自动驾驶准入与安全要求，2027年7月1日起实施，高阶智驾商业化合规障碍扫清，利好智能汽车链条。"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "imp": 3,
+      "c": "macro",
+      "t": "央行5000亿买断式逆回购净投放2000亿，呵护跨月流动性",
+      "d": "央行开展5000亿元3个月期买断式逆回购操作，净投放2000亿元以对冲到期并稳定跨月资金面；资金利率低位运行，流动性延续宽松格局。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "流动性",
+        "银行"
+      ],
+      "src": "中国人民银行"
+    },
+    {
+      "id": 2,
+      "imp": 3,
+      "c": "macro",
+      "t": "中证协拟修订IPO尽调示范，新增工程、互联网、消费、医药四类行业指南",
+      "d": "进一步完善科技型企业尽职调查标准，新增工程、互联网、消费、医药四类行业尽调指南，引导行业更好服务新兴产业与未来产业优质创新创业企业。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "券商",
+        "投行",
+        "IPO"
+      ],
+      "src": "中国证券业协会"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "macro",
+      "t": "上半年服务进出口37797.5亿元同比增8.3%，服务贸易结构优化",
+      "d": "商务部数据，上半年服务进出口总额37797.5亿元，同比增长8.3%；旅行服务进出口增长最快，知识密集型服务贸易占比提升，贸易结构持续优化。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "服务贸易",
+        "消费"
+      ],
+      "src": "商务部"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "macro",
+      "t": "自动驾驶强制性国标落地，L3/L4准入2027年7月1日实施",
+      "d": "工信部发布智能网联汽车组合驾驶辅助系统强制性国家标准，明确L3/L4级自动驾驶准入与安全要求，2027年7月1日起实施，为高阶智驾商业化扫清合规障碍。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "自动驾驶",
+        "智能汽车",
+        "零部件"
+      ],
+      "src": "工信部"
+    },
+    {
+      "id": 5,
+      "imp": 2,
+      "c": "macro",
+      "t": "四川10家农商行获批解散，农村金融机构风险出清加速",
+      "d": "监管批复同意四川10家农村商业银行解散，推动区域中小银行整合与风险化解，是农信社改革深化背景下机构出清的延续。",
+      "g": -1,
+      "lv": "行业级",
+      "s": [
+        "银行",
+        "金融改革"
+      ],
+      "src": "金融监管总局"
+    },
+    {
+      "id": 6,
+      "imp": 1,
+      "c": "macro",
+      "t": "7月物流业景气指数50.4%，供应链运行保持扩张",
+      "d": "中国物流与采购联合会数据，7月物流业景气指数50.4%，业务总量与新订单指数维持扩张区间，供应链运行平稳。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "物流",
+        "宏观景气"
+      ],
+      "src": "中国物流与采购联合会"
+    },
+    {
+      "id": 7,
+      "imp": 1,
+      "c": "macro",
+      "t": "上交所7月新开户265.54万户同比增35.23%，居民入市升温",
+      "d": "上交所披露7月A股新开户265.54万户，同比增长35.23%，环比亦明显回升，反映市场赚钱效应带动增量资金入场。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "开户",
+        "增量资金"
+      ],
+      "src": "上交所"
+    },
+    {
+      "id": 8,
+      "imp": 1,
+      "c": "macro",
+      "t": "国内航线燃油附加费下调，出行成本边际回落",
+      "d": "多家航司下调燃油附加费征收标准，油价回落向出行端传导，利好暑期出行需求释放。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "航空",
+        "消费"
+      ],
+      "src": "民航局/航司"
+    },
+    {
+      "id": 9,
+      "imp": 1,
+      "c": "macro",
+      "t": "人民日报钟声：中美经贸应回到对话合作轨道",
+      "d": "署名文章强调中美经贸互利共赢，反对单边关税与脱钩，释放稳定双边经贸关系信号，关注后续磋商进展。",
+      "g": 0,
+      "lv": "市场级",
+      "s": [
+        "中美关系",
+        "关税"
+      ],
+      "src": "人民日报"
+    },
+    {
+      "id": 10,
+      "imp": 1,
+      "c": "macro",
+      "t": "外资看多A股：177家机构调研413次密集覆盖硬科技",
+      "d": "7月以来外资机构密集调研A股公司，177家外资机构累计调研413次，重点覆盖半导体、新能源、医药等硬科技方向，长线资金对中国资产兴趣回升。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "外资",
+        "硬科技"
+      ],
+      "src": "Wind/券商"
+    },
+    {
+      "id": 11,
+      "imp": 3,
+      "c": "cn",
+      "t": "8月5日A股低开：创业板指低开3.35%，CPO光模块大幅回调",
+      "d": "受隔夜海外科技股获利了结与光模块拥挤交易影响，A股早盘低开，创业板指低开3.35%，中际旭创跌13.89%、新易盛跌10.71%、天孚通信跌6.6%，CPO板块集体重挫；稀土、小金属逆势走强。",
+      "g": -1,
+      "lv": "市场级",
+      "s": [
+        "CPO",
+        "光模块",
+        "创业板"
+      ],
+      "src": "交易所"
+    },
+    {
+      "id": 12,
+      "imp": 3,
+      "c": "cn",
+      "t": "上一交易日A股放量大涨：创业板指+5.64%、科创50+4.09%",
+      "d": "8月4日A股放量大涨，上证涨0.33%报3822.28、深成指涨3.25%报13885.71、创业板指涨5.64%报3488.97、科创50涨4.09%报1616.36，两市成交2.21万亿，逾3600股上涨。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "宽基指数",
+        "成交"
+      ],
+      "src": "交易所"
+    },
+    {
+      "id": 13,
+      "imp": 2,
+      "c": "cn",
+      "t": "稀土、小金属逆势走强，涨价逻辑再获资金追捧",
+      "d": "8月5日早盘稀土永磁、小金属板块逆势领涨，小金属涨4.59%、贵金属涨3.25%、非金属材料涨4.05%，资源品在科技回调时成为资金避风港。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "稀土",
+        "小金属",
+        "贵金属"
+      ],
+      "src": "交易所"
+    },
+    {
+      "id": 14,
+      "imp": 2,
+      "c": "cn",
+      "t": "社保基金与QFII二季重仓曝光：QFII现身42家公司",
+      "d": "上市公司中报披露，社保基金现身8家前十大流通股东，QFII重仓42家公司，集中在高端制造、医药、化工等景气方向，长线资金持仓轮廓显现。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "社保",
+        "QFII",
+        "重仓"
+      ],
+      "src": "上市公司公告"
+    },
+    {
+      "id": 15,
+      "imp": 2,
+      "c": "cn",
+      "t": "长江证券拟以1-2亿元回购股份，券商估值修复预期升温",
+      "d": "长江证券公告拟以自有资金1-2亿元回购公司股份用于股权激励或员工持股，为上市券商回购添新例，关注板块资本回报改善。",
+      "g": 1,
+      "lv": "公司级",
+      "s": [
+        "券商",
+        "回购"
+      ],
+      "src": "公司公告"
+    },
+    {
+      "id": 16,
+      "imp": 1,
+      "c": "cn",
+      "t": "申万行业分化：电子化学品+4.82%、半导体+3.69%领涨",
+      "d": "早盘电子化学品涨4.82%、玻璃玻纤涨4.76%、半导体涨3.69%、贵金属涨3.25%；前一交易日领涨的通信设备、元件、消费电子跌幅居前，板块轮动加剧。",
+      "g": 0,
+      "lv": "行业级",
+      "s": [
+        "电子",
+        "半导体",
+        "轮动"
+      ],
+      "src": "交易所"
+    },
+    {
+      "id": 17,
+      "imp": 1,
+      "c": "cn",
+      "t": "申通快递被立案调查，快递行业合规监管趋严",
+      "d": "申通快递公告因涉嫌违规被监管部门立案调查，引发市场对快递行业价格战与合规风险的关注，板块情绪承压。",
+      "g": -1,
+      "lv": "公司级",
+      "s": [
+        "快递",
+        "物流",
+        "监管"
+      ],
+      "src": "公司公告/监管"
+    },
+    {
+      "id": 18,
+      "imp": 1,
+      "c": "cn",
+      "t": "港股跟随A股走弱，恒生互联网成相对韧性板块",
+      "d": "8月4日港股恒指跌0.60%报25852.92、恒生科技涨0.21%、恒生互联网涨0.09%；南向资金净买入25.7亿港元，内地资金持续增配港股科技。",
+      "g": 0,
+      "lv": "市场级",
+      "s": [
+        "港股",
+        "南向",
+        "恒生互联网"
+      ],
+      "src": "港交所"
+    },
+    {
+      "id": 19,
+      "imp": 1,
+      "c": "cn",
+      "t": "人民币中间价报6.7889调升28点，离岸人民币走强至6.7461",
+      "d": "8月5日人民币兑美元中间价6.7889，较上一交易日调升28个基点；美元指数回落至99.89，离岸人民币报6.7461，汇率延续偏强。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "汇率",
+        "人民币"
+      ],
+      "src": "外汇交易中心"
+    },
+    {
+      "id": 20,
+      "imp": 1,
+      "c": "cn",
+      "t": "希音（SHEIN）启动港股上市推介，出海消费龙头资本化提速",
+      "d": "快时尚跨境电商希音启动港股发行推介，若成行将成为中概出海消费龙头的重要上市案例，提振跨境与消费板块情绪。",
+      "g": 1,
+      "lv": "公司级",
+      "s": [
+        "港股IPO",
+        "跨境电商",
+        "消费"
+      ],
+      "src": "市场消息"
+    },
+    {
+      "id": 21,
+      "imp": 3,
+      "c": "corp",
+      "t": "特朗普拟禁止中国光收发器进口，CPO出口链海外风险升温",
+      "d": "美方拟以安全为由限制中国产光收发器（光模块）进口，直接冲击中际旭创、新易盛等出口链；叠加A股早盘光模块重挫，板块短期承压但国产替代逻辑仍在。",
+      "g": -1,
+      "lv": "行业级",
+      "s": [
+        "光模块",
+        "CPO",
+        "出口链"
+      ],
+      "src": "外媒/市场"
+    },
+    {
+      "id": 22,
+      "imp": 2,
+      "c": "corp",
+      "t": "AMD二季报：营收115.4亿美元增50%，EPS增246%大超预期",
+      "d": "AMD二季度营收115.4亿美元同比增50%，每股收益同比增246%，数据中心与AI芯片需求强劲，指引继续上修，验证全球AI算力高景气。",
+      "g": 1,
+      "lv": "公司级",
+      "s": [
+        "AMD",
+        "AI芯片",
+        "算力"
+      ],
+      "src": "公司财报"
+    },
+    {
+      "id": 23,
+      "imp": 2,
+      "c": "corp",
+      "t": "SpaceX单季收入78亿美元同比增92%，商业航天提速",
+      "d": "SpaceX披露最新季度收入约78亿美元，同比增长92%，星链用户与发射服务规模扩张，商业航天商业化加速。",
+      "g": 1,
+      "lv": "公司级",
+      "s": [
+        "商业航天",
+        "卫星互联网"
+      ],
+      "src": "公司披露"
+    },
+    {
+      "id": 24,
+      "imp": 2,
+      "c": "corp",
+      "t": "存储与云算力产能持续售罄：三大原厂2027年DRAM/HBM售罄",
+      "d": "三星、美光、SK海力士2027年DRAM与HBM产能全部分配完毕，NAND全年产能亦预售一空；AWS产能预售至2028年，存储涨价与AI算力紧缺逻辑延续。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "存储",
+        "HBM",
+        "AI算力"
+      ],
+      "src": "产业链/财报"
+    },
+    {
+      "id": 25,
+      "imp": 2,
+      "c": "corp",
+      "t": "长鑫科技获海外ETF重仓，外资密集配置国产存储",
+      "d": "海外存储主题ETF加码配置长鑫科技，Tema Memory ETF权重升至12.97%成第一大重仓，外资对国产存储链关注度提升。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "存储",
+        "半导体",
+        "外资"
+      ],
+      "src": "持仓披露"
+    },
+    {
+      "id": 26,
+      "imp": 1,
+      "c": "corp",
+      "t": "7月A股回购预案同比激增444%，宁德时代拟回购200-400亿居首",
+      "d": "7月回购预案266条、拟回购约900亿元同比增444%；宁德时代拟回购200-400亿元创A股历史最大规模，中际旭创40-80亿、兆易创新10-20亿，回购托底效应显现。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "回购",
+        "分红"
+      ],
+      "src": "Wind/中金"
+    },
+    {
+      "id": 27,
+      "imp": 1,
+      "c": "corp",
+      "t": "船舶行业高景气延续：上半年新接订单同比增105.2%",
+      "d": "我国海船新接订单量、完工量、手持订单量全面上涨，国际市场份额领先；海工装备新接订单金额同比增121.9%，多家船企半年度业绩大幅预增。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "船舶",
+        "海工装备"
+      ],
+      "src": "自然资源部"
+    },
+    {
+      "id": 28,
+      "imp": 1,
+      "c": "corp",
+      "t": "8月电子布价格创年内最大单月涨幅，主流系列涨17%-18%",
+      "d": "1080/2116/7628等主流系列均价单月涨17%~18%，年内累涨118%~165%，涨价沿覆铜板向PCB传导，玻璃玻纤与PCB链条景气延续。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "电子布",
+        "PCB",
+        "覆铜板"
+      ],
+      "src": "券商研报"
+    },
+    {
+      "id": 29,
+      "imp": 1,
+      "c": "corp",
+      "t": "宁德时代中期分红派发约61.8亿元，股权登记日8月7日",
+      "d": "公司同步全面上调2026年业绩指引，并推进200-400亿元回购计划，锂电龙头资本回报与景气双升。",
+      "g": 1,
+      "lv": "公司级",
+      "s": [
+        "锂电",
+        "新能源",
+        "分红"
+      ],
+      "src": "公司公告"
+    },
+    {
+      "id": 30,
+      "imp": 1,
+      "c": "corp",
+      "t": "机器人产业链价值重估：宇树按420亿市值发行，智元启动赴港",
+      "d": "宇树科技按发行10%股份募资42.02亿元测算初始市值约420亿元；智元机器人启动赴港上市，比亚迪、小鹏人形机器人量产倒计时，减速器与执行器环节受益。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "机器人",
+        "人形机器人",
+        "减速器"
+      ],
+      "src": "市场消息"
+    },
+    {
+      "id": 31,
+      "imp": 3,
+      "c": "intl",
+      "t": "美股8月4日集体大涨：道指+1.71%创高，纳指100+3.32%、SOX+6.55%",
+      "d": "道指涨1.71%报54085.88创收盘新高，纳指涨2.59%报26584.99，纳指100涨3.32%报29733.16，标普500涨1.79%报7736.52创新高；费城半导体涨6.55%报12179.26，VIX回落至15.86。AI芯片与大型科技领涨。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "美股",
+        "半导体",
+        "全球权益"
+      ],
+      "src": "美股行情"
+    },
+    {
+      "id": 32,
+      "imp": 3,
+      "c": "intl",
+      "t": "国际油价隔夜暴跌：WTI-5.69%、布伦特-5.26%",
+      "d": "WTI原油跌5.69%报75.77美元/桶，布伦特跌5.26%报79.36美元，创阶段最大单日跌幅；主因OPEC+增产预期与需求担忧，供应宽松压制油价中枢。",
+      "g": -1,
+      "lv": "市场级",
+      "s": [
+        "原油",
+        "石化",
+        "航空"
+      ],
+      "src": "汇通财经"
+    },
+    {
+      "id": 33,
+      "imp": 2,
+      "c": "intl",
+      "t": "美伊霍尔木兹谈判：贝森特称8月5日或达成协议",
+      "d": "美财长贝森特表示美伊谈判或在8月5日达成框架协议，涉及霍尔木兹海峡通行；但伊朗方面表态谨慎，地缘溢价反复，油价对消息高度敏感。",
+      "g": 0,
+      "lv": "市场级",
+      "s": [
+        "地缘政治",
+        "原油",
+        "黄金"
+      ],
+      "src": "外媒"
+    },
+    {
+      "id": 34,
+      "imp": 2,
+      "c": "intl",
+      "t": "现货黄金站上4150美元，避险与降息预期共振",
+      "d": "伦敦现货黄金报4150.70美元/盎司，受地缘不确定与美联储降息预期支撑维持强势；韩国央行时隔13年重启购金，央行购金需求延续。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "黄金",
+        "有色金属",
+        "避险"
+      ],
+      "src": "金投网/央行"
+    },
+    {
+      "id": 35,
+      "imp": 2,
+      "c": "intl",
+      "t": "美元指数回落至99.89，非美货币普遍反弹",
+      "d": "美元指数走弱至99.89，人民币、欧元等非美货币走强；市场下调美联储加息预期、押注年内降息，美元承压。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "美元",
+        "外汇"
+      ],
+      "src": "Wind"
+    },
+    {
+      "id": 36,
+      "imp": 1,
+      "c": "intl",
+      "t": "美债收益率走低：10年期报4.68%降约5BP",
+      "d": "10年期美债收益率报4.68%较前一交易日降约5BP，2年期同步下行；纽约联储主席称政策处于良好位置、无需急于调整，降息路径仍不明朗。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "美债",
+        "美联储"
+      ],
+      "src": "美联储/Wind"
+    },
+    {
+      "id": 37,
+      "imp": 1,
+      "c": "intl",
+      "t": "欧洲股市多数收涨，德国DAX刷新历史新高",
+      "d": "德国DAX涨1.45%报26001.31创收盘新高，法国CAC40涨1.22%，欧洲斯托克50涨1.14%；全球风险偏好同步回暖。",
+      "g": 1,
+      "lv": "市场级",
+      "s": [
+        "欧股",
+        "DAX",
+        "全球权益"
+      ],
+      "src": "路透"
+    },
+    {
+      "id": 38,
+      "imp": 1,
+      "c": "intl",
+      "t": "韩国股市剧烈波动，单股杠杆ETF争议发酵",
+      "d": "韩国综合指数前一交易日大跌5.12%，SK海力士、三星电子跌近9%；围绕单股杠杆ETF监管争议升级，金融监管部门拟引入紧急行动权限。",
+      "g": -1,
+      "lv": "市场级",
+      "s": [
+        "韩国股市",
+        "杠杆ETF",
+        "半导体"
+      ],
+      "src": "韩联社"
+    },
+    {
+      "id": 39,
+      "imp": 1,
+      "c": "intl",
+      "t": "AI应用端财报密集：Palantir、Snap业绩超预期盘后涨超10%",
+      "d": "Palantir Q2盈利碾压预期、美国商业收入劲增149%并上调全年指引，Snap超预期，二者盘后均涨超10%；AI应用端商业化加速。",
+      "g": 1,
+      "lv": "行业级",
+      "s": [
+        "AI应用",
+        "软件"
+      ],
+      "src": "公司财报"
+    },
+    {
+      "id": 40,
+      "imp": 1,
+      "c": "intl",
+      "t": "机构预警AI芯片建设潮将掀逾5000亿美元发债高峰",
+      "d": "AI数据中心与芯片产能扩张带来巨额融资需求，机构预测相关发债高峰超5000亿美元；本周五美国将公布7月非农，预期新增8.75万人、失业率或升至4.3%。",
+      "g": 0,
+      "lv": "行业级",
+      "s": [
+        "AI算力",
+        "美债",
+        "非农"
+      ],
+      "src": "FactSet"
+    }
+  ],
+  "opps": [
+    {
+      "t": "稀土与小金属（涨价+避险）",
+      "lv": "事件",
+      "lvc": "lv-c",
+      "d": "8月5日早盘稀土永磁、小金属逆势领涨，小金属涨4.59%、非金属材料涨4.05%、贵金属涨3.25%，在科技成长回调时成为资金避风港；叠加地缘不确定与美联储降息预期，有色资源品具备阶段配置价值。",
+      "tags": [
+        "稀土",
+        "小金属",
+        "贵金属"
+      ],
+      "risk": "属防御性轮动，持续性取决于科技主线回调深度与商品价格波动，须防一日游。"
+    },
+    {
+      "t": "半导体设备与国产存储（主线）",
+      "lv": "主线",
+      "lvc": "lv-a",
+      "d": "AMD二季营收115.4亿美元增50%、EPS增246%验证全球AI算力高景气；三星、美光、SK海力士2027年DRAM与HBM产能全数售罄，长鑫科技获海外ETF重仓（权重12.97%），国产存储与设备链景气延续。",
+      "tags": [
+        "中际旭创",
+        "兆易创新",
+        "长鑫科技",
+        "半导体设备"
+      ],
+      "risk": "光模块受特朗普拟禁进口与高位回调双重压制，短线波动加剧，注意仓位与节奏。"
+    },
+    {
+      "t": "创新药与CXO",
+      "lv": "关注",
+      "lvc": "lv-b",
+      "d": "创新药龙头中报验证订单景气，社保与QFII二季重仓曝光集中在高端制造、医药方向；创新药出海与CXO回暖逻辑延续，长线资金持仓轮廓显现。",
+      "tags": [
+        "CXO",
+        "创新药",
+        "医疗器械"
+      ],
+      "risk": "海外生物安全立法与集采压制成隐忧，需跟踪政策与汇率扰动。"
+    },
+    {
+      "t": "港股科技与互联互通受益标的",
+      "lv": "关注",
+      "lvc": "lv-b",
+      "d": "南向资金净买入25.7亿港元持续增配港股科技，恒生互联网逆势涨0.09%显韧性；若希音等出海龙头赴港上市落地，将进一步激活港股流动性与估值修复。",
+      "tags": [
+        "恒生科技",
+        "港股券商",
+        "AH溢价"
+      ],
+      "risk": "恒指仍受银行地产权重拖累，指数与个股背离，需甄别个股质地。"
+    },
+    {
+      "t": "黄金与有色金属（避险+央行购金）",
+      "lv": "关注",
+      "lvc": "lv-b",
+      "d": "现货黄金站上4150美元，地缘不确定与降息预期共振；韩国央行时隔13年重启购金，全球央行购金需求延续，贵金属中期趋势未破。",
+      "tags": [
+        "黄金",
+        "贵金属",
+        "有色"
+      ],
+      "risk": "若美元与美债收益率反弹，金价短线或承压，注意仓位管理。"
+    },
+    {
+      "t": "银行等红利资产：短期回避，中期观察",
+      "lv": "谨慎",
+      "lvc": "lv-c",
+      "d": "在成交放大、成长风格占优的环境下，红利板块短期缺乏相对收益；但适度宽松与低利率环境未变，股息率回到高位后仍具中期配置价值，宜等待风格再平衡。",
+      "tags": [
+        "国有大行",
+        "保险",
+        "高股息"
+      ],
+      "risk": "若市场转入震荡，红利资金可能快速回流，切勿单边押注方向。"
+    }
+  ],
+  "risks": [
+    "CPO/光模块高位剧烈回调：中际旭创8月5日早盘跌13.89%，拥挤交易风险集中释放，短线追高性价比骤降。",
+    "科技成长前一日涨幅过大（创业板指+5.64%、通信设备+10.74%），波动率与拥挤度同步抬升，注意获利了结压力。",
+    "国际油价单日暴跌逾5%（WTI-5.69%），上游油气与资源股承压；但美伊霍尔木兹谈判反复，油价对地缘消息高度敏感，易反向波动。",
+    "美伊霍尔木兹谈判反复：贝森特称或于8月5日达成协议，伊朗表态谨慎，地缘溢价不确定性高。",
+    "本周五美国7月非农数据公布，预期新增8.75万人、失业率或升至4.3%，超预期偏离将放大全球资产波动。",
+    "美联储降息路径不明：纽约联储主席称政策处于良好位置、无需急于调整，压制全球风险资产估值弹性。",
+    "特朗普拟禁止中国光收发器进口，光模块出口链海外政策风险升温，叠加A股板块高位回调形成双击。",
+    "8月中报密集披露期，前期高涨幅个股面临业绩兑现检验，警惕预期差引发补跌。"
+  ],
+  "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
+};
+// 外部托管：自动化每日写入 GitHub，网页免重部署自更新。
+// 多源容错：jsDelivr(国内可访问) 优先，raw.githubusercontent 兜底；任一成功即采用，避免静默回退旧快照。
+const BRIEF_SOURCES = [
+  "https://cdn.jsdelivr.net/gh/chen6808hong/finance-brief-data@main/brief.json",
+  "https://raw.githubusercontent.com/chen6808hong/finance-brief-data/main/brief.json"
+];
+let BRIEF = BRIEF_FALLBACK;
+let BRIEF_SRC = "内置快照(08-05)";
+function fetchBrief(url){
+  const sep = url.indexOf('?')<0 ? '?' : '&';
+  return fetch(url + sep + "t=" + Date.now(), {cache:'no-store'})
+    .then(function(r){ if(!r.ok) throw new Error('http '+r.status); return r.json(); })
+    .then(function(d){ if(d && d.date){ return d; } throw new Error('invalid payload'); });
+}
+function loadBrief(){
+  let chain = Promise.reject(new Error('init'));
+  BRIEF_SOURCES.forEach(function(u){ chain = chain.catch(function(){ return fetchBrief(u); }); });
+  return chain
+    .then(function(d){ BRIEF = d; BRIEF_SRC = "线上最新"; return d; })
+    .catch(function(e){ BRIEF = BRIEF_FALLBACK; BRIEF_SRC = "内置快照(08-05)，线上拉取失败"; return BRIEF; });
+}
+/* ============ BRIEF_DATA_END ============ */
+
+const CATS = [
+  {k:"all",  n:"全部"},
+  {k:"macro",n:"宏观政策"},
+  {k:"cn",   n:"国内市场"},
+  {k:"corp", n:"公司产业"},
+  {k:"intl", n:"国际市场"}
+];
+const KEY = "wb_finbrief_";
+let state = {
+  cat:"all", favOnly:false, exp:{},
+  read: load("read", {}),
+  fav:  load("fav",  {})
+};
+
+function load(k,def){ try{ const v=localStorage.getItem(KEY+k); return v?JSON.parse(v):def; }catch(e){ return def; } }
+function save(k,v){ try{ localStorage.setItem(KEY+k, JSON.stringify(v)); }catch(e){} }
+function esc(s){ return String(s).replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+function toast(m){ const t=document.getElementById('toast'); t.textContent=m; t.classList.add('on'); clearTimeout(t._h); t._h=setTimeout(()=>t.classList.remove('on'),1800); }
+
+/* ---------- 头部 ---------- */
+function renderHead(){
+  document.getElementById('hdSub').textContent =
+    BRIEF.date + " " + BRIEF.weekday + " · 共 " + BRIEF.items.length + " 条核心资讯 · 更新于 " + BRIEF.updated;
+  document.getElementById('mkTime').textContent = "截至 " + BRIEF.updated;
+  document.getElementById('srcLine').textContent = BRIEF.sources;
+  document.title = "财经简报 " + BRIEF.date;
+  updateSrcHint();
+}
+function updateSrcHint(){
+  const el = document.getElementById('noticeTx');
+  if(!el) return;
+  const box = el.parentNode;
+  if(BRIEF_SRC && BRIEF_SRC.indexOf('线上最新')>=0){
+    el.textContent = "数据已自动同步至最新（更新于 "+BRIEF.updated+"），每 5 分钟自动刷新；已读/收藏保存在本机。";
+    if(box){ box.style.color=""; box.style.borderColor="#f0dfba"; box.style.background="var(--warnbg)"; }
+  } else {
+    el.textContent = "⚠ 线上数据拉取失败，当前显示内置快照("+BRIEF.date+")。请检查网络后刷新页面。";
+    if(box){ box.style.color="#a33"; box.style.borderColor="#e3b3b3"; box.style.background="#fdecec"; }
+  }
+}
+
+/* ---------- 市场速览 ---------- */
+function renderMarket(){
+  const groups = BRIEF.marketGroups || [{name:"市场", items:BRIEF.market||[]}];
+  document.getElementById('mkGrid').innerHTML = groups.map(g=>{
+    const cards = (g.items||[]).map(m=>{
+      const cls = m.d>0?'r':(m.d<0?'g':'n0');
+      return '<div class="mkc"><div class="n">'+esc(m.n)+'</div><div class="v '+cls+'">'+esc(m.v)+'</div><div class="c '+cls+'">'+esc(m.c)+'</div></div>';
+    }).join('');
+    return '<div class="mkg"><div class="mkg-h"><b>'+esc(g.name)+'</b><span class="n">'+(g.items?g.items.length:0)+'</span></div><div class="mk">'+cards+'</div></div>';
+  }).join('');
+}
+
+/* ---------- 今日必看 ---------- */
+function renderFocus(){
+  document.getElementById('focusBox').innerHTML = BRIEF.focus.map((f,i)=>
+    '<div class="fi"><div class="num">'+(i+1)+'</div><div class="bd"><div class="t">'+esc(f.t)+'</div><div class="d">'+esc(f.d)+'</div></div></div>'
+  ).join('');
+}
+
+/* ---------- 板块条形图（内联 SVG 手写） ---------- */
+function renderChart(){
+  const up = BRIEF.sectors.up, dn = BRIEF.sectors.down;
+  const rows = up.concat(dn);
+  const max = Math.max.apply(null, rows.map(r=>Math.abs(r.v)));
+  const W=680, LW=96, RW=54, PL=LW, PR=W-RW;
+  const axis=(PL+PR)/2, half=(PR-PL)/2-4;
+  const rh=25, gap=6, H=rows.length*(rh+gap)+30;
+  let s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="行业涨跌幅">';
+  s+='<line x1="'+axis+'" y1="6" x2="'+axis+'" y2="'+(H-22)+'" stroke="#dfe4ec" stroke-width="1"/>';
+  rows.forEach((r,i)=>{
+    const y=6+i*(rh+gap), w=Math.abs(r.v)/max*half;
+    const pos=r.v>=0;
+    const x=pos?axis:axis-w;
+    const col=pos?'#d9382d':'#0f8a52';
+    const bg =pos?'#fdeceb':'#e8f6ef';
+    s+='<rect x="'+(axis-half)+'" y="'+y+'" width="'+(half*2)+'" height="'+rh+'" rx="5" fill="'+bg+'" opacity=".45"/>';
+    s+='<rect x="'+x+'" y="'+y+'" width="'+Math.max(w,2)+'" height="'+rh+'" rx="5" fill="'+col+'"/>';
+    s+='<text x="'+(LW-10)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" fill="#5a6478" font-family="-apple-system,sans-serif">'+esc(r.n)+'</text>';
+    s+='<text x="'+(W-8)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" font-weight="600" fill="'+col+'" font-family="-apple-system,sans-serif">'+(pos?'+':'')+r.v.toFixed(2)+'</text>';
+  });
+  s+='<text x="'+axis+'" y="'+(H-6)+'" text-anchor="middle" font-size="11" fill="#8a93a6" font-family="-apple-system,sans-serif">红涨绿跌 · 申万行业指数</text>';
+  s+='</svg>';
+  document.getElementById('chartBox').innerHTML=s;
+}
+
+/* ---------- Tab ---------- */
+function renderTabs(){
+  document.getElementById('tabs').innerHTML = CATS.map(c=>{
+    const n = c.k==='all' ? BRIEF.items.length : BRIEF.items.filter(i=>i.c===c.k).length;
+    return '<button class="tab'+(state.cat===c.k?' on':'')+'" onclick="setCat(\''+c.k+'\')">'+c.n+'<span class="b">'+n+'</span></button>';
+  }).join('');
+}
+function setCat(k){ state.cat=k; renderTabs(); render(); }
+
+/* ---------- 列表：每个板块默认前 3 条，其余横向滑动 ---------- */
+const TOP_N = 3;
+const CATNAME = {macro:"宏观政策", cn:"国内市场", corp:"公司产业", intl:"国际市场"};
+const SW_ICON = '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 3 12l5 5"/><path d="M16 7l5 5-5 5"/><path d="M3 12h18"/></svg>';
+
+const STAR_PATH = "M11.5 3.2 14 8.3l5.6.8-4 3.9 1 5.6-5.1-2.7L6.4 18.6l1-5.6-4-3.9 5.6-.8z";
+function impStars(n){
+  n = n|0;
+  if(n<1) return '';
+  let s = '<span class="imp" title="重要程度 '+n+' 星">';
+  for(let k=0;k<n;k++){
+    s += '<svg viewBox="0 0 24 24" fill="#f0883e" stroke="#f0883e" stroke-width="1.4" stroke-linejoin="round"><path d="'+STAR_PATH+'"/></svg>';
+  }
+  return s+'</span>';
+}
+
+function itemHTML(i){
+  const gp = i.g>0?'<span class="pill p-up">利好</span>' : (i.g<0?'<span class="pill p-dn">利空</span>':'<span class="pill p-nu">中性</span>');
+  const sc = (i.s||[]).map(x=>'<span class="pill p-sc">'+esc(x)+'</span>').join('');
+  const fav = state.fav[i.id];
+  const starSvg = '<svg viewBox="0 0 24 24" fill="'+(fav?'#e8a33d':'none')+'" stroke="'+(fav?'#e8a33d':'#b6bdcb')+'" stroke-width="2" stroke-linejoin="round"><path d="M11.5 3.2 14 8.3l5.6.8-4 3.9 1 5.6-5.1-2.7L6.4 18.6l1-5.6-4-3.9 5.6-.8z"/></svg>';
+  return '<div class="it'+(state.read[i.id]?' read':'')+'" id="it'+i.id+'">'
+    + '<div class="it-h">'+impStars(i.imp)+'<div class="it-n">'+i.id+'</div><div class="it-t">'+esc(i.t)+'</div>'
+    + '<button class="star" onclick="toggleStar('+i.id+')" aria-label="收藏">'+starSvg+'</button></div>'
+    + '<div class="it-d">'+esc(i.d)+'</div>'
+    + '<div class="it-f">'+gp+'<span class="pill p-lv">'+esc(i.lv)+'</span>'+sc+'<span class="p-src">'+esc(i.src)+'</span></div>'
+    + '<button class="rdbtn" onclick="toggleRead('+i.id+')">'+(state.read[i.id]?'标为未读':'标记已读')+'</button>'
+    + '</div>';
+}
+
+function groupHTML(key, arr){
+  const head = '<div class="grp-h"><span class="dot"></span><b>'+CATNAME[key]+'</b><span class="n">'+arr.length+' 条</span></div>';
+  if(arr.length<=TOP_N){
+    return '<div class="grp">'+head+'<div class="grp-col">'+arr.map(itemHTML).join('')+'</div></div>';
+  }
+  if(state.exp[key]){
+    return '<div class="grp">'+head
+      + '<div class="grp-col">'+arr.map(itemHTML).join('')+'</div>'
+      + '<div class="sw-hint"><span class="sp"></span>'
+      + '<button class="sw-more" onclick="toggleExp(\''+key+'\')">收起，只看前 '+TOP_N+' 条</button></div>'
+      + '</div>';
+  }
+  const rest = arr.slice(TOP_N);
+  return '<div class="grp">'+head
+    + '<div class="grp-col">'+arr.slice(0,TOP_N).map(itemHTML).join('')+'</div>'
+    + '<div class="sw-hint">'+SW_ICON+'<span>还有 '+rest.length+' 条，左右滑动查看</span><span class="sp"></span>'
+    + '<button class="sw-more" onclick="toggleExp(\''+key+'\')">展开全部</button></div>'
+    + '<div class="swipe" data-k="'+key+'">'+rest.map(itemHTML).join('')+'</div>'
+    + '</div>';
+}
+function toggleExp(k){ state.exp[k]=!state.exp[k]; render(); }
+
+function grabScroll(){
+  const m={}; document.querySelectorAll('.swipe').forEach(el=>{ m[el.getAttribute('data-k')]=el.scrollLeft; }); return m;
+}
+function putScroll(m){
+  document.querySelectorAll('.swipe').forEach(el=>{
+    const v=m[el.getAttribute('data-k')]; if(v) el.scrollLeft=v;
+  });
+}
+
+function render(){
+  const sp = grabScroll();
+  const q = (document.getElementById('q').value||'').trim().toLowerCase();
+  let arr = BRIEF.items.filter(i=>{
+    if(state.cat!=='all' && i.c!==state.cat) return false;
+    if(state.favOnly && !state.fav[i.id]) return false;
+    if(q){
+      const hay=(i.t+i.d+(i.s||[]).join('')+i.src).toLowerCase();
+      if(hay.indexOf(q)<0) return false;
+    }
+    return true;
+  });
+  const unread = arr.filter(i=>!state.read[i.id]).length;
+  document.getElementById('listCnt').textContent = arr.length+" 条 · 未读 "+unread;
+
+  const box = document.getElementById('list');
+  if(!arr.length){ box.className='list'; box.innerHTML='<div class="empty">没有符合条件的资讯</div>'; return; }
+
+  /* 搜索或只看收藏时结果本就精简，直接完整平铺 */
+  if(q || state.favOnly){
+    box.className='list';
+    box.innerHTML = arr.map(itemHTML).join('');
+    return;
+  }
+
+  box.className='list grouped';
+  const keys = state.cat==='all' ? ['macro','cn','corp','intl'] : [state.cat];
+  box.innerHTML = keys.map(k=>{
+    const sub = arr.filter(i=>i.c===k).sort((a,b)=> (b.imp||0)-(a.imp||0) || (a.id-b.id));
+    return sub.length ? groupHTML(k, sub) : '';
+  }).join('');
+  putScroll(sp);
+}
+
+function toggleRead(id){ state.read[id]=!state.read[id]; if(!state.read[id]) delete state.read[id]; save("read",state.read); render(); }
+function toggleStar(id){ state.fav[id]=!state.fav[id]; if(!state.fav[id]) delete state.fav[id]; save("fav",state.fav); render(); }
+function markAllRead(){ BRIEF.items.forEach(i=>state.read[i.id]=true); save("read",state.read); render(); toast("已全部标记为已读"); }
+function toggleFav(){ state.favOnly=!state.favOnly; document.getElementById('favTx').textContent = state.favOnly?'显示全部':'只看收藏'; render(); }
+function gotoTop(){
+  var el = document.scrollingElement || document.documentElement || document.body;
+  if(el && typeof el.scrollTo==="function"){ try{ el.scrollTo({top:0,behavior:"smooth"}); return; }catch(e){} }
+  if(el) el.scrollTop = 0;
+  if(window.scrollY || window.pageYOffset) window.scrollTo(0,0);
+}
+
+/* ---------- 投资机会 / 风险 ---------- */
+function renderOpp(){
+  document.getElementById('oppBox').innerHTML = BRIEF.opps.map(o=>
+    '<div class="oc"><h4>'+esc(o.t)+'<span class="lv '+o.lvc+'">'+esc(o.lv)+'</span></h4>'
+    + '<p>'+esc(o.d)+'</p>'
+    + '<div class="tags">'+(o.tags||[]).map(t=>'<span class="pill p-sc">'+esc(t)+'</span>').join('')+'</div>'
+    + '<p style="color:#b8791a;font-size:12.5px">风险：'+esc(o.risk)+'</p></div>'
+  ).join('');
+  document.getElementById('riskList').innerHTML = BRIEF.risks.map(r=>'<li>'+esc(r)+'</li>').join('');
+}
+
+/* ---------- 导入导出 ---------- */
+function exportJSON(){
+  const payload = { app:"wb_finbrief", version:1, exportedAt:new Date().toISOString(),
+    brief:BRIEF, marks:{read:state.read, fav:state.fav} };
+  dl(JSON.stringify(payload,null,2), "财经简报_"+BRIEF.date+".json", "application/json");
+  toast("已导出 JSON 备份");
+}
+function exportMD(){
+  let s = "# 财经简报 "+BRIEF.date+" "+BRIEF.weekday+"\n更新于 "+BRIEF.updated+"\n\n## 市场速览\n";
+  (BRIEF.marketGroups||[{name:"",items:BRIEF.market||[]}]).forEach(g=>{
+    if(g.name) s += "\n### "+g.name+"\n";
+    (g.items||[]).forEach(m=> s += "- "+m.n+"："+m.v+"（"+m.c+"）\n");
+  });
+  s += "\n## 今日必看\n";
+  BRIEF.focus.forEach((f,i)=> s += (i+1)+". "+f.t+"\n   "+f.d+"\n");
+  const map={macro:"宏观政策",cn:"国内市场",corp:"公司产业",intl:"国际市场"};
+  Object.keys(map).forEach(k=>{
+    s += "\n## "+map[k]+"\n";
+    BRIEF.items.filter(i=>i.c===k).forEach(i=>{
+      s += i.id+". ["+(i.g>0?"利好":i.g<0?"利空":"中性")+"|"+i.lv+"] "+i.t+"\n   "+i.d+"\n   板块："+(i.s||[]).join("、")+" | 来源："+i.src+"\n";
+    });
+  });
+  s += "\n## 投资机会分析\n";
+  BRIEF.opps.forEach(o=> s += "- 【"+o.lv+"】"+o.t+"\n  "+o.d+"\n  关注："+(o.tags||[]).join("、")+"\n  风险："+o.risk+"\n");
+  s += "\n## 风险提示\n";
+  BRIEF.risks.forEach((r,i)=> s += (i+1)+". "+r+"\n");
+  s += "\n"+BRIEF.sources+"\n免责声明：本简报由公开信息自动汇编，不构成投资建议。\n";
+  dl(s, "财经简报_"+BRIEF.date+".txt", "text/plain;charset=utf-8");
+  toast("已导出文本版");
+}
+function dl(content,name,type){
+  const b=new Blob([content],{type:type}); const u=URL.createObjectURL(b);
+  const a=document.createElement('a'); a.href=u; a.download=name; document.body.appendChild(a); a.click();
+  setTimeout(()=>{URL.revokeObjectURL(u); a.remove();},400);
+}
+function importJSON(e){
+  const f=e.target.files&&e.target.files[0]; if(!f) return;
+  const r=new FileReader();
+  r.onload=function(){
+    try{
+      const d=JSON.parse(r.result);
+      if(d.marks){ state.read=d.marks.read||{}; state.fav=d.marks.fav||{}; save("read",state.read); save("fav",state.fav); }
+      if(d.brief && d.brief.items){ Object.assign(BRIEF, d.brief); renderHead(); renderMarket(); renderFocus(); renderChart(); renderOpp(); renderTabs(); }
+      render(); toast("导入成功");
+    }catch(err){ toast("文件格式不正确"); }
+    e.target.value="";
+  };
+  r.readAsText(f);
+}
+
+/* ---------- 弹窗 ---------- */
+let okFn=null;
+function openModal(t,b,fn){ document.getElementById('mTitle').textContent=t; document.getElementById('mBody').textContent=b; okFn=fn; document.getElementById('mask').classList.add('on'); }
+function closeModal(){ document.getElementById('mask').classList.remove('on'); okFn=null; }
+document.getElementById('mOk').onclick=function(){ if(okFn) okFn(); closeModal(); };
+document.getElementById('mask').onclick=function(e){ if(e.target.id==='mask') closeModal(); };
+function askClear(){
+  openModal("清空本地记录","将清除所有已读标记和收藏记录，此操作不可恢复。简报内容本身不会被删除。确定继续吗？",function(){
+    state.read={}; state.fav={}; save("read",{}); save("fav",{}); render(); toast("已清空本地记录");
+  });
+}
+
+/* ---------- 备份提醒 ---------- */
+function backupHint(){
+  const n = Object.keys(state.read).length + Object.keys(state.fav).length;
+  if(n>=30){ document.getElementById('noticeTx').textContent = "本地记录已积累 "+n+" 条，建议点击上方「导出 JSON 备份」保存一份。"; }
+}
+
+/* ---------- 启动 ---------- */
+function refreshBrief(){
+  return loadBrief().then(function(){
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); render(); updateSrcHint();
+    return BRIEF;
+  });
+}
+refreshBrief().then(backupHint);
+// 线上自动刷新：每5分钟静默重新拉取最新数据并重渲染（保留已读/收藏），实现打开后持续自更新
+setInterval(function(){
+  loadBrief().then(function(){
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); render(); updateSrcHint();
+  });
+}, 5*60*1000);
+</script>
+</body>
+</html>
