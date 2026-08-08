@@ -256,19 +256,23 @@ brief = {
     "sources": "数据源：东方财富行情接口、Yahoo Finance；本版为云端定时脚本自动生成的行情快照，AI 精编版将覆盖此内容。",
 }
 
-# ---------- 兜底防覆盖：若本地 AI 精编版当天已更新，则不覆盖 ----------
+# ---------- 行情回退源 & 防覆盖守卫 ----------
+# 云端 CI 环境 (GITHUB_ACTIONS=true) 每次都应生成快照，跳过防覆盖守卫；
+# 仅本地运行时保留守卫：当天已有 AI 精编版则跳过，避免覆盖本地成果。
 _existing = {}
 TODAY = brief["date"]
 try:
     with open("brief.json", "r", encoding="utf-8") as _f:
         _existing = json.load(_f)
+except Exception:
+    _existing = {}
+
+if os.environ.get("GITHUB_ACTIONS") != "true":
     _ex_date = _existing.get("date")
     _ex_upd = _existing.get("updated", "")
     if _ex_date == TODAY and ("云端快照" not in _ex_upd):
         print("检测到本地 AI 精编版(%s)当天已更新，云端兜底跳过覆盖。" % _ex_upd, flush=True)
         sys.exit(0)
-except Exception:
-    pass  # 文件不存在或解析失败则正常生成
 
 # 行情抓取失败时，回退到已有快照的对应值，避免周末/接口异常把页面填成 —
 if _existing:
