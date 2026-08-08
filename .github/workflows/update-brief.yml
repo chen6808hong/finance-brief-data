@@ -1,0 +1,37 @@
+name: 财经简报·云端兜底更新
+
+on:
+  schedule:
+    - cron: '30 22 * * *'   # 06:30 北京时间 (GMT+8) = 22:30 UTC
+    - cron: '0 9 * * *'     # 17:00 北京时间 (GMT+8) = 09:00 UTC
+  workflow_dispatch: {}      # 允许在 Actions 页面手动点 Run
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate brief.json
+        run: python generate_brief_api.py
+
+      - name: Commit and push (仅在有变化时)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add brief.json
+          if git diff --cached --quiet; then
+            echo "brief.json 无变化，跳过提交"
+          else
+            git commit -m "chore: 云端兜底刷新简报 $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
