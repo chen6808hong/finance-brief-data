@@ -187,14 +187,29 @@ header{
 .ins .ins-s{font-size:11px;color:var(--tx3);margin-top:8px}
 .ins .cat{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:700;margin-right:7px;vertical-align:middle;white-space:nowrap;display:inline-block}
 
-/* ---------- Risk ---------- */
-.risk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px;box-shadow:var(--sh)}
-.risk ol{margin:0;padding-left:20px;font-size:13px;color:var(--tx2)}
-.risk li{margin:5px 0}
+/* ---------- 行业涨跌（文本列表，无图表） ---------- */
+.secL{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:11px;box-shadow:var(--sh)}
+.secCols{display:flex;gap:14px}
+.secCol{flex:1;min-width:0}
+.secColH{font-size:12px;font-weight:700;color:var(--tx3);margin-bottom:6px;letter-spacing:.5px}
+.secCol.up .secColH{color:#d9382d}
+.secCol.dn .secColH{color:#0f8a52}
+.secRow{display:flex;justify-content:space-between;align-items:center;padding:5px 8px;border-radius:7px;font-size:13px}
+.secRow:nth-child(odd){background:rgba(125,135,155,.06)}
+.secRow .sn{color:var(--tx2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.secRow .sv{font-weight:700;font-variant-numeric:tabular-nums}
+.secRow .sv.pos{color:#d9382d}
+.secRow .sv.neg{color:#0f8a52}
+.secEmpty{padding:5px 8px;font-size:12px;color:var(--tx3)}
 
-/* ---------- Chart ---------- */
-.chartbox{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:11px;box-shadow:var(--sh)}
-.chartbox svg{width:100%;height:auto;display:block}
+/* ---------- 风险提示（独立强化版块） ---------- */
+.warn-h{color:#d9382d}
+.warn-h b{color:#d9382d}
+.riskBox{background:linear-gradient(180deg,#fff6f5,var(--card));border:1px solid #f3c9c4;border-radius:var(--r);padding:10px 12px;box-shadow:var(--sh)}
+.rk{display:flex;gap:9px;align-items:flex-start;padding:7px 8px;border-radius:8px;font-size:13px;color:var(--tx2);line-height:1.5}
+.rk:nth-child(odd){background:rgba(217,56,45,.05)}
+.rkN{flex:none;width:22px;height:22px;border-radius:6px;background:#d9382d;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.rkT{flex:1;min-width:0}
 
 /* ---------- Footer ---------- */
 footer{margin:22px 0 0;padding:14px 0 8px;border-top:1px solid var(--line);font-size:11.5px;color:var(--tx3);line-height:1.7}
@@ -284,7 +299,7 @@ footer{margin:22px 0 0;padding:14px 0 8px;border-top:1px solid var(--line);font-
   <!-- 板块涨跌 -->
   <div class="sec">
     <div class="sec-h"><span class="bar"></span><b>A股行业涨跌前后五</b><span class="cnt">单位 %</span></div>
-    <div class="chartbox" id="chartBox"></div>
+    <div class="secL" id="secList"></div>
   </div>
 
   <!-- 资讯 -->
@@ -309,8 +324,8 @@ footer{margin:22px 0 0;padding:14px 0 8px;border-top:1px solid var(--line);font-
 
   <!-- 风险 -->
   <div class="sec">
-    <div class="sec-h"><span class="bar"></span><b>风险提示</b></div>
-    <div class="risk"><ol id="riskList"></ol></div>
+    <div class="sec-h warn-h"><span class="bar"></span><b>⚠ 风险提示</b><span class="cnt">务必关注</span></div>
+    <div class="riskBox" id="riskBox"></div>
   </div>
 
   <div class="foot-acts">
@@ -1229,7 +1244,14 @@ const BRIEF_FALLBACK = {
   "insights": [
     { "t": "非农单月负增长容易制造恐慌，但更应看「前两月修正」", "typ": "信息差", "cat": "财经", "d": "市场常聚焦当月数值，忽视前两月下修才是趋势拐点信号；下修幅度越大，越说明前期就业被高估，美元与美债的反应往往滞后。", "src": "美国劳工部" },
     { "t": "「政策喊话=必然落地」是常见认知差", "typ": "认知差", "cat": "财经", "d": "行业自律、倡议书与行政强制存在本质区别，无罚则的「不降价」承诺执行度常打折扣，盈利修复节奏易被提前定价。", "src": "公开资讯" },
-    { "t": "指数急涨叠加新开户激增，常是情绪过热的反向信号", "typ": "信息差", "cat": "财经", "d": "散户开户数与成交量同步冲高，往往对应阶段性赚钱效应扩散的尾声，而非趋势起点，需警惕量价背离。", "src": "交易所/券商" }
+    { "t": "指数急涨叠加新开户激增，常是情绪过热的反向信号", "typ": "信息差", "cat": "财经", "d": "散户开户数与成交量同步冲高，往往对应阶段性赚钱效应扩散的尾声，而非趋势起点，需警惕量价背离。", "src": "交易所/券商" },
+    { "t": "黄金突破整数关口「无脑追涨」是典型认知差", "typ": "认知差", "cat": "财经", "d": "整数位本身无基本面含义，把长期看多逻辑直接等同于当下追涨，易在情绪高点接盘；真正方向取决于利率与美元实际路径。", "src": "公开资讯" },
+    { "t": "ETF净申购潮常是「下跌中越跌越买」的结果，而非看涨先行信号", "typ": "信息差", "cat": "财经", "d": "机构与长期资金多在回调中分批申购，净流入更多是对已发生波动的结果映射；单周申购数据噪声大，不宜简单当作方向领先信号。", "src": "交易所/基金业协会" },
+    { "t": "「北向/外资单日净买入」不等于聪明钱看多", "typ": "认知差", "cat": "财经", "d": "单日净买卖含被动调仓、对冲与套利，噪声很大；判断真实流向应看数周维度的连续净买入与持仓结构。", "src": "港交所/公开数据" },
+    { "t": "分红除权日股价「下跌」是账面价值重排，并非真实亏损", "typ": "信息差", "cat": "财经", "d": "除权除息日股价按分红额机械下移，实为权益内部转移；追逐填权者常忽略税收与除权后实际回报。", "src": "公开资讯" },
+    { "t": "低市盈率(PE)不等于便宜，盈利周期位置更关键", "typ": "认知差", "cat": "财经", "d": "周期股在盈利高点PE最低（看似便宜实则贵），低谷PE最高（看似贵实则便宜）；估值须结合盈利周期与自由现金流。", "src": "公开资讯" },
+    { "t": "收益率曲线倒挂是领先指标，不是即时衰退信号", "typ": "信息差", "cat": "财经", "d": "长短端利差倒挂领先经济走弱往往有数月时滞；把倒挂当天当作衰退已发生，会误判政策与资产节奏。", "src": "公开资讯" },
+    { "t": "本币中间价微调常被误读为贬值意图", "typ": "认知差", "cat": "财经", "d": "中间价小幅调贬在美元走弱背景下，常是央行收窄逆周期因子、让汇率更市场化的体现，而非主动引导贬值。", "src": "外汇交易中心" }
   ],
   "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
 };
@@ -1341,31 +1363,17 @@ function numVal(v){
 function renderChart(){
   var sec=BRIEF.sectors||{};
   var up=sec.up||[], dn=sec.down||[];
-  var rows=up.concat(dn);
-  if(!rows.length){ document.getElementById('chartBox').innerHTML='<div class="empty">暂无行业涨跌数据</div>'; return; }
-  var vals=rows.map(function(r){ return numVal(r.v); });
-  var max=Math.max.apply(null, vals.map(Math.abs))||1;
-  var W=680, LW=96, RW=54, PL=LW, PR=W-RW;
-  var axis=(PL+PR)/2, half=(PR-PL)/2-4;
-  var rh=25, gap=6, H=rows.length*(rh+gap)+30;
-  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="行业涨跌幅">';
-  s+='<line x1="'+axis+'" y1="6" x2="'+axis+'" y2="'+(H-22)+'" stroke="#dfe4ec" stroke-width="1"/>';
-  rows.forEach(function(r,i){
-    var val=numVal(r.v);
-    var y=6+i*(rh+gap), w=Math.abs(val)/max*half;
-    var pos=val>=0;
-    var x=pos?axis:axis-w;
-    var col=pos?'#d9382d':'#0f8a52';
-    var bg=pos?'#fdeceb':'#e8f6ef';
-    var label=typeof r.v==='string'?String(r.v):((val>=0?'+':'')+val.toFixed(2));
-    s+='<rect x="'+(axis-half)+'" y="'+y+'" width="'+(half*2)+'" height="'+rh+'" rx="5" fill="'+bg+'" opacity=".45"/>';
-    s+='<rect x="'+x.toFixed(1)+'" y="'+y+'" width="'+Math.max(w,2).toFixed(1)+'" height="'+rh+'" rx="5" fill="'+col+'"/>';
-    s+='<text x="'+(LW-10)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" fill="#5a6478" font-family="-apple-system,sans-serif">'+esc(r.n)+'</text>';
-    s+='<text x="'+(W-8)+'" y="'+(y+rh/2+4.5)+'" text-anchor="end" font-size="12.5" font-weight="600" fill="'+col+'" font-family="-apple-system,sans-serif">'+esc(label)+'</text>';
-  });
-  s+='<text x="'+axis+'" y="'+(H-6)+'" text-anchor="middle" font-size="11" fill="#8a93a6" font-family="-apple-system,sans-serif">红涨绿跌 · 申万行业指数</text>';
-  s+='</svg>';
-  document.getElementById('chartBox').innerHTML=s;
+  if(!up.length && !dn.length){ document.getElementById('secList').innerHTML='<div class="empty">暂无行业涨跌数据</div>'; return; }
+  function col(items, cls){
+    var head=cls==='up'?'领涨 ▲':'领跌 ▼';
+    if(!items.length) return '<div class="secCol '+cls+'"><div class="secColH">'+head+'</div><div class="secEmpty">—</div></div>';
+    return '<div class="secCol '+cls+'"><div class="secColH">'+head+'</div>'+
+      items.map(function(r){
+        var v=r.v, txt=typeof v==='string'?String(v):((numVal(v)>=0?'+':'')+numVal(v).toFixed(2));
+        return '<div class="secRow"><span class="sn">'+esc(r.n)+'</span><span class="sv '+(numVal(v)>=0?'pos':'neg')+'">'+esc(txt)+'</span></div>';
+      }).join('')+'</div>';
+  }
+  document.getElementById('secList').innerHTML='<div class="secCols">'+col(up,'up')+col(dn,'dn')+'</div>';
 }
 
 /* ---------- Tab ---------- */
@@ -1476,7 +1484,14 @@ function renderOpp(){
     + '<div class="tags">'+(o.tags||[]).map(t=>'<span class="pill p-sc">'+esc(t)+'</span>').join('')+'</div>'
     + '<p style="color:#b8791a;font-size:12.5px">风险：'+esc(o.risk)+'</p></div>'
   ).join('');
-  document.getElementById('riskList').innerHTML = (BRIEF.risks||[]).map(r=>'<li>'+esc(r)+'</li>').join('');
+}
+
+/* ---------- 风险提示（独立强化版块） ---------- */
+function renderRisks(){
+  const box=document.getElementById('riskBox');
+  const arr=BRIEF.risks||[];
+  if(!arr.length){ box.innerHTML='<div class="empty">暂无风险提示</div>'; return; }
+  box.innerHTML=arr.map((r,i)=>'<div class="rk"><span class="rkN">'+String(i+1).padStart(2,'0')+'</span><span class="rkT">'+esc(r)+'</span></div>').join('');
 }
 
 /* ---------- 信息差·认知差 ---------- */
@@ -1539,7 +1554,7 @@ function importJSON(e){
     try{
       const d=JSON.parse(r.result);
       if(d.marks){ state.read=d.marks.read||{}; state.fav=d.marks.fav||{}; save("read",state.read); save("fav",state.fav); }
-      if(d.brief && d.brief.items){ Object.assign(BRIEF, d.brief); renderHead(); renderMarket(); renderFocus(); renderChart(); renderOpp(); renderInsights(); renderTabs(); }
+      if(d.brief && d.brief.items){ Object.assign(BRIEF, d.brief); renderHead(); renderMarket(); renderFocus(); renderChart(); renderOpp(); renderRisks(); renderInsights(); renderTabs(); }
       render(); toast("导入成功");
     }catch(err){ toast("文件格式不正确"); }
     e.target.value="";
@@ -1568,7 +1583,7 @@ function backupHint(){
 /* ---------- 启动 ---------- */
 function refreshBrief(){
   return loadBrief().then(function(){
-    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderInsights(); render(); updateSrcHint();
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderRisks(); renderInsights(); render(); updateSrcHint();
     return BRIEF;
   });
 }
@@ -1576,7 +1591,7 @@ refreshBrief().then(backupHint);
 // 线上自动刷新：每5分钟静默重新拉取最新数据并重渲染（保留已读/收藏），实现打开后持续自更新
 setInterval(function(){
   loadBrief().then(function(){
-    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderInsights(); render(); updateSrcHint();
+    renderHead(); renderMarket(); renderFocus(); renderChart(); renderTabs(); renderOpp(); renderRisks(); renderInsights(); render(); updateSrcHint();
   });
 }, 5*60*1000);
 </script>
