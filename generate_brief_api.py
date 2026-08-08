@@ -257,6 +257,7 @@ brief = {
 }
 
 # ---------- 兜底防覆盖：若本地 AI 精编版当天已更新，则不覆盖 ----------
+_existing = {}
 TODAY = brief["date"]
 try:
     with open("brief.json", "r", encoding="utf-8") as _f:
@@ -268,6 +269,21 @@ try:
         sys.exit(0)
 except Exception:
     pass  # 文件不存在或解析失败则正常生成
+
+# 行情抓取失败时，回退到已有快照的对应值，避免周末/接口异常把页面填成 —
+if _existing:
+    _old = {}
+    for _g in _existing.get("marketGroups", []):
+        for _it in _g.get("items", []):
+            _old[(_g["name"], _it["n"])] = _it
+    for _g in brief["marketGroups"]:
+        for _it in _g["items"]:
+            if _it.get("v") == "—" and (_g["name"], _it["n"]) in _old:
+                _o = _old[(_g["name"], _it["n"])]
+                if _o.get("v") not in (None, "", "—"):
+                    _it["v"] = _o["v"]; _it["c"] = _o.get("c", "—"); _it["d"] = _o.get("d", 0)
+    if not brief.get("sectors", {}).get("up") and _existing.get("sectors", {}).get("up"):
+        brief["sectors"] = _existing["sectors"]
 
 with open("brief.json", "w", encoding="utf-8") as f:
     json.dump(brief, f, ensure_ascii=False, indent=2)
