@@ -7,7 +7,7 @@
 作为兜底：本地 WorkBuddy 自动化(AI 精编) 在线时会覆盖本脚本产出；
 本脚本保证即使本地客户端离线，页面也有结构合法、行情真实的最新快照。
 """
-import json, urllib.request, urllib.parse, datetime, sys, os
+import json, urllib.request, urllib.parse, datetime, sys, os, re, html
 
 UA = {'User-Agent': 'Mozilla/5.0 (compatible; finance-brief-bot/1.0)'}
 TIMEOUT = 12
@@ -136,9 +136,63 @@ else:
     downs = [{"n": "传媒", "v": 0.0}, {"n": "汽车", "v": 0.0}, {"n": "电力设备", "v": 0.0}, {"n": "医药", "v": 0.0}, {"n": "计算机", "v": 0.0}]
 sectors = {"up": ups[:5], "down": downs[:5]}
 
-# ---------- 资讯 (规则化快照) ----------
+# ---------- 资讯 (规则化快照 + 当日真实新闻) ----------
 def q(d): return d[1] if d and d[0] is not None else None
-items = [
+
+# 当日真实财经新闻：境外 CI 可稳定访问的国际源 CNBC/MarketWatch（中文源在境外不可达）。
+# 用于「核心资讯」板块每日动态更新；抓取失败则回退到下方规则化快照。
+def _fetch_rss(url, timeout=12):
+    try:
+        req = urllib.request.Request(url, headers=UA)
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            data = r.read().decode('utf-8', 'ignore')
+        out = []
+        for it in re.findall(r'<item>(.*?)</item>', data, re.S):
+            tm = re.search(r'<title>(.*?)</title>', it, re.S)
+            dm = re.search(r'<description>(.*?)</description>', it, re.S)
+            sm = re.search(r'<source[^>]*>(.*?)</source>', it, re.S)
+            title = html.unescape(re.sub(r'\s+', ' ', tm.group(1)).strip()) if tm else ''
+            desc = html.unescape(re.sub(r'<[^>]+>', '', dm.group(1))) if dm else ''
+            desc = re.sub(r'\s+', ' ', desc).strip()
+            src = html.unescape(re.sub(r'\s+', ' ', sm.group(1)).strip()) if sm else ''
+            out.append({'title': title, 'desc': desc, 'src': src})
+        return out
+    except Exception:
+        return []
+
+def _classify(title):
+    t = title.lower()
+    if any(k in t for k in ['fed', 'rate', 'inflation', 'powell', 'ecb', 'yield', 'bond']):
+        return 'macro', ['宏观', '利率']
+    if any(k in t for k in ['gold', 'oil', 'crude', 'commodit', 'natural gas']):
+        return 'commodity', ['商品']
+    if any(k in t for k in ['stock', 'market', 's&p', 'nasdaq', 'dow', 'share', 'earnings', 'wall street']):
+        return 'intl', ['美股', '全球']
+    return 'intl', ['全球']
+
+def build_news_items():
+    raw = _fetch_rss('https://search.cnbc.com/rs/search/combinedcms/view.xml?partnerId=wrss01&id=10000664')
+    if len(raw) < 8:
+        raw += _fetch_rss('https://www.marketwatch.com/rss/topstories')
+    seen, items = set(), []
+    for n in raw:
+        if not n['title']:
+            continue
+        key = n['title'][:30]
+        if key in seen:
+            continue
+        seen.add(key)
+        c, tags = _classify(n['title'])
+        body = n['desc'][:150] if n['desc'] else n['title']
+        items.append({'id': len(items) + 1, 'imp': 2, 'c': c, 't': n['title'],
+                      'd': body, 'g': 0, 'lv': '全球级', 's': tags, 'src': (n['src'] or 'CNBC')})
+        if len(items) >= 6:
+            break
+    return items
+
+news_items = build_news_items()
+
+static_items = [
     {"id": 1, "imp": 3, "c": "macro", "t": "央行公开市场操作与流动性观察（自动快照）",
      "d": "本条目由云端定时脚本基于公开市场数据生成，详见各交易所与央行公开信息；AI 精编版将覆盖此内容。",
      "g": 0, "lv": "市场级", "s": ["流动性", "宏观"], "src": "公开行情API"},
@@ -174,6 +228,8 @@ items = [
         fmt(ks11[0], ks11[1])[0], fmt(ks11[0], ks11[1])[1]),
      "g": 0, "lv": "市场级", "s": ["亚太", "全球"], "src": "Yahoo Finance"},
 ]
+# 当日真实新闻足够则采用新闻版（每日动态），否则回退规则化快照
+items = news_items if len(news_items) >= 3 else static_items
 
 focus = [
     {"t": "A股主要宽基收盘表现（自动快照）",
