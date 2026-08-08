@@ -81,7 +81,7 @@ hsi = em_quote("100.HSI"); hstech = em_quote("100.HSTECH"); hsiii = em_quote("10
 dji = yf("^DJI"); ixic = yf("^IXIC"); ndx = yf("^NDX"); gsps = yf("^GSPC"); sox = yf("^SOX"); vix = yf("^VIX")
 n225 = yf("^N225"); ks11 = yf("^KS11")
 # 商品/外汇/利率
-gc = yf("GC=F"); cl = yf("CL=F"); bz = yf("BZ=F"); dxy = yf("DX-Y.NYB"); tn_x = yf("^TNX")
+gc = yf("GC=F"); cl = yf("CL=F"); bz = yf("BZ=F"); dxy = yf("DX-Y.NYB"); tn_x = yf("^TNX"); fvy = yf("^FVX")
 
 # 申万行业
 boards = em_boards()
@@ -109,11 +109,11 @@ marketGroups = [
         mk("VIX", vix[0], vix[1]),
     ]},
     {"name": "外汇/利率", "items": [
+        mk("5年美债收益率", fvy[0], None if fvy[0] is None else -fvy[1]),
+        mk("10年美债收益率", tn_x[0], None if tn_x[0] is None else -tn_x[1]),
         mk("美元指数", dxy[0], dxy[1]),
-        mk("10年美债", tn_x[0], None if tn_x[0] is None else -tn_x[1]),
     ]},
     {"name": "商品", "items": [
-        mk("WTI原油", cl[0], cl[1]),
         mk("布伦特原油", bz[0], bz[1]),
         mk("现货黄金", gc[0], gc[1]),
     ]},
