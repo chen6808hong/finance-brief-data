@@ -1241,11 +1241,11 @@ const BRIEF_FALLBACK = {
   "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
 };
 // 外部托管：自动化每日写入 GitHub，网页免重部署自更新。
-// 多源容错：jsDelivr(国内可访问) 优先，raw.githubusercontent 兜底；任一成功即采用，避免静默回退旧快照。
+// 多源容错：jsDelivr(国内可访问、application/json) 主源，raw.githubusercontent 兜底；同源 brief.json 仅作最后兜底，避免 GitHub Pages(Jekyll) 对同源 .json 的缓存/路由干扰导致拉到旧数据。
 const BRIEF_SOURCES = [
-  "brief.json",
   "https://cdn.jsdelivr.net/gh/chen6808hong/finance-brief-data@main/brief.json",
-  "https://raw.githubusercontent.com/chen6808hong/finance-brief-data/main/brief.json"
+  "https://raw.githubusercontent.com/chen6808hong/finance-brief-data/main/brief.json",
+  "brief.json"
 ];
 let BRIEF = BRIEF_FALLBACK;
 let BRIEF_SRC = "内置快照(08-05)";
@@ -1390,24 +1390,9 @@ function itemHTML(i){
 }
 
 function groupHTML(key, arr){
+  // 完整平铺该分类全部条目，不做“前 N 条 + 横滑隐藏”，确保所有资讯一眼可见
   const head = '<div class="grp-h"><span class="dot"></span><b>'+CATNAME[key]+'</b><span class="n">'+arr.length+' 条</span></div>';
-  if(arr.length<=TOP_N){
-    return '<div class="grp">'+head+'<div class="grp-col">'+arr.map(itemHTML).join('')+'</div></div>';
-  }
-  if(state.exp[key]){
-    return '<div class="grp">'+head
-      + '<div class="grp-col">'+arr.map(itemHTML).join('')+'</div>'
-      + '<div class="sw-hint"><span class="sp"></span>'
-      + '<button class="sw-more" onclick="toggleExp(\''+key+'\')">收起，只看前 '+TOP_N+' 条</button></div>'
-      + '</div>';
-  }
-  const rest = arr.slice(TOP_N);
-  return '<div class="grp">'+head
-    + '<div class="grp-col">'+arr.slice(0,TOP_N).map(itemHTML).join('')+'</div>'
-    + '<div class="sw-hint">'+SW_ICON+'<span>还有 '+rest.length+' 条，左右滑动查看</span><span class="sp"></span>'
-    + '<button class="sw-more" onclick="toggleExp(\''+key+'\')">展开全部</button></div>'
-    + '<div class="swipe" data-k="'+key+'">'+rest.map(itemHTML).join('')+'</div>'
-    + '</div>';
+  return '<div class="grp">'+head+'<div class="grp-col">'+arr.map(itemHTML).join('')+'</div></div>';
 }
 function toggleExp(k){ state.exp[k]=!state.exp[k]; render(); }
 
