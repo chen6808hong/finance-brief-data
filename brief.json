@@ -1,6 +1,6 @@
 {
   "date": "2026-08-08",
-  "updated": "2026-08-08 23:50(云端快照)",
+  "updated": "2026-08-08 23:56(云端快照)",
   "weekday": "星期六",
   "marketGroups": [
     {
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证394004.00(+102.00%)、深成1431101.00(+142.00%)、创业板356312.00(+135.00%)，数据来自公开市场接口。"
+      "d": "上证394004.00(+102.00%)、深成1431101.00(+142.00%)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -218,87 +218,85 @@
   "items": [
     {
       "id": 1,
-      "imp": 3,
+      "imp": 2,
       "c": "macro",
-      "t": "央行公开市场操作与流动性观察（自动快照）",
-      "d": "本条目由云端定时脚本基于公开市场数据生成，详见各交易所与央行公开信息；AI 精编版将覆盖此内容。",
+      "t": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
+      "d": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
       "g": 0,
-      "lv": "市场级",
+      "lv": "全球级",
       "s": [
-        "流动性",
-        "宏观"
+        "宏观",
+        "利率"
       ],
-      "src": "公开行情API"
+      "src": "CNBC"
     },
     {
       "id": 2,
       "imp": 2,
-      "c": "cn",
-      "t": "A股主要宽基指数收盘表现（自动快照）",
-      "d": "上证指数394004.00(+102.00%)、深成指1431101.00(+142.00%)、创业板指356312.00(+135.00%)，数据来自东方财富行情接口。",
-      "g": 1,
-      "lv": "市场级",
-      "s": [
-        "A股",
-        "宽基"
-      ],
-      "src": "东方财富"
-    },
-    {
-      "id": 3,
-      "imp": 2,
       "c": "intl",
-      "t": "美股隔夜收盘与全球风险偏好（自动快照）",
-      "d": "道指54036.93(+2.96%)、纳指26690.62(+5.19%)、纳指10029722.30(+5.12%)、费城半导体12356.79(+9.24%)、VIX14.90(+-6.05%)，数据来自 Yahoo Finance。",
-      "g": 1,
-      "lv": "市场级",
+      "t": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "d": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "g": 0,
+      "lv": "全球级",
       "s": [
         "美股",
         "全球"
       ],
-      "src": "Yahoo Finance"
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "macro",
+      "t": "Odds the Fed will hike in September tumble following big July jobs miss",
+      "d": "Odds the Fed will hike in September tumble following big July jobs miss",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
     },
     {
       "id": 4,
-      "imp": 1,
-      "c": "cn",
-      "t": "港股与南向资金观察（自动快照）",
-      "d": "恒生指数2566803.00(+54.00%)、恒生科技—(—)，数据来自东方财富行情接口。",
-      "g": 1,
-      "lv": "市场级",
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Atlassian Corporation, Doximity, First Solar, Airbnb & more",
+      "d": "Stocks making the biggest moves premarket: Atlassian Corporation, Doximity, First Solar, Airbnb & more",
+      "g": 0,
+      "lv": "全球级",
       "s": [
-        "港股",
-        "南向"
+        "美股",
+        "全球"
       ],
-      "src": "东方财富"
+      "src": "CNBC"
     },
     {
       "id": 5,
-      "imp": 1,
+      "imp": 2,
       "c": "intl",
-      "t": "商品与外汇利率（自动快照）",
-      "d": "现货黄金4399.70(+9.07%)、WTI原油78.18(+-2.69%)、美元指数99.60(+-0.36%)、10年美债收益率4.66，数据来自 Yahoo Finance。",
+      "t": "Copper jumps to its highest level ever. What the metal is telling us",
+      "d": "Copper jumps to its highest level ever. What the metal is telling us",
       "g": 0,
-      "lv": "市场级",
+      "lv": "全球级",
       "s": [
-        "商品",
-        "外汇"
+        "全球"
       ],
-      "src": "Yahoo Finance"
+      "src": "CNBC"
     },
     {
       "id": 6,
-      "imp": 1,
-      "c": "macro",
-      "t": "亚太与全球市场联动（自动快照）",
-      "d": "日经22565606.71(+2.90%)、韩国综指6258.77(+-5.10%)，数据来自 Yahoo Finance。",
+      "imp": 2,
+      "c": "intl",
+      "t": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
+      "d": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
       "g": 0,
-      "lv": "市场级",
+      "lv": "全球级",
       "s": [
-        "亚太",
         "全球"
       ],
-      "src": "Yahoo Finance"
+      "src": "CNBC"
     }
   ],
   "opps": [
