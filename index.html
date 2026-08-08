@@ -185,6 +185,7 @@ header{
 .ins .ins-t{font-size:14.5px;font-weight:600;line-height:1.45}
 .ins .ins-d{font-size:13px;color:var(--tx2);margin-top:7px;line-height:1.62}
 .ins .ins-s{font-size:11px;color:var(--tx3);margin-top:8px}
+.ins .cat{font-size:11px;padding:2px 8px;border-radius:6px;font-weight:700;margin-right:7px;vertical-align:middle;white-space:nowrap;display:inline-block}
 
 /* ---------- Risk ---------- */
 .risk{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 13px;box-shadow:var(--sh)}
@@ -1226,9 +1227,9 @@ const BRIEF_FALLBACK = {
     "8月中报密集披露期，前期高涨幅个股面临业绩兑现检验，警惕预期差引发补跌。"
   ],
   "insights": [
-    { "t": "非农单月负增长容易制造恐慌，但更应看「前两月修正」", "typ": "信息差", "d": "市场常聚焦当月数值，忽视前两月下修才是趋势拐点信号；下修幅度越大，越说明前期就业被高估，美元与美债的反应往往滞后。", "src": "美国劳工部" },
-    { "t": "「政策喊话=必然落地」是常见认知差", "typ": "认知差", "d": "行业自律、倡议书与行政强制存在本质区别，无罚则的「不降价」承诺执行度常打折扣，盈利修复节奏易被提前定价。", "src": "公开资讯" },
-    { "t": "指数急涨叠加新开户激增，常是情绪过热的反向信号", "typ": "信息差", "d": "散户开户数与成交量同步冲高，往往对应阶段性赚钱效应扩散的尾声，而非趋势起点，需警惕量价背离。", "src": "交易所/券商" }
+    { "t": "非农单月负增长容易制造恐慌，但更应看「前两月修正」", "typ": "信息差", "cat": "财经", "d": "市场常聚焦当月数值，忽视前两月下修才是趋势拐点信号；下修幅度越大，越说明前期就业被高估，美元与美债的反应往往滞后。", "src": "美国劳工部" },
+    { "t": "「政策喊话=必然落地」是常见认知差", "typ": "认知差", "cat": "财经", "d": "行业自律、倡议书与行政强制存在本质区别，无罚则的「不降价」承诺执行度常打折扣，盈利修复节奏易被提前定价。", "src": "公开资讯" },
+    { "t": "指数急涨叠加新开户激增，常是情绪过热的反向信号", "typ": "信息差", "cat": "财经", "d": "散户开户数与成交量同步冲高，往往对应阶段性赚钱效应扩散的尾声，而非趋势起点，需警惕量价背离。", "src": "交易所/券商" }
   ],
   "sources": "数据来源：中国人民银行、中国证监会、中国证券业协会、工信部、商务部、金融监管总局、上交所、港交所、外汇交易中心、Wind、商务部、新华社、人民日报、证券时报、财联社、汇通财经、金投网、路透、韩联社、公司公告与公开财经资讯汇编"
 };
@@ -1483,10 +1484,14 @@ function renderInsights(){
   const box = document.getElementById('insBox');
   const arr = BRIEF.insights||[];
   if(!arr.length){ box.innerHTML='<div class="empty">暂无信息差/认知差内容</div>'; return; }
+  const CAT={财经:'#3a6ba8',科技:'#1f8a70',科学:'#b5651d',社会:'#c0392b',国际:'#7d5ba6',健康:'#d81b60',环境:'#2e7d32',文化:'#9b59b6',教育:'#e67e22'};
   box.innerHTML = arr.map(x=>{
+    const cat = x.cat||'财经';
+    const cc = CAT[cat]||'#6d5aa8';
     const isCog = x.typ==='认知差';
     const ty = '<span class="ty '+(isCog?'ty-c':'ty-i')+'">'+(isCog?'认知差':'信息差')+'</span>';
-    return '<div class="ins">'+ty+'<span class="ins-t">'+esc(x.t)+'</span>'
+    const catTag = '<span class="cat" style="color:'+cc+';background:'+cc+'22">'+esc(cat)+'</span>';
+    return '<div class="ins" style="border-left-color:'+cc+'">'+catTag+ty+'<span class="ins-t">'+esc(x.t)+'</span>'
       + '<div class="ins-d">'+esc(x.d)+'</div>'
       + (x.src?'<div class="ins-s">来源：'+esc(x.src)+'</div>':'')+'</div>';
   }).join('');
