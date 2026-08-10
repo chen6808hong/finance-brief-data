@@ -1,6 +1,6 @@
 {
   "date": "2026-08-10",
-  "updated": "2026-08-10 11:36(云端快照)",
+  "updated": "2026-08-10 22:31(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -78,32 +78,32 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "54036.93",
-          "c": "+2.96%",
+          "v": "53975.98",
+          "c": "+1.50%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "26690.62",
-          "c": "+5.19%",
+          "v": "26605.36",
+          "c": "+2.67%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29722.30",
-          "c": "+5.12%",
+          "v": "29621.81",
+          "c": "+2.94%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7757.64",
-          "c": "+3.58%",
+          "v": "7753.11",
+          "c": "+2.01%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12356.79",
-          "c": "+9.24%",
+          "v": "11993.86",
+          "c": "+4.93%",
           "d": 1
         },
         {
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.36",
-          "c": "+0.86%",
-          "d": 1
+          "v": "4.41",
+          "c": "+-1.66%",
+          "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.66",
-          "c": "+0.55%",
-          "d": 1
+          "v": "4.70",
+          "c": "+-1.56%",
+          "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.72",
-          "c": "+0.03%",
+          "v": "99.81",
+          "c": "+0.12%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "84.48",
-          "c": "+6.33%",
+          "v": "87.70",
+          "c": "+10.38%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4395.00",
-          "c": "+3.51%",
+          "v": "4452.10",
+          "c": "+4.86%",
           "d": 1
         }
       ]
@@ -204,20 +204,60 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证396659.00(+67.00%)、深成1431696.00(+4.00%)、创业板353721.00(+-73.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26690.62(+5.19%)、费城半导体12356.79(+9.24%)，数据来自 Yahoo Finance。"
+      "d": "纳指26605.36(+2.67%)、费城半导体11993.86(+4.93%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4395.00(+3.51%)、WTI原油79.09(+5.14%)。"
+      "d": "现货黄金4452.10(+4.86%)、WTI原油82.13(+9.19%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
+      "d": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves midday: NetApp, Intel, Apple, Doximity, Verisk Analytics & more",
+      "d": "Stocks making the biggest moves midday: NetApp, Intel, Apple, Doximity, Verisk Analytics & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
+      "d": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
@@ -231,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
@@ -245,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "Odds the Fed will hike in September tumble following big July jobs miss",
@@ -255,46 +295,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Atlassian Corporation, Doximity, First Solar, Airbnb & more",
-      "d": "Stocks making the biggest moves premarket: Atlassian Corporation, Doximity, First Solar, Airbnb & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Copper jumps to its highest level ever. What the metal is telling us",
-      "d": "Copper jumps to its highest level ever. What the metal is telling us",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "d": "United Wholesale Mortgage plunges 35% after suspending dividend and raising capital",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -315,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4395.00(+3.51%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4452.10(+4.86%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12356.79(+9.24%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11993.86(+4.93%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
