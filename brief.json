@@ -1,6 +1,6 @@
 {
   "date": "2026-08-11",
-  "updated": "2026-08-11 11:33(云端快照)",
+  "updated": "2026-08-11 22:31(云端快照)",
   "weekday": "星期二",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53975.98",
-          "c": "+1.50%",
-          "d": 1
+          "v": "53791.85",
+          "c": "+-0.54%",
+          "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26605.36",
-          "c": "+2.67%",
-          "d": 1
+          "v": "26445.44",
+          "c": "+-0.52%",
+          "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29621.81",
-          "c": "+2.94%",
-          "d": 1
+          "v": "29525.48",
+          "c": "+-0.70%",
+          "d": -1
         },
         {
           "n": "标普500",
-          "v": "7753.11",
-          "c": "+2.01%",
-          "d": 1
+          "v": "7728.20",
+          "c": "+-0.11%",
+          "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11993.86",
-          "c": "+4.93%",
-          "d": 1
+          "v": "12098.47",
+          "c": "+-0.66%",
+          "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.48",
-          "c": "+-2.09%",
+          "v": "15.28",
+          "c": "+-3.35%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.41",
-          "c": "+-1.66%",
+          "v": "4.38",
+          "c": "+-1.41%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.70",
-          "c": "+-1.56%",
+          "v": "4.68",
+          "c": "+-1.45%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.83",
-          "c": "+-0.14%",
+          "v": "99.81",
+          "c": "+-0.16%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "87.60",
-          "c": "+6.19%",
+          "v": "89.29",
+          "c": "+8.24%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4445.30",
-          "c": "+4.79%",
+          "v": "4433.60",
+          "c": "+4.52%",
           "d": 1
         }
       ]
@@ -208,11 +208,11 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26605.36(+2.67%)、费城半导体11993.86(+4.93%)，数据来自 Yahoo Finance。"
+      "d": "纳指26445.44(+-0.52%)、费城半导体12098.47(+-0.66%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4445.30(+4.79%)、WTI原油82.11(+6.24%)。"
+      "d": "现货黄金4433.60(+4.52%)、WTI原油83.55(+8.10%)。"
     }
   ],
   "items": [
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Riot Platforms, Hims & Hers Health, Intel & more",
-      "d": "Stocks making the biggest moves premarket: Riot Platforms, Hims & Hers Health, Intel & more",
+      "t": "Stocks making the biggest moves after hours: Super Micro Computer, CoreWeave, H&R Block and more",
+      "d": "Stocks making the biggest moves after hours: Super Micro Computer, CoreWeave, H&R Block and more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,8 +234,21 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
-      "t": "Wall Street just endorsed Jensen Huang's 'big concept' for AI. What now?",
-      "d": "Wall Street just endorsed Jensen Huang's 'big concept' for AI. What now?",
+      "t": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
+      "d": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
+      "d": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -245,11 +258,11 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
-      "t": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
-      "d": "Nvidia lines up $500 billion in financing as CEO Jensen Huang tells CNBC his chips are ‘investable asset’",
+      "t": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
+      "d": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -258,29 +271,15 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
-      "d": "Three reasons Goldman's co-head of global banking and markets says to stay invested",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
       "id": 5,
       "imp": 2,
-      "c": "macro",
-      "t": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
-      "d": "Next big push in ETF industry? Why these risk assets are gaining traction as interest rate uncertainty persists",
+      "c": "intl",
+      "t": "Why JPMorgan is investing big in the 2028 LA Olympics",
+      "d": "Why JPMorgan is investing big in the 2028 LA Olympics",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "宏观",
-        "利率"
+        "全球"
       ],
       "src": "CNBC"
     },
@@ -288,8 +287,8 @@
       "id": 6,
       "imp": 2,
       "c": "intl",
-      "t": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
-      "d": "Berkshire earnings rose last quarter and CEO Greg Abel is starting to deploy Buffett's massive cash hoard",
+      "t": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
+      "d": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -315,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4445.30(+4.79%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4433.60(+4.52%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11993.86(+4.93%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12098.47(+-0.66%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
