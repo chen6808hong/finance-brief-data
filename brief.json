@@ -1,6 +1,6 @@
 {
   "date": "2026-08-12",
-  "updated": "2026-08-12 09:01(云端快照)",
+  "updated": "2026-08-12 11:35(云端快照)",
   "weekday": "星期三",
   "marketGroups": [
     {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "15.31",
-          "c": "+1.06%",
+          "v": "15.39",
+          "c": "+1.58%",
           "d": 1
         }
       ]
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.85",
-          "c": "+0.25%",
+          "v": "99.84",
+          "c": "+0.24%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "89.21",
-          "c": "+6.77%",
+          "v": "88.97",
+          "c": "+6.49%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4463.70",
-          "c": "+2.83%",
+          "v": "4470.00",
+          "c": "+2.98%",
           "d": 1
         }
       ]
@@ -212,12 +212,26 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4463.70(+2.83%)、WTI原油83.48(+6.78%)。"
+      "d": "现货黄金4470.00(+2.98%)、WTI原油83.42(+6.70%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "macro",
+      "t": "New York City Council announces probe into prediction market platforms’ marketing strategies",
+      "d": "New York City Council announces probe into prediction market platforms’ marketing strategies",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
@@ -231,7 +245,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves after hours: Super Micro Computer, CoreWeave, H&R Block and more",
@@ -245,7 +259,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
@@ -272,24 +286,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
       "d": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Why JPMorgan is investing big in the 2028 LA Olympics",
-      "d": "Why JPMorgan is investing big in the 2028 LA Olympics",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -314,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4463.70(+2.83%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4470.00(+2.98%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
