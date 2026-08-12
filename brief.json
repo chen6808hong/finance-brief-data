@@ -1,52 +1,52 @@
 {
-  "date": "2026-08-11",
-  "updated": "2026-08-11 22:31(云端快照)",
-  "weekday": "星期二",
+  "date": "2026-08-12",
+  "updated": "2026-08-12 04:30(云端快照)",
+  "weekday": "星期三",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "393409.00",
-          "c": "+-82.00%",
-          "d": -1
+          "v": "394651.00",
+          "c": "+32.00%",
+          "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1425944.00",
-          "c": "+-40.00%",
-          "d": -1
+          "v": "1443807.00",
+          "c": "+125.00%",
+          "d": 1
         },
         {
           "n": "创业板指",
-          "v": "354916.00",
-          "c": "+34.00%",
+          "v": "361065.00",
+          "c": "+173.00%",
           "d": 1
         },
         {
           "n": "科创50",
-          "v": "170950.00",
-          "c": "+-163.00%",
-          "d": -1
+          "v": "174515.00",
+          "c": "+209.00%",
+          "d": 1
         },
         {
           "n": "国证算力",
-          "v": "1229972.00",
-          "c": "+-48.00%",
-          "d": -1
+          "v": "1266071.00",
+          "c": "+293.00%",
+          "d": 1
         },
         {
           "n": "国证芯片",
-          "v": "1745809.00",
-          "c": "+-160.00%",
-          "d": -1
+          "v": "1791976.00",
+          "c": "+264.00%",
+          "d": 1
         },
         {
           "n": "沪深300",
-          "v": "466379.00",
-          "c": "+-81.00%",
-          "d": -1
+          "v": "469388.00",
+          "c": "+65.00%",
+          "d": 1
         }
       ]
     },
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2565282.00",
-          "c": "+-110.00%",
+          "v": "2535213.00",
+          "c": "+-117.00%",
           "d": -1
         },
         {
@@ -131,9 +131,9 @@
         },
         {
           "n": "美元指数",
-          "v": "99.81",
-          "c": "+-0.16%",
-          "d": -1
+          "v": "99.90",
+          "c": "+0.30%",
+          "d": 1
         }
       ]
     },
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "89.29",
-          "c": "+8.24%",
+          "v": "89.74",
+          "c": "+7.41%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4433.60",
-          "c": "+4.52%",
+          "v": "4456.50",
+          "c": "+2.67%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证393409.00(+-82.00%)、深成1425944.00(+-40.00%)、创业板354916.00(+34.00%)，数据来自公开市场接口。"
+      "d": "上证394651.00(+32.00%)、深成1443807.00(+125.00%)、创业板361065.00(+173.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,26 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4433.60(+4.52%)、WTI原油83.55(+8.10%)。"
+      "d": "现货黄金4456.50(+2.67%)、WTI原油84.07(+7.53%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
+      "d": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves after hours: Super Micro Computer, CoreWeave, H&R Block and more",
@@ -231,7 +245,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "AI computing power is becoming a tradable asset class as CME launches futures contracts",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Why JPMorgan is investing big in the 2028 LA Olympics",
@@ -279,20 +293,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
-      "d": "Polymarket makes moves to get house in order before expected boom times for prediction markets this fall",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4433.60(+4.52%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4456.50(+2.67%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
