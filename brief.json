@@ -1,39 +1,39 @@
 {
-  "date": "2026-08-12",
-  "updated": "2026-08-12 22:31(云端快照)",
-  "weekday": "星期三",
+  "date": "2026-08-13",
+  "updated": "2026-08-13 05:19(云端快照)",
+  "weekday": "星期四",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "394668.00",
-          "c": "+32.00%",
+          "v": "396474.00",
+          "c": "+46.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1441443.00",
-          "c": "+109.00%",
+          "v": "1453244.00",
+          "c": "+82.00%",
           "d": 1
         },
         {
           "n": "创业板指",
-          "v": "360208.00",
-          "c": "+149.00%",
+          "v": "366415.00",
+          "c": "+172.00%",
           "d": 1
         },
         {
           "n": "科创50",
-          "v": "173699.00",
-          "c": "+161.00%",
+          "v": "177132.00",
+          "c": "+198.00%",
           "d": 1
         },
         {
           "n": "国证算力",
-          "v": "1256355.00",
-          "c": "+215.00%",
+          "v": "1291431.00",
+          "c": "+279.00%",
           "d": 1
         },
         {
@@ -55,9 +55,9 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2544017.00",
-          "c": "+-83.00%",
-          "d": -1
+          "v": "2551002.00",
+          "c": "+27.00%",
+          "d": 1
         },
         {
           "n": "恒生科技",
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.98",
-          "c": "+0.39%",
+          "v": "99.97",
+          "c": "+0.16%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "88.58",
-          "c": "+6.02%",
+          "v": "88.90",
+          "c": "+1.35%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4460.20",
-          "c": "+2.75%",
+          "v": "4455.50",
+          "c": "+2.15%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证394668.00(+32.00%)、深成1441443.00(+109.00%)、创业板360208.00(+149.00%)，数据来自公开市场接口。"
+      "d": "上证396474.00(+46.00%)、深成1453244.00(+82.00%)、创业板366415.00(+172.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4460.20(+2.75%)、WTI原油82.77(+5.87%)。"
+      "d": "现货黄金4455.50(+2.15%)、WTI原油83.08(+1.16%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
+      "d": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves after hours: Cisco, Jack in the Box, Cerebras, StubHub & more",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "SpaceX short sellers are running out of bullets as stock rebounds more than 40% off low",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "New York City Council announces probe into prediction market platforms’ marketing strategies",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
@@ -273,7 +286,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
@@ -281,20 +294,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
-      "d": "Is betting on elections using prediction markets illegal? Many states are unsure as midterms approach",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -316,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4460.20(+2.75%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4455.50(+2.15%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
