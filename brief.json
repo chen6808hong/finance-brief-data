@@ -1,6 +1,6 @@
 {
   "date": "2026-08-13",
-  "updated": "2026-08-13 11:34(云端快照)",
+  "updated": "2026-08-13 22:31(云端快照)",
   "weekday": "星期四",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53770.27",
-          "c": "+-1.07%",
+          "v": "53839.99",
+          "c": "+-0.08%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26588.49",
-          "c": "+0.85%",
+          "v": "26803.03",
+          "c": "+1.73%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29742.60",
-          "c": "+0.86%",
+          "v": "30084.50",
+          "c": "+2.42%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7748.50",
-          "c": "+0.32%",
+          "v": "7798.99",
+          "c": "+1.15%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12399.38",
-          "c": "+3.25%",
+          "v": "12456.00",
+          "c": "+3.38%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "14.58",
-          "c": "+-2.15%",
+          "v": "14.63",
+          "c": "+-1.81%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.38",
-          "c": "+0.32%",
+          "v": "4.31",
+          "c": "+1.12%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.68",
-          "c": "+-0.26%",
-          "d": -1
+          "v": "4.64",
+          "c": "+0.41%",
+          "d": 1
         },
         {
           "n": "美元指数",
-          "v": "99.89",
-          "c": "+0.08%",
+          "v": "99.95",
+          "c": "+0.14%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "87.33",
-          "c": "+-0.44%",
+          "v": "86.88",
+          "c": "+-0.96%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4449.90",
-          "c": "+2.02%",
+          "v": "4410.40",
+          "c": "+1.11%",
           "d": 1
         }
       ]
@@ -208,11 +208,11 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26588.49(+0.85%)、费城半导体12399.38(+3.25%)，数据来自 Yahoo Finance。"
+      "d": "纳指26803.03(+1.73%)、费城半导体12456.00(+3.38%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4449.90(+2.02%)、WTI原油81.56(+-0.69%)。"
+      "d": "现货黄金4410.40(+1.11%)、WTI原油81.04(+-1.33%)。"
     }
   ],
   "items": [
@@ -220,11 +220,12 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "d": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
+      "t": "These charts show why stocks keep rallying. Profit margins are the highest on record",
+      "d": "These charts show why stocks keep rallying. Profit margins are the highest on record",
       "g": 0,
       "lv": "全球级",
       "s": [
+        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -233,12 +234,11 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves after hours: Cisco, Jack in the Box, Cerebras, StubHub & more",
-      "d": "Stocks making the biggest moves after hours: Cisco, Jack in the Box, Cerebras, StubHub & more",
+      "t": "Bill Ackman buys Netflix again four years after exit, says it has won the streaming wars",
+      "d": "Bill Ackman buys Netflix again four years after exit, says it has won the streaming wars",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -247,12 +247,11 @@
       "id": 3,
       "imp": 2,
       "c": "intl",
-      "t": "SpaceX short sellers are running out of bullets as stock rebounds more than 40% off low",
-      "d": "SpaceX short sellers are running out of bullets as stock rebounds more than 40% off low",
+      "t": "'Big Short' investor Steve Eisman sees an Achilles' heel in the AI boom",
+      "d": "'Big Short' investor Steve Eisman sees an Achilles' heel in the AI boom",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -260,14 +259,13 @@
     {
       "id": 4,
       "imp": 2,
-      "c": "macro",
-      "t": "New York City Council announces probe into prediction market platforms’ marketing strategies",
-      "d": "New York City Council announces probe into prediction market platforms’ marketing strategies",
+      "c": "intl",
+      "t": "Iran looks to ramp up economic alliance with BRICS nations as war with U.S. drags on",
+      "d": "Iran looks to ramp up economic alliance with BRICS nations as war with U.S. drags on",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "宏观",
-        "利率"
+        "全球"
       ],
       "src": "CNBC"
     },
@@ -275,8 +273,8 @@
       "id": 5,
       "imp": 2,
       "c": "intl",
-      "t": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
-      "d": "EVs dominate China’s car market: 5 takeaways from the country's latest auto sales data",
+      "t": "Stocks making the biggest moves premarket: Tapestry, Yeti, Bullish, StubHub, Cerebras & more",
+      "d": "Stocks making the biggest moves premarket: Tapestry, Yeti, Bullish, StubHub, Cerebras & more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -289,8 +287,8 @@
       "id": 6,
       "imp": 2,
       "c": "intl",
-      "t": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
-      "d": "Why Jensen Huang’s $500 billion AI financing plan faces a big risk from China",
+      "t": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
+      "d": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -315,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4449.90(+2.02%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4410.40(+1.11%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +324,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12399.38(+3.25%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12456.00(+3.38%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
