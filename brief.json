@@ -1,6 +1,6 @@
 {
   "date": "2026-08-14",
-  "updated": "2026-08-14 09:01(云端快照)",
+  "updated": "2026-08-14 11:30(云端快照)",
   "weekday": "星期五",
   "marketGroups": [
     {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "14.62",
-          "c": "+-5.43%",
+          "v": "14.52",
+          "c": "+-6.08%",
           "d": -1
         }
       ]
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.74",
-          "c": "+-0.07%",
+          "v": "99.66",
+          "c": "+-0.15%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "87.96",
-          "c": "+0.27%",
-          "d": 1
+          "v": "87.18",
+          "c": "+-0.62%",
+          "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4401.70",
-          "c": "+0.91%",
+          "v": "4411.80",
+          "c": "+1.15%",
           "d": 1
         }
       ]
@@ -212,12 +212,26 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4401.70(+0.91%)、WTI原油82.53(+0.49%)。"
+      "d": "现货黄金4411.80(+1.15%)、WTI原油81.74(+-0.47%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Reddit, Applied Materials, Sandisk, Wayfair & more",
+      "d": "Stocks making the biggest moves premarket: Reddit, Applied Materials, Sandisk, Wayfair & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Uber partners with China's Pony.ai for 2,000 robotaxis in Europe",
@@ -230,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "These charts show why stocks keep rallying. Profit margins are the highest on record",
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Bill Ackman buys Netflix again four years after exit, says it has won the streaming wars",
@@ -257,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "'Big Short' investor Steve Eisman sees an Achilles' heel in the AI boom",
@@ -270,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Iran looks to ramp up economic alliance with BRICS nations as war with U.S. drags on",
@@ -278,20 +292,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Tapestry, Yeti, Bullish, StubHub, Cerebras & more",
-      "d": "Stocks making the biggest moves premarket: Tapestry, Yeti, Bullish, StubHub, Cerebras & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -313,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4401.70(+0.91%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4411.80(+1.15%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
