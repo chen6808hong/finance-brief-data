@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-13",
-  "updated": "2026-08-13 22:31(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-08-14",
+  "updated": "2026-08-14 05:13(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.95",
-          "c": "+0.14%",
+          "v": "99.86",
+          "c": "+0.06%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "86.88",
-          "c": "+-0.96%",
+          "v": "87.14",
+          "c": "+-0.66%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4410.40",
-          "c": "+1.11%",
+          "v": "4379.40",
+          "c": "+0.40%",
           "d": 1
         }
       ]
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4410.40(+1.11%)、WTI原油81.04(+-1.33%)。"
+      "d": "现货黄金4379.40(+0.40%)、WTI原油81.42(+-0.86%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Uber partners with China's Pony.ai for 2,000 robotaxis in Europe",
+      "d": "Uber partners with China's Pony.ai for 2,000 robotaxis in Europe",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "These charts show why stocks keep rallying. Profit margins are the highest on record",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Bill Ackman buys Netflix again four years after exit, says it has won the streaming wars",
@@ -244,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "'Big Short' investor Steve Eisman sees an Achilles' heel in the AI boom",
@@ -257,7 +270,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Iran looks to ramp up economic alliance with BRICS nations as war with U.S. drags on",
@@ -270,7 +283,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: Tapestry, Yeti, Bullish, StubHub, Cerebras & more",
@@ -279,19 +292,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "d": "This Chinese firm has topped Micron and Kioxia in shipments of crucial NAND memory chips",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -313,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4410.40(+1.11%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4379.40(+0.40%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
