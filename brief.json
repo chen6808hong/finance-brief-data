@@ -1,6 +1,6 @@
 {
   "date": "2026-08-17",
-  "updated": "2026-08-17 22:31(云端快照)",
+  "updated": "2026-08-17 23:02(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "91.43",
-          "c": "+2.75%",
+          "v": "91.22",
+          "c": "+2.52%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4471.80",
-          "c": "+1.43%",
+          "v": "4471.20",
+          "c": "+1.41%",
           "d": 1
         }
       ]
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4471.80(+1.43%)、WTI原油85.22(+2.34%)。"
+      "d": "现货黄金4471.20(+1.41%)、WTI原油85.06(+2.15%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
+      "d": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: EyePoint, Intuitive Machines, Workday, JetBlue & more",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Prediction market traders see roughly 1-in-4 odds Paramount’s bid to buy Warner Bros. Discovery fails",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Stanley Druckenmiller loaded up on Amazon and chip stocks before July rout",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Synchrony, credit card issuer to Amazon and Walmart, partners with OpenAI for ChatGPT shopping",
@@ -272,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman Sachs picks China stocks poised to benefit from a new wave of AI-related hardware exports",
@@ -281,19 +294,6 @@
       "lv": "全球级",
       "s": [
         "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Berkshire Hathaway boosts Alphabet to a top three holding, ups Delta and housing bets",
-      "d": "Berkshire Hathaway boosts Alphabet to a top three holding, ups Delta and housing bets",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4471.80(+1.43%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4471.20(+1.41%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
