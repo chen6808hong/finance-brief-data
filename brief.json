@@ -1,6 +1,6 @@
 {
   "date": "2026-08-18",
-  "updated": "2026-08-18 10:02(云端快照)",
+  "updated": "2026-08-18 22:31(云端快照)",
   "weekday": "星期二",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53459.78",
-          "c": "+-0.96%",
+          "v": "53343.40",
+          "c": "+-0.83%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26644.91",
-          "c": "+0.15%",
-          "d": 1
+          "v": "26289.71",
+          "c": "+-0.59%",
+          "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29995.38",
-          "c": "+1.26%",
-          "d": 1
+          "v": "29490.96",
+          "c": "+-0.12%",
+          "d": -1
         },
         {
           "n": "标普500",
-          "v": "7745.06",
-          "c": "+-0.10%",
+          "v": "7691.76",
+          "c": "+-0.47%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "12621.00",
-          "c": "+5.23%",
-          "d": 1
+          "v": "11992.46",
+          "c": "+-0.88%",
+          "d": -1
         },
         {
           "n": "VIX",
-          "v": "16.02",
-          "c": "+10.10%",
+          "v": "15.84",
+          "c": "+8.87%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.38",
-          "c": "+0.21%",
+          "v": "4.37",
+          "c": "+0.18%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.72",
-          "c": "+-0.85%",
+          "v": "4.71",
+          "c": "+-0.51%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.62",
-          "c": "+-0.34%",
+          "v": "99.64",
+          "c": "+-0.32%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "91.03",
-          "c": "+4.55%",
+          "v": "91.35",
+          "c": "+4.92%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4449.80",
-          "c": "+1.98%",
+          "v": "4391.00",
+          "c": "+0.63%",
           "d": 1
         }
       ]
@@ -204,20 +204,61 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证399030.00(+19.00%)、深成1462250.00(+-56.00%)、创业板370556.00(+-93.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26644.91(+0.15%)、费城半导体12621.00(+5.23%)，数据来自 Yahoo Finance。"
+      "d": "纳指26289.71(+-0.59%)、费城半导体11992.46(+-0.88%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4449.80(+1.98%)、WTI原油84.19(+3.62%)。"
+      "d": "现货黄金4391.00(+0.63%)、WTI原油84.49(+3.99%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves after hours: Toll Brothers, Keysight Technologies, La-Z-Boy & more",
+      "d": "Stocks making the biggest moves after hours: Toll Brothers, Keysight Technologies, La-Z-Boy & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
+      "d": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Kalshi seeks to launch ‘perps’ on equity indexes as it moves in on traditional exchanges' turf",
+      "d": "Kalshi seeks to launch ‘perps’ on equity indexes as it moves in on traditional exchanges' turf",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
@@ -230,21 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves midday: EyePoint, Intuitive Machines, Workday, JetBlue & more",
-      "d": "Stocks making the biggest moves midday: EyePoint, Intuitive Machines, Workday, JetBlue & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Prediction market traders see roughly 1-in-4 odds Paramount’s bid to buy Warner Bros. Discovery fails",
@@ -258,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Stanley Druckenmiller loaded up on Amazon and chip stocks before July rout",
@@ -268,32 +295,6 @@
       "s": [
         "美股",
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Credit card issuer Synchrony announces partnership with OpenAI",
-      "d": "Credit card issuer Synchrony announces partnership with OpenAI",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Goldman Sachs picks China stocks poised to benefit from a new wave of AI-related hardware exports",
-      "d": "Goldman Sachs picks China stocks poised to benefit from a new wave of AI-related hardware exports",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
       ],
       "src": "CNBC"
     }
@@ -314,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4449.80(+1.98%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4391.00(+0.63%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12621.00(+5.23%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11992.46(+-0.88%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
