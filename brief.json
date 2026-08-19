@@ -1,51 +1,51 @@
 {
-  "date": "2026-08-18",
-  "updated": "2026-08-18 23:03(云端快照)",
-  "weekday": "星期二",
+  "date": "2026-08-19",
+  "updated": "2026-08-19 09:05(云端快照)",
+  "weekday": "星期三",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "399030.00",
-          "c": "+19.00%",
-          "d": 1
+          "v": "389442.00",
+          "c": "+-240.00%",
+          "d": -1
         },
         {
           "n": "深证成指",
-          "v": "1462250.00",
-          "c": "+-56.00%",
+          "v": "1389015.00",
+          "c": "+-501.00%",
           "d": -1
         },
         {
           "n": "创业板指",
-          "v": "370556.00",
-          "c": "+-93.00%",
+          "v": "347349.00",
+          "c": "+-626.00%",
           "d": -1
         },
         {
           "n": "科创50",
-          "v": "179087.00",
-          "c": "+11.00%",
-          "d": 1
+          "v": "166752.00",
+          "c": "+-689.00%",
+          "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1309369.00",
-          "c": "+-153.00%",
+          "v": "1206868.00",
+          "c": "+-783.00%",
           "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "1859586.00",
-          "c": "+5.00%",
-          "d": 1
+          "v": "1714169.00",
+          "c": "+-782.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "472581.00",
-          "c": "+-32.00%",
+          "v": "458870.00",
+          "c": "+-290.00%",
           "d": -1
         }
       ]
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2547115.00",
-          "c": "+7.00%",
+          "v": "2549507.00",
+          "c": "+9.00%",
           "d": 1
         },
         {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "15.84",
-          "c": "+8.87%",
+          "v": "15.80",
+          "c": "+8.00%",
           "d": 1
         }
       ]
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.64",
-          "c": "+-0.32%",
+          "v": "99.44",
+          "c": "+-0.23%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "91.31",
-          "c": "+4.87%",
+          "v": "91.51",
+          "c": "+3.38%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4387.90",
-          "c": "+0.56%",
+          "v": "4412.10",
+          "c": "+0.72%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证399030.00(+19.00%)、深成1462250.00(+-56.00%)、创业板370556.00(+-93.00%)，数据来自公开市场接口。"
+      "d": "上证389442.00(+-240.00%)、深成1389015.00(+-501.00%)、创业板347349.00(+-626.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,38 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4387.90(+0.56%)、WTI原油84.44(+3.93%)。"
+      "d": "现货黄金4412.10(+0.72%)、WTI原油84.64(+2.72%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Goldman studied where AI is squeezing labor markets. Here's what it found",
+      "d": "Goldman studied where AI is squeezing labor markets. Here's what it found",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "What Chinese liquor maker Moutai's slump says about the country's economy",
+      "d": "What Chinese liquor maker Moutai's slump says about the country's economy",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves after hours: Toll Brothers, Keysight Technologies, La-Z-Boy & more",
@@ -231,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
@@ -245,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Kalshi seeks to launch ‘perps’ on equity indexes as it moves in on traditional exchanges' turf",
@@ -258,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
@@ -266,34 +292,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Prediction market traders see roughly 1-in-4 odds Paramount’s bid to buy Warner Bros. Discovery fails",
-      "d": "Prediction market traders see roughly 1-in-4 odds Paramount’s bid to buy Warner Bros. Discovery fails",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stanley Druckenmiller loaded up on Amazon and chip stocks before July rout",
-      "d": "Stanley Druckenmiller loaded up on Amazon and chip stocks before July rout",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4387.90(+0.56%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4412.10(+0.72%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
