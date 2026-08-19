@@ -1,6 +1,6 @@
 {
   "date": "2026-08-19",
-  "updated": "2026-08-19 10:03(云端快照)",
+  "updated": "2026-08-19 22:31(云端快照)",
   "weekday": "星期三",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53343.40",
-          "c": "+-0.83%",
+          "v": "53463.05",
+          "c": "+-0.57%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26289.71",
-          "c": "+-0.59%",
+          "v": "26331.09",
+          "c": "+-0.97%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29490.96",
-          "c": "+-0.12%",
+          "v": "29426.02",
+          "c": "+-1.06%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7691.76",
-          "c": "+-0.47%",
+          "v": "7707.98",
+          "c": "+-0.52%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11992.46",
-          "c": "+-0.88%",
+          "v": "11738.23",
+          "c": "+-5.33%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.85",
-          "c": "+8.34%",
+          "v": "14.89",
+          "c": "+1.78%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.37",
-          "c": "+0.18%",
-          "d": 1
+          "v": "4.35",
+          "c": "+-0.93%",
+          "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.71",
-          "c": "+-0.51%",
+          "v": "4.65",
+          "c": "+-0.26%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.39",
-          "c": "+-0.28%",
+          "v": "98.77",
+          "c": "+-0.90%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "91.86",
-          "c": "+3.77%",
+          "v": "91.61",
+          "c": "+3.49%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4413.40",
-          "c": "+0.75%",
+          "v": "4576.40",
+          "c": "+4.47%",
           "d": 1
         }
       ]
@@ -208,16 +208,70 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26289.71(+-0.59%)、费城半导体11992.46(+-0.88%)，数据来自 Yahoo Finance。"
+      "d": "纳指26331.09(+-0.97%)、费城半导体11738.23(+-5.33%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4413.40(+0.75%)、WTI原油84.90(+3.03%)。"
+      "d": "现货黄金4576.40(+4.47%)、WTI原油84.38(+2.40%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "macro",
+      "t": "Fed officials saw need for rate hike if inflation doesn't cool, minutes show",
+      "d": "Fed officials saw need for rate hike if inflation doesn't cool, minutes show",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Stocks making the biggest moves midday: Moderna, Pilgrim's Pride, Target, gold miners & more",
+      "d": "Stocks making the biggest moves midday: Moderna, Pilgrim's Pride, Target, gold miners & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Carvana shares are under pressure this week as Mark Walter probe fuels investor jitters",
+      "d": "Carvana shares are under pressure this week as Mark Walter probe fuels investor jitters",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
+      "t": "Retail investors aren't entirely giving up on AI trade, but they appear more cautious",
+      "d": "Retail investors aren't entirely giving up on AI trade, but they appear more cautious",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 5,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman studied where AI is squeezing labor markets. Here's what it found",
@@ -230,65 +284,11 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "What Chinese liquor maker Moutai's slump says about the country's economy",
       "d": "What Chinese liquor maker Moutai's slump says about the country's economy",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves after hours: Toll Brothers, Keysight Technologies, La-Z-Boy & more",
-      "d": "Stocks making the biggest moves after hours: Toll Brothers, Keysight Technologies, La-Z-Boy & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "macro",
-      "t": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
-      "d": "Analysis: Bond market pressure is squeezing Main Street as Wall Street waits on Warsh",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Kalshi seeks to launch ‘perps’ on equity indexes as it moves in on traditional exchanges' turf",
-      "d": "Kalshi seeks to launch ‘perps’ on equity indexes as it moves in on traditional exchanges' turf",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
-      "d": "Lakers governor Jeanie Buss says siblings cannot sell family’s stake to Bob Iger, Joshua Kushner",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -313,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4413.40(+0.75%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4576.40(+4.47%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -324,7 +324,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11992.46(+-0.88%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11738.23(+-5.33%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
