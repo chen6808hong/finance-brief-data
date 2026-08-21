@@ -1,6 +1,6 @@
 {
   "date": "2026-08-21",
-  "updated": "2026-08-21 10:06(云端快照)",
+  "updated": "2026-08-21 22:31(云端快照)",
   "weekday": "星期五",
   "marketGroups": [
     {
@@ -78,39 +78,39 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52759.21",
-          "c": "+-2.01%",
+          "v": "53277.01",
+          "c": "+-0.85%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26067.17",
-          "c": "+-2.75%",
+          "v": "26180.46",
+          "c": "+-2.05%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29213.16",
-          "c": "+-2.90%",
+          "v": "29308.86",
+          "c": "+-2.45%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7641.16",
-          "c": "+-2.02%",
+          "v": "7674.37",
+          "c": "+-1.43%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11800.02",
-          "c": "+-5.27%",
+          "v": "11740.37",
+          "c": "+-5.45%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.69",
-          "c": "+3.29%",
-          "d": 1
+          "v": "15.13",
+          "c": "+-0.39%",
+          "d": -1
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.39",
-          "c": "+-0.57%",
+          "v": "4.42",
+          "c": "+-1.10%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.70",
-          "c": "+-0.00%",
-          "d": 0
+          "v": "4.74",
+          "c": "+-0.30%",
+          "d": -1
         },
         {
           "n": "美元指数",
-          "v": "98.63",
-          "c": "+-1.01%",
+          "v": "98.84",
+          "c": "+-0.80%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "93.41",
-          "c": "+2.80%",
+          "v": "93.87",
+          "c": "+3.30%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4642.30",
-          "c": "+5.08%",
+          "v": "4661.60",
+          "c": "+5.52%",
           "d": 1
         }
       ]
@@ -208,16 +208,56 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26067.17(+-2.75%)、费城半导体11800.02(+-5.27%)，数据来自 Yahoo Finance。"
+      "d": "纳指26180.46(+-2.05%)、费城半导体11740.37(+-5.45%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4642.30(+5.08%)、WTI原油86.49(+2.36%)。"
+      "d": "现货黄金4661.60(+5.52%)、WTI原油86.64(+2.53%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Kalshi traders think the bitcoin rally could end the year near current levels",
+      "d": "Kalshi traders think the bitcoin rally could end the year near current levels",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves midday: Moderna, Robinhood, BJ's Wholesale, Coinbase & more",
+      "d": "Stocks making the biggest moves midday: Moderna, Robinhood, BJ's Wholesale, Coinbase & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Trump admin taps former JPMorgan Chase exec Matt Zames to advise Social Security agency",
+      "d": "Trump admin taps former JPMorgan Chase exec Matt Zames to advise Social Security agency",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Samsung plans up to $80 billion in shareholder returns after SK Hynix buyback",
@@ -231,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Labubu maker Pop Mart shares fall as key ex-China sales data drop, Citi cuts price target",
@@ -245,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Chinese humanoid robots' biggest obstacle: Humans are still (mostly) better",
@@ -254,48 +294,6 @@
       "lv": "全球级",
       "s": [
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves midday: Walmart, Deere, CrowdStrike, Moderna & more",
-      "d": "Stocks making the biggest moves midday: Walmart, Deere, CrowdStrike, Moderna & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "macro",
-      "t": "China is defying the global bond yield surge, boosting its diversification appeal",
-      "d": "China is defying the global bond yield surge, boosting its diversification appeal",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "Fed officials saw need for rate hike if inflation doesn't cool, minutes show",
-      "d": "Fed officials saw need for rate hike if inflation doesn't cool, minutes show",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
@@ -316,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4642.30(+5.08%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4661.60(+5.52%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -327,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11800.02(+-5.27%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11740.37(+-5.45%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
