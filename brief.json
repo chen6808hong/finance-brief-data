@@ -1,51 +1,51 @@
 {
-  "date": "2026-08-20",
-  "updated": "2026-08-20 23:44(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-08-21",
+  "updated": "2026-08-21 09:01(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "390372.00",
-          "c": "+24.00%",
+          "v": "390520.00",
+          "c": "+4.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1397278.00",
-          "c": "+59.00%",
+          "v": "1409417.00",
+          "c": "+87.00%",
           "d": 1
         },
         {
           "n": "创业板指",
-          "v": "349559.00",
-          "c": "+64.00%",
+          "v": "354558.00",
+          "c": "+143.00%",
           "d": 1
         },
         {
           "n": "科创50",
-          "v": "165297.00",
-          "c": "+-87.00%",
-          "d": -1
+          "v": "165356.00",
+          "c": "+4.00%",
+          "d": 1
         },
         {
           "n": "国证算力",
-          "v": "1204993.00",
-          "c": "+-16.00%",
-          "d": -1
+          "v": "1229699.00",
+          "c": "+205.00%",
+          "d": 1
         },
         {
           "n": "国证芯片",
-          "v": "1694443.00",
-          "c": "+-115.00%",
-          "d": -1
+          "v": "1705673.00",
+          "c": "+66.00%",
+          "d": 1
         },
         {
           "n": "沪深300",
-          "v": "459275.00",
-          "c": "+9.00%",
+          "v": "461890.00",
+          "c": "+57.00%",
           "d": 1
         }
       ]
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2569849.00",
-          "c": "+80.00%",
+          "v": "2600946.00",
+          "c": "+121.00%",
           "d": 1
         },
         {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "16.01",
-          "c": "+12.35%",
+          "v": "15.77",
+          "c": "+3.82%",
           "d": 1
         }
       ]
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "98.84",
-          "c": "+-0.80%",
+          "v": "98.63",
+          "c": "+-1.01%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "93.28",
-          "c": "+2.65%",
+          "v": "93.00",
+          "c": "+2.34%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4580.50",
-          "c": "+3.68%",
+          "v": "4638.80",
+          "c": "+5.00%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证390372.00(+24.00%)、深成1397278.00(+59.00%)、创业板349559.00(+64.00%)，数据来自公开市场接口。"
+      "d": "上证390520.00(+4.00%)、深成1409417.00(+87.00%)、创业板354558.00(+143.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,39 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4580.50(+3.68%)、WTI原油86.30(+2.13%)。"
+      "d": "现货黄金4638.80(+5.00%)、WTI原油85.96(+1.73%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Labubu maker Pop Mart shares fall as key ex-China sales data drop, Citi cuts price target",
+      "d": "Labubu maker Pop Mart shares fall as key ex-China sales data drop, Citi cuts price target",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Chinese humanoid robots' biggest obstacle: humans are still (mostly) better",
+      "d": "Chinese humanoid robots' biggest obstacle: humans are still (mostly) better",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: Walmart, Deere, CrowdStrike, Moderna & more",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "China is defying the global bond yield surge, boosting its diversification appeal",
@@ -245,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "macro",
       "t": "Fed officials saw need for rate hike if inflation doesn't cool, minutes show",
@@ -259,7 +286,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Carvana shares are under pressure this week as Mark Walter probe fuels investor jitters",
@@ -269,32 +296,6 @@
       "s": [
         "美股",
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Retail investors aren't entirely giving up on AI trade, but they appear more cautious",
-      "d": "Retail investors aren't entirely giving up on AI trade, but they appear more cautious",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Goldman studied where AI is squeezing labor markets. Here's what it found",
-      "d": "Goldman studied where AI is squeezing labor markets. Here's what it found",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
       ],
       "src": "CNBC"
     }
@@ -315,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4580.50(+3.68%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4638.80(+5.00%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
