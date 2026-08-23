@@ -1,6 +1,6 @@
 {
   "date": "2026-08-23",
-  "updated": "2026-08-23 09:55(云端快照)",
+  "updated": "2026-08-23 22:31(云端快照)",
   "weekday": "星期日",
   "marketGroups": [
     {
@@ -131,7 +131,7 @@
         },
         {
           "n": "美元指数",
-          "v": "98.84",
+          "v": "98.85",
           "c": "+-0.81%",
           "d": -1
         }
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "94.39",
-          "c": "+3.70%",
+          "v": "93.70",
+          "c": "+2.94%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4680.60",
-          "c": "+7.21%",
+          "v": "4678.20",
+          "c": "+7.15%",
           "d": 1
         }
       ]
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4680.60(+7.21%)、WTI原油87.06(+2.50%)。"
+      "d": "现货黄金4678.20(+7.15%)、WTI原油86.44(+1.77%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Wells Fargo and Citigroup have room to buy a big bank. These 5 regionals fit the bill",
+      "d": "Wells Fargo and Citigroup have room to buy a big bank. These 5 regionals fit the bill",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Kalshi traders think the bitcoin rally could end the year near current levels",
@@ -230,7 +243,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: Moderna, Robinhood, BJ's Wholesale, Coinbase & more",
@@ -244,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Trump admin taps former JPMorgan Chase exec Matt Zames to advise Social Security agency",
@@ -257,7 +270,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Samsung plans up to $80 billion in shareholder returns after SK Hynix buyback",
@@ -271,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Labubu maker Pop Mart shares fall as key ex-China sales data drop, Citi cuts price target",
@@ -280,19 +293,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Chinese humanoid robots' biggest obstacle: Humans are still (mostly) better",
-      "d": "Chinese humanoid robots' biggest obstacle: Humans are still (mostly) better",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4680.60(+7.21%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4678.20(+7.15%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
