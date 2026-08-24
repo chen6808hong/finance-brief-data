@@ -1,6 +1,6 @@
 {
   "date": "2026-08-24",
-  "updated": "2026-08-24 10:58(云端快照)",
+  "updated": "2026-08-24 22:31(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -8,9 +8,9 @@
       "items": [
         {
           "n": "上证指数",
-          "v": "390520.00",
-          "c": "+4.00%",
-          "d": 1
+          "v": "388201.00",
+          "c": "+-59.00%",
+          "d": -1
         },
         {
           "n": "深证成指",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53277.01",
-          "c": "+-0.85%",
+          "v": "53417.16",
+          "c": "+-0.08%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26180.46",
-          "c": "+-2.05%",
+          "v": "25980.19",
+          "c": "+-2.49%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29308.86",
-          "c": "+-2.45%",
+          "v": "29023.18",
+          "c": "+-3.24%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7674.37",
-          "c": "+-1.43%",
+          "v": "7652.86",
+          "c": "+-1.19%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11740.37",
-          "c": "+-5.45%",
+          "v": "11423.17",
+          "c": "+-9.49%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.93",
-          "c": "+0.57%",
+          "v": "15.85",
+          "c": "+0.06%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.42",
-          "c": "+-1.10%",
+          "v": "4.41",
+          "c": "+-0.94%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.74",
-          "c": "+-0.30%",
-          "d": -1
+          "v": "4.70",
+          "c": "+0.04%",
+          "d": 1
         },
         {
           "n": "美元指数",
-          "v": "99.01",
-          "c": "+0.18%",
+          "v": "98.98",
+          "c": "+0.16%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "93.00",
-          "c": "+1.51%",
+          "v": "92.07",
+          "c": "+0.49%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4700.10",
-          "c": "+4.69%",
+          "v": "4715.40",
+          "c": "+5.03%",
           "d": 1
         }
       ]
@@ -204,20 +204,74 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证—(—)、深成1379429.00(+-213.00%)、创业板343189.00(+-321.00%)，数据来自公开市场接口。"
+      "d": "上证388201.00(+-59.00%)、深成1379429.00(+-213.00%)、创业板343189.00(+-321.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26180.46(+-2.05%)、费城半导体11740.37(+-5.45%)，数据来自 Yahoo Finance。"
+      "d": "纳指25980.19(+-2.49%)、费城半导体11423.17(+-9.49%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4700.10(+4.69%)、WTI原油85.25(+-0.68%)。"
+      "d": "现货黄金4715.40(+5.03%)、WTI原油85.05(+-0.91%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "macro",
+      "t": "Prediction market traders doubtful Bessent’s bond interventions will push yields lower",
+      "d": "Prediction market traders doubtful Bessent’s bond interventions will push yields lower",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Goldman Sachs partner warns of 'huge danger' in letting AI replace bankers' reasoning skills",
+      "d": "Goldman Sachs partner warns of 'huge danger' in letting AI replace bankers' reasoning skills",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Crypto extends gains after biggest 3-day rally since 2023",
+      "d": "Crypto extends gains after biggest 3-day rally since 2023",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Alibaba, Marvell, Sandisk, Coinbase and more",
+      "d": "Stocks making the biggest moves premarket: Alibaba, Marvell, Sandisk, Coinbase and more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push",
@@ -231,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Wells Fargo and Citigroup have room to buy a big bank. These 5 regionals fit the bill",
@@ -239,60 +293,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
-      "imp": 2,
-      "c": "intl",
-      "t": "Kalshi traders think the bitcoin rally could end the year near current levels",
-      "d": "Kalshi traders think the bitcoin rally could end the year near current levels",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves midday: Moderna, Robinhood, BJ's Wholesale, Coinbase & more",
-      "d": "Stocks making the biggest moves midday: Moderna, Robinhood, BJ's Wholesale, Coinbase & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Trump admin taps former JPMorgan Chase exec Matt Zames to advise Social Security agency",
-      "d": "Trump admin taps former JPMorgan Chase exec Matt Zames to advise Social Security agency",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Samsung plans up to $80 billion in shareholder returns after SK Hynix buyback",
-      "d": "Samsung plans up to $80 billion in shareholder returns after SK Hynix buyback",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4700.10(+4.69%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4715.40(+5.03%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11740.37(+-5.45%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11423.17(+-9.49%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
