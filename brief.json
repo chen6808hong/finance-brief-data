@@ -1,52 +1,52 @@
 {
-  "date": "2026-08-25",
-  "updated": "2026-08-25 23:41(云端快照)",
-  "weekday": "星期二",
+  "date": "2026-08-26",
+  "updated": "2026-08-26 09:01(云端快照)",
+  "weekday": "星期三",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "388944.00",
-          "c": "+19.00%",
+          "v": "391252.00",
+          "c": "+59.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1374587.00",
-          "c": "+-35.00%",
-          "d": -1
+          "v": "1384133.00",
+          "c": "+69.00%",
+          "d": 1
         },
         {
           "n": "创业板指",
-          "v": "339752.00",
-          "c": "+-100.00%",
-          "d": -1
+          "v": "341488.00",
+          "c": "+51.00%",
+          "d": 1
         },
         {
           "n": "科创50",
-          "v": "160459.00",
-          "c": "+14.00%",
+          "v": "163202.00",
+          "c": "+171.00%",
           "d": 1
         },
         {
           "n": "国证算力",
-          "v": "1180005.00",
-          "c": "+68.00%",
+          "v": "1183012.00",
+          "c": "+25.00%",
           "d": 1
         },
         {
           "n": "国证芯片",
-          "v": "1646626.00",
-          "c": "+17.00%",
+          "v": "1665632.00",
+          "c": "+115.00%",
           "d": 1
         },
         {
           "n": "沪深300",
-          "v": "455203.00",
-          "c": "+-24.00%",
-          "d": -1
+          "v": "459079.00",
+          "c": "+85.00%",
+          "d": 1
         }
       ]
     },
@@ -55,9 +55,9 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2551110.00",
-          "c": "+-2.00%",
-          "d": -1
+          "v": "2565297.00",
+          "c": "+56.00%",
+          "d": 1
         },
         {
           "n": "恒生科技",
@@ -108,9 +108,9 @@
         },
         {
           "n": "VIX",
-          "v": "15.45",
-          "c": "+3.76%",
-          "d": 1
+          "v": "15.69",
+          "c": "+-2.00%",
+          "d": -1
         }
       ]
     },
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "98.90",
-          "c": "+0.00%",
+          "v": "98.94",
+          "c": "+0.15%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "85.88",
-          "c": "+-8.42%",
+          "v": "84.77",
+          "c": "+-10.19%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4718.30",
-          "c": "+4.47%",
+          "v": "4683.40",
+          "c": "+1.28%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证388944.00(+19.00%)、深成1374587.00(+-35.00%)、创业板339752.00(+-100.00%)，数据来自公开市场接口。"
+      "d": "上证391252.00(+59.00%)、深成1384133.00(+69.00%)、创业板341488.00(+51.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,39 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4718.30(+4.47%)、WTI原油81.02(+-7.75%)。"
+      "d": "现货黄金4683.40(+1.28%)、WTI原油79.73(+-8.42%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
+      "d": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "HP partners with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
+      "d": "HP partners with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: Dick's Sporting Goods, Marvell, AMD, Kura Oncology & more",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
@@ -244,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "macro",
       "t": "Prediction market traders doubtful Bessent’s bond interventions will push yields lower",
@@ -258,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman Sachs partner warns of 'huge danger' in letting AI replace bankers' reasoning skills",
@@ -267,33 +294,6 @@
       "lv": "全球级",
       "s": [
         "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Crypto extends gains after biggest 3-day rally since 2023",
-      "d": "Crypto extends gains after biggest 3-day rally since 2023",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push",
-      "d": "Alibaba plunges after announcing $10.2 billion share placement to fund AI push",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4718.30(+4.47%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4683.40(+1.28%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
