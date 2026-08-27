@@ -1,6 +1,6 @@
 {
   "date": "2026-08-27",
-  "updated": "2026-08-27 09:01(云端快照)",
+  "updated": "2026-08-27 22:31(云端快照)",
   "weekday": "星期四",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53463.88",
-          "c": "+0.00%",
+          "v": "53569.44",
+          "c": "+1.54%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "26130.20",
-          "c": "+-0.76%",
-          "d": -1
+          "v": "26541.35",
+          "c": "+1.82%",
+          "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29224.52",
-          "c": "+-0.68%",
-          "d": -1
+          "v": "29641.56",
+          "c": "+1.47%",
+          "d": 1
         },
         {
           "n": "标普500",
-          "v": "7675.70",
-          "c": "+-0.42%",
-          "d": -1
+          "v": "7730.99",
+          "c": "+1.18%",
+          "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "11611.24",
-          "c": "+-1.08%",
-          "d": -1
+          "v": "11882.17",
+          "c": "+0.70%",
+          "d": 1
         },
         {
           "n": "VIX",
-          "v": "14.84",
-          "c": "+-1.92%",
+          "v": "14.51",
+          "c": "+-4.10%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.38",
-          "c": "+0.14%",
+          "v": "4.40",
+          "c": "+0.63%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.66",
-          "c": "+0.68%",
+          "v": "4.67",
+          "c": "+1.39%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "99.17",
-          "c": "+0.17%",
+          "v": "99.13",
+          "c": "+0.13%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "86.24",
-          "c": "+-6.43%",
+          "v": "88.62",
+          "c": "+-3.85%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4652.70",
-          "c": "+0.26%",
+          "v": "4660.70",
+          "c": "+0.43%",
           "d": 1
         }
       ]
@@ -208,16 +208,58 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26130.20(+-0.76%)、费城半导体11611.24(+-1.08%)，数据来自 Yahoo Finance。"
+      "d": "纳指26541.35(+1.82%)、费城半导体11882.17(+0.70%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4652.70(+0.26%)、WTI原油81.55(+-4.07%)。"
+      "d": "现货黄金4660.70(+0.43%)、WTI原油83.57(+-1.69%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves after hours: Gap, Workday, Autodesk and more",
+      "d": "Stocks making the biggest moves after hours: Gap, Workday, Autodesk and more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday. Here's what to expect",
+      "d": "Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday. Here's what to expect",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "macro",
+      "t": "Kansas City Fed's Schmid says inflation 'stubborn' and 'sticky,' policy rate not restrictive",
+      "d": "Kansas City Fed's Schmid says inflation 'stubborn' and 'sticky,' policy rate not restrictive",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Z.ai shares surge 8% after releasing new AI model running only on Chinese chips",
@@ -231,21 +273,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves after hours: Nvidia, Salesforce, CrowdStrike, Urban Outfitters and more",
-      "d": "Stocks making the biggest moves after hours: Nvidia, Salesforce, CrowdStrike, Urban Outfitters and more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
@@ -259,7 +287,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "HP inks deal with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
@@ -268,33 +296,6 @@
       "lv": "全球级",
       "s": [
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
-      "d": "China needs U.S. dollars but is building a hedge against Washington’s sanctions",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "Prediction market traders doubtful Bessent’s bond interventions will push yields lower",
-      "d": "Prediction market traders doubtful Bessent’s bond interventions will push yields lower",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
@@ -315,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4652.70(+0.26%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4660.70(+0.43%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +327,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11611.24(+-1.08%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11882.17(+0.70%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
