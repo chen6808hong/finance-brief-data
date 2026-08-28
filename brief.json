@@ -1,52 +1,52 @@
 {
-  "date": "2026-08-27",
-  "updated": "2026-08-27 22:31(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-08-28",
+  "updated": "2026-08-28 06:04(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "395657.00",
-          "c": "+113.00%",
+          "v": "395953.00",
+          "c": "+7.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1404888.00",
-          "c": "+150.00%",
-          "d": 1
+          "v": "1398863.00",
+          "c": "+-43.00%",
+          "d": -1
         },
         {
           "n": "创业板指",
-          "v": "347335.00",
-          "c": "+171.00%",
-          "d": 1
+          "v": "343975.00",
+          "c": "+-97.00%",
+          "d": -1
         },
         {
           "n": "科创50",
-          "v": "169348.00",
-          "c": "+377.00%",
-          "d": 1
+          "v": "167058.00",
+          "c": "+-135.00%",
+          "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1235782.00",
-          "c": "+446.00%",
-          "d": 1
+          "v": "1222187.00",
+          "c": "+-110.00%",
+          "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "1736834.00",
-          "c": "+427.00%",
-          "d": 1
+          "v": "1705489.00",
+          "c": "+-180.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "463028.00",
-          "c": "+86.00%",
-          "d": 1
+          "v": "461731.00",
+          "c": "+-28.00%",
+          "d": -1
         }
       ]
     },
@@ -55,9 +55,9 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2556574.00",
-          "c": "+-34.00%",
-          "d": -1
+          "v": "2563007.00",
+          "c": "+25.00%",
+          "d": 1
         },
         {
           "n": "恒生科技",
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.13",
-          "c": "+0.13%",
+          "v": "99.19",
+          "c": "+0.20%",
           "d": 1
         }
       ]
@@ -142,15 +142,15 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "88.62",
-          "c": "+-3.85%",
+          "v": "88.27",
+          "c": "+-4.23%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4660.70",
-          "c": "+0.43%",
-          "d": 1
+          "v": "4628.40",
+          "c": "+-0.27%",
+          "d": -1
         }
       ]
     }
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证395657.00(+113.00%)、深成1404888.00(+150.00%)、创业板347335.00(+171.00%)，数据来自公开市场接口。"
+      "d": "上证395953.00(+7.00%)、深成1398863.00(+-43.00%)、创业板343975.00(+-97.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4660.70(+0.43%)、WTI原油83.57(+-1.69%)。"
+      "d": "现货黄金4628.40(+-0.27%)、WTI原油83.14(+-2.20%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Trump ratchets up rhetoric against Beijing as U.S.-China officials meet for Xi's Washington visit",
+      "d": "Trump ratchets up rhetoric against Beijing as U.S.-China officials meet for Xi's Washington visit",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves after hours: Gap, Workday, Autodesk and more",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "macro",
       "t": "Fed Chairman Kevin Warsh delivers his key Jackson Hole speech Friday. Here's what to expect",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Kansas City Fed's Schmid says inflation 'stubborn' and 'sticky,' policy rate not restrictive",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Z.ai shares surge 8% after releasing new AI model running only on Chinese chips",
@@ -273,7 +286,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "China's short-drama producers flood the market with cheap bets — and let audiences pick the winners",
@@ -282,19 +295,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "HP inks deal with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
-      "d": "HP inks deal with U.S.-blacklisted Huawei for licensing the Chinese company's WiFi tech",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -316,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4660.70(+0.43%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4628.40(+-0.27%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
