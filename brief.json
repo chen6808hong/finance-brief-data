@@ -1,52 +1,52 @@
 {
-  "date": "2026-08-31",
-  "updated": "2026-08-31 22:33(云端快照)",
-  "weekday": "星期一",
+  "date": "2026-09-01",
+  "updated": "2026-09-01 09:01(云端快照)",
+  "weekday": "星期二",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "398630.00",
-          "c": "+86.00%",
-          "d": 1
+          "v": "397989.00",
+          "c": "+-16.00%",
+          "d": -1
         },
         {
           "n": "深证成指",
-          "v": "1401500.00",
-          "c": "+44.00%",
-          "d": 1
+          "v": "1387238.00",
+          "c": "+-102.00%",
+          "d": -1
         },
         {
           "n": "创业板指",
-          "v": "343868.00",
-          "c": "+42.00%",
-          "d": 1
+          "v": "339343.00",
+          "c": "+-132.00%",
+          "d": -1
         },
         {
           "n": "科创50",
-          "v": "168439.00",
-          "c": "+134.00%",
-          "d": 1
+          "v": "164753.00",
+          "c": "+-219.00%",
+          "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1241372.00",
-          "c": "+210.00%",
-          "d": 1
+          "v": "1217963.00",
+          "c": "+-189.00%",
+          "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "1721797.00",
-          "c": "+150.00%",
-          "d": 1
+          "v": "1676848.00",
+          "c": "+-261.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "462509.00",
-          "c": "+35.00%",
-          "d": 1
+          "v": "461144.00",
+          "c": "+-30.00%",
+          "d": -1
         }
       ]
     },
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2556699.00",
-          "c": "+-7.00%",
+          "v": "2532973.00",
+          "c": "+-93.00%",
           "d": -1
         },
         {
@@ -108,9 +108,9 @@
         },
         {
           "n": "VIX",
-          "v": "14.92",
-          "c": "+-3.43%",
-          "d": -1
+          "v": "15.65",
+          "c": "+2.89%",
+          "d": 1
         }
       ]
     },
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.41",
-          "c": "+0.25%",
+          "v": "99.59",
+          "c": "+0.43%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "88.52",
-          "c": "+0.77%",
+          "v": "92.47",
+          "c": "+3.09%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4497.30",
-          "c": "+-2.19%",
+          "v": "4423.60",
+          "c": "+-4.04%",
           "d": -1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证398630.00(+86.00%)、深成1401500.00(+44.00%)、创业板343868.00(+42.00%)，数据来自公开市场接口。"
+      "d": "上证397989.00(+-16.00%)、深成1387238.00(+-102.00%)、创业板339343.00(+-132.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,25 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4497.30(+-2.19%)、WTI原油86.29(+4.94%)。"
+      "d": "现货黄金4423.60(+-4.04%)、WTI原油87.95(+5.29%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Hugging Face's new duck robot is selling fast. A Chinese chip powers it",
+      "d": "Hugging Face's new duck robot is selling fast. A Chinese chip powers it",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "macro",
       "t": "Markets see Warsh endorsing a rate hike in September. Not everyone is convinced",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: PG&E, Edison International, Apple, Howmet Aerospace, Eli Lilly & more",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Aon CEO says insurance broker seeks to build 'premiere middle market platform' with purchase of rival USI",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Kalshi partners with brokerage Alpaca as it tries to build its international audience",
@@ -272,24 +285,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Crypto exchange Gemini not at fault for collapse of Earn lending program, arbitrator says",
       "d": "Crypto exchange Gemini not at fault for collapse of Earn lending program, arbitrator says",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China's Xi builds diplomatic clout with multiple state visits ahead of Trump summit",
-      "d": "China's Xi builds diplomatic clout with multiple state visits ahead of Trump summit",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4497.30(+-2.19%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4423.60(+-4.04%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
