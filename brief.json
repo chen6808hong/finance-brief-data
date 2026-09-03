@@ -1,6 +1,6 @@
 {
   "date": "2026-09-03",
-  "updated": "2026-09-03 09:02(云端快照)",
+  "updated": "2026-09-03 22:31(云端快照)",
   "weekday": "星期四",
   "marketGroups": [
     {
@@ -78,39 +78,39 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "53061.95",
-          "c": "+-0.75%",
-          "d": -1
+          "v": "53686.11",
+          "c": "+0.22%",
+          "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "26217.83",
-          "c": "+0.34%",
+          "v": "26584.06",
+          "c": "+0.16%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29143.33",
-          "c": "+-0.28%",
+          "v": "29482.32",
+          "c": "+-0.54%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7666.60",
-          "c": "+-0.12%",
-          "d": -1
+          "v": "7747.71",
+          "c": "+0.22%",
+          "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "11339.25",
-          "c": "+-2.34%",
+          "v": "11352.13",
+          "c": "+-4.46%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.19",
-          "c": "+5.27%",
-          "d": 1
+          "v": "14.32",
+          "c": "+-0.76%",
+          "d": -1
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.55",
-          "c": "+-3.55%",
+          "v": "4.51",
+          "c": "+-0.62%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.80",
-          "c": "+-2.65%",
+          "v": "4.76",
+          "c": "+-0.89%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.22",
-          "c": "+-0.22%",
+          "v": "99.00",
+          "c": "+-0.43%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "95.77",
-          "c": "+5.83%",
+          "v": "95.82",
+          "c": "+5.89%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4481.30",
-          "c": "+1.13%",
+          "v": "4523.10",
+          "c": "+2.08%",
           "d": 1
         }
       ]
@@ -204,20 +204,47 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证394209.00(+2.00%)、深成1362512.00(+10.00%)、创业板331254.00(+1.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26217.83(+0.34%)、费城半导体11339.25(+-2.34%)，数据来自 Yahoo Finance。"
+      "d": "纳指26584.06(+0.16%)、费城半导体11352.13(+-4.46%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4481.30(+1.13%)、WTI原油91.16(+6.30%)。"
+      "d": "现货黄金4523.10(+2.08%)、WTI原油91.77(+7.01%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Snowflake, Moderna, Broadcom & more",
+      "d": "Stocks making the biggest moves premarket: Snowflake, Moderna, Broadcom & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
+      "d": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "macro",
       "t": "New York Fed's Williams says yield surge due to strong economic prospects",
@@ -231,21 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Vertiv, Sirius, Dell, MongoDB & more",
-      "d": "Stocks making the biggest moves premarket: Vertiv, Sirius, Dell, MongoDB & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Berkshire CEO Greg Abel says Japanese bond yields not a challenge for trading houses right now",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Nepal’s mountain tourism industry faces ‘serious warning’ after Himalayan flood disaster",
@@ -272,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Prediction market traders think job creation rebounded in August",
@@ -282,20 +295,6 @@
       "s": [
         "美股",
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "Fed Governor Barr says he'll support rate hike if inflation doesn't ease",
-      "d": "Fed Governor Barr says he'll support rate hike if inflation doesn't ease",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
@@ -316,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4481.30(+1.13%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4523.10(+2.08%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -327,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11339.25(+-2.34%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11352.13(+-4.46%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
