@@ -1,6 +1,6 @@
 {
   "date": "2026-09-07",
-  "updated": "2026-09-07 00:08(云端快照)",
+  "updated": "2026-09-07 09:01(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "14.53",
-          "c": "+-2.61%",
+          "v": "15.07",
+          "c": "+-7.77%",
           "d": -1
         }
       ]
@@ -131,8 +131,8 @@
         },
         {
           "n": "美元指数",
-          "v": "99.15",
-          "c": "+-0.52%",
+          "v": "98.96",
+          "c": "+-0.71%",
           "d": -1
         }
       ]
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
-      "d": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+      "t": "China just pumped $54 billion into banks and insurers — but their stocks still fell",
+      "d": "China just pumped $54 billion into banks and insurers — but their stocks still fell",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,6 +234,20 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
+      "t": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+      "d": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
       "t": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
       "d": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
       "g": 0,
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: Sandisk, Tesla, Lululemon, Quanex, AMC & more",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Bitcoin heads for third winning week in a row as macro pressures mount",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
@@ -280,20 +294,6 @@
       "lv": "全球级",
       "s": [
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "New York Fed's Williams says yield surge due to strong economic prospects",
-      "d": "New York Fed's Williams says yield surge due to strong economic prospects",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
