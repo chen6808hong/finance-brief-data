@@ -1,6 +1,6 @@
 {
   "date": "2026-09-08",
-  "updated": "2026-09-08 00:35(云端快照)",
+  "updated": "2026-09-08 13:08(云端快照)",
   "weekday": "星期二",
   "marketGroups": [
     {
@@ -108,9 +108,9 @@
         },
         {
           "n": "VIX",
-          "v": "15.30",
-          "c": "+-6.36%",
-          "d": -1
+          "v": "15.43",
+          "c": "+1.51%",
+          "d": 1
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.55",
-          "c": "+-0.95%",
-          "d": -1
+          "v": "4.53",
+          "c": "+0.50%",
+          "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.78",
-          "c": "+-0.55%",
-          "d": -1
+          "v": "4.77",
+          "c": "+0.63%",
+          "d": 1
         },
         {
           "n": "美元指数",
-          "v": "99.18",
-          "c": "+-0.50%",
+          "v": "98.87",
+          "c": "+-0.69%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "97.12",
-          "c": "+2.61%",
+          "v": "97.98",
+          "c": "+2.46%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4467.20",
-          "c": "+2.74%",
+          "v": "4451.60",
+          "c": "+1.95%",
           "d": 1
         }
       ]
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证393270.00(+7.00%)、深成1377491.00(+191.00%)、创业板339868.00(+341.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,52 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4467.20(+2.74%)、WTI原油92.43(+2.45%)。"
+      "d": "现货黄金4451.60(+1.95%)、WTI原油92.85(+2.02%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
+      "d": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Peloton Interactive, Roivant Sciences, Boston Scientific & more",
+      "d": "Stocks making the biggest moves premarket: Peloton Interactive, Roivant Sciences, Boston Scientific & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
+      "d": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "China says it will pump $54 billion into banks and insurers — but their stocks still fell",
@@ -231,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
@@ -245,51 +285,11 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
       "d": "White House has vetted candidates for key CFTC vacancies, sources tell CNBC. It's unclear if they will be filled",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves midday: Sandisk, Tesla, Lululemon, Quanex, AMC & more",
-      "d": "Stocks making the biggest moves midday: Sandisk, Tesla, Lululemon, Quanex, AMC & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Bitcoin heads for third winning week in a row as macro pressures mount",
-      "d": "Bitcoin heads for third winning week in a row as macro pressures mount",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
-      "d": "China hits back at G20 statement on its reliance on exports, accusing them of 'promoting protectionism'",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4467.20(+2.74%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4451.60(+1.95%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
