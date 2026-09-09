@@ -1,6 +1,6 @@
 {
   "date": "2026-09-09",
-  "updated": "2026-09-09 00:24(云端快照)",
+  "updated": "2026-09-09 13:13(云端快照)",
   "weekday": "星期三",
   "marketGroups": [
     {
@@ -8,45 +8,45 @@
       "items": [
         {
           "n": "上证指数",
-          "v": "394055.00",
-          "c": "+20.00%",
+          "v": "395151.00",
+          "c": "+28.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1370321.00",
-          "c": "+-52.00%",
-          "d": -1
+          "v": "1372332.00",
+          "c": "+15.00%",
+          "d": 1
         },
         {
           "n": "创业板指",
-          "v": "335972.00",
-          "c": "+-115.00%",
+          "v": "335497.00",
+          "c": "+-14.00%",
           "d": -1
         },
         {
           "n": "科创50",
-          "v": "159100.00",
-          "c": "+-152.00%",
+          "v": "158006.00",
+          "c": "+-69.00%",
           "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1213156.00",
-          "c": "+-96.00%",
-          "d": -1
+          "v": "1215244.00",
+          "c": "+17.00%",
+          "d": 1
         },
         {
           "n": "国证芯片",
-          "v": "1628611.00",
-          "c": "+-135.00%",
+          "v": "1619084.00",
+          "c": "+-58.00%",
           "d": -1
         },
         {
           "n": "沪深300",
-          "v": "455874.00",
-          "c": "+-36.00%",
-          "d": -1
+          "v": "457260.00",
+          "c": "+30.00%",
+          "d": 1
         }
       ]
     },
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2531718.00",
-          "c": "+-38.00%",
+          "v": "2527496.00",
+          "c": "+-17.00%",
           "d": -1
         },
         {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "15.72",
-          "c": "+3.42%",
+          "v": "16.23",
+          "c": "+13.34%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.57",
-          "c": "+-0.35%",
+          "v": "4.59",
+          "c": "+-0.79%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
           "v": "4.81",
-          "c": "+-0.21%",
+          "c": "+-0.25%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "98.75",
-          "c": "+-0.82%",
+          "v": "98.64",
+          "c": "+-0.36%",
           "d": -1
         }
       ]
@@ -142,15 +142,15 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "99.29",
-          "c": "+3.83%",
+          "v": "100.48",
+          "c": "+5.19%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4393.90",
-          "c": "+0.63%",
-          "d": 1
+          "v": "4450.60",
+          "c": "+-0.92%",
+          "d": -1
         }
       ]
     }
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证394055.00(+20.00%)、深成1370321.00(+-52.00%)、创业板335972.00(+-115.00%)，数据来自公开市场接口。"
+      "d": "上证395151.00(+28.00%)、深成1372332.00(+15.00%)、创业板335497.00(+-14.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,7 +212,7 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4393.90(+0.63%)、WTI原油94.45(+3.78%)。"
+      "d": "现货黄金4450.60(+-0.92%)、WTI原油95.53(+4.63%)。"
     }
   ],
   "items": [
@@ -220,11 +220,12 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
-      "d": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
+      "t": "Stocks making the biggest moves premarket: Apple, Casey's General Store, Signet Jewelers & more",
+      "d": "Stocks making the biggest moves premarket: Apple, Casey's General Store, Signet Jewelers & more",
       "g": 0,
       "lv": "全球级",
       "s": [
+        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -233,8 +234,8 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves after hours: ServiceTitan, Mission Produce, Chime Financial and more",
-      "d": "Stocks making the biggest moves after hours: ServiceTitan, Mission Produce, Chime Financial and more",
+      "t": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
+      "d": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -247,11 +248,12 @@
       "id": 3,
       "imp": 2,
       "c": "intl",
-      "t": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
-      "d": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
+      "t": "China's EV makers shift gears to focus on humanoids as car market slows",
+      "d": "China's EV makers shift gears to focus on humanoids as car market slows",
       "g": 0,
       "lv": "全球级",
       "s": [
+        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -260,8 +262,8 @@
       "id": 4,
       "imp": 2,
       "c": "intl",
-      "t": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
-      "d": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
+      "t": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
+      "d": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -273,12 +275,11 @@
       "id": 5,
       "imp": 2,
       "c": "intl",
-      "t": "China says it will pump $54 billion into banks and insurers — but their stocks still fell",
-      "d": "China says it will pump $54 billion into banks and insurers — but their stocks still fell",
+      "t": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
+      "d": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -287,12 +288,11 @@
       "id": 6,
       "imp": 2,
       "c": "intl",
-      "t": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
-      "d": "Sugar is outperforming the stock market this year. Here's what's driving it, and where it can go from here",
+      "t": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
+      "d": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4393.90(+0.63%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4450.60(+-0.92%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
