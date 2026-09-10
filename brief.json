@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-09",
-  "updated": "2026-09-09 13:13(云端快照)",
-  "weekday": "星期三",
+  "date": "2026-09-10",
+  "updated": "2026-09-10 00:23(云端快照)",
+  "weekday": "星期四",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52786.07",
-          "c": "+-0.75%",
+          "v": "52380.66",
+          "c": "+-0.73%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26421.41",
-          "c": "+0.19%",
+          "v": "26253.34",
+          "c": "+0.59%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29507.70",
-          "c": "+0.17%",
+          "v": "29421.55",
+          "c": "+1.18%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7673.52",
-          "c": "+-0.16%",
-          "d": -1
+          "v": "7636.36",
+          "c": "+0.06%",
+          "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "11887.87",
-          "c": "+3.06%",
+          "v": "11931.32",
+          "c": "+5.69%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "16.23",
-          "c": "+13.34%",
+          "v": "16.46",
+          "c": "+14.94%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.59",
-          "c": "+-0.79%",
+          "v": "4.61",
+          "c": "+-1.36%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.81",
-          "c": "+-0.25%",
+          "v": "4.84",
+          "c": "+-0.85%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "98.64",
-          "c": "+-0.36%",
+          "v": "98.78",
+          "c": "+-0.23%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "100.48",
-          "c": "+5.19%",
+          "v": "101.50",
+          "c": "+6.26%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4450.60",
-          "c": "+-0.92%",
+          "v": "4439.80",
+          "c": "+-1.16%",
           "d": -1
         }
       ]
@@ -204,15 +204,15 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证395151.00(+28.00%)、深成1372332.00(+15.00%)、创业板335497.00(+-14.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26421.41(+0.19%)、费城半导体11887.87(+3.06%)，数据来自 Yahoo Finance。"
+      "d": "纳指26253.34(+0.59%)、费城半导体11931.32(+5.69%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4450.60(+-0.92%)、WTI原油95.53(+4.63%)。"
+      "d": "现货黄金4439.80(+-1.16%)、WTI原油96.73(+5.95%)。"
     }
   ],
   "items": [
@@ -220,8 +220,21 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Apple, Casey's General Store, Signet Jewelers & more",
-      "d": "Stocks making the biggest moves premarket: Apple, Casey's General Store, Signet Jewelers & more",
+      "t": "Ant International partners with Visa, Mastercard on developing AI payments",
+      "d": "Ant International partners with Visa, Mastercard on developing AI payments",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves midday: Meta, Centerspace, Apple, Casey's General Stores, Signet & more",
+      "d": "Stocks making the biggest moves midday: Meta, Centerspace, Apple, Casey's General Stores, Signet & more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "China's EV makers shift gears to focus on humanoids as car market slows",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
@@ -272,24 +285,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
       "d": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
-      "d": "Crypto platforms have lost over $3.63 billion to cyberattacks — even though most of them did security checks",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4450.60(+-0.92%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4439.80(+-1.16%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11887.87(+3.06%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11931.32(+5.69%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
