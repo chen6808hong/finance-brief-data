@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-10",
-  "updated": "2026-09-10 13:11(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-09-11",
+  "updated": "2026-09-11 00:19(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52380.66",
-          "c": "+-0.73%",
+          "v": "52064.10",
+          "c": "+-1.88%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26253.34",
-          "c": "+0.59%",
-          "d": 1
+          "v": "26081.72",
+          "c": "+-0.52%",
+          "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29421.55",
-          "c": "+1.18%",
-          "d": 1
+          "v": "29103.51",
+          "c": "+-0.14%",
+          "d": -1
         },
         {
           "n": "标普500",
-          "v": "7636.36",
-          "c": "+0.06%",
-          "d": 1
+          "v": "7591.70",
+          "c": "+-0.98%",
+          "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11931.32",
-          "c": "+5.69%",
+          "v": "11614.17",
+          "c": "+2.42%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "17.69",
-          "c": "+21.75%",
+          "v": "17.84",
+          "c": "+22.78%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.70",
-          "c": "+-4.26%",
+          "v": "4.73",
+          "c": "+-4.97%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.91",
-          "c": "+-3.19%",
+          "v": "4.94",
+          "c": "+-3.82%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.09",
-          "c": "+-0.07%",
+          "v": "99.05",
+          "c": "+-0.11%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "104.87",
-          "c": "+8.92%",
+          "v": "108.04",
+          "c": "+12.21%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4394.10",
-          "c": "+-0.81%",
+          "v": "4361.20",
+          "c": "+-1.55%",
           "d": -1
         }
       ]
@@ -208,16 +208,43 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26253.34(+0.59%)、费城半导体11931.32(+5.69%)，数据来自 Yahoo Finance。"
+      "d": "纳指26081.72(+-0.52%)、费城半导体11614.17(+2.42%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4394.10(+-0.81%)、WTI原油99.73(+9.02%)。"
+      "d": "现货黄金4361.20(+-1.55%)、WTI原油102.98(+12.57%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "OpenAI targets work of Wall Street junior bankers with new ChatGPT for Financial Services",
+      "d": "OpenAI targets work of Wall Street junior bankers with new ChatGPT for Financial Services",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Kalshi launches ‘perps’ for gold and silver following CFTC approval, expanding futures offerings",
+      "d": "Kalshi launches ‘perps’ for gold and silver following CFTC approval, expanding futures offerings",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: Macy's, Meta, Apple, Novartis and more",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Ant International partners with Visa, Mastercard on developing AI payments",
@@ -244,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
@@ -258,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "China's EV makers shift gears to focus on humanoids as car market slows",
@@ -267,32 +294,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
-      "d": "How one hedge-fund manager built his firm to be powered entirely by AI agents",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
-      "d": "Visa tells CNBC it is expanding data offering for blockchain lenders as demand for stablecoin-linked cards surges",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4394.10(+-0.81%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4361.20(+-1.55%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11931.32(+5.69%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11614.17(+2.42%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
