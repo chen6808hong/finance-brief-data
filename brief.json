@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "updated": "2026-09-11 00:19(云端快照)",
+  "updated": "2026-09-11 13:05(云端快照)",
   "weekday": "星期五",
   "marketGroups": [
     {
@@ -108,8 +108,8 @@
         },
         {
           "n": "VIX",
-          "v": "17.84",
-          "c": "+22.78%",
+          "v": "16.33",
+          "c": "+6.73%",
           "d": 1
         }
       ]
@@ -119,21 +119,21 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.73",
-          "c": "+-4.97%",
+          "v": "4.75",
+          "c": "+-4.31%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
           "v": "4.94",
-          "c": "+-3.82%",
+          "c": "+-3.30%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.05",
-          "c": "+-0.11%",
-          "d": -1
+          "v": "99.08",
+          "c": "+0.24%",
+          "d": 1
         }
       ]
     },
@@ -142,15 +142,15 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "108.04",
-          "c": "+12.21%",
+          "v": "104.66",
+          "c": "+6.88%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4361.20",
-          "c": "+-1.55%",
-          "d": -1
+          "v": "4419.50",
+          "c": "+0.58%",
+          "d": 1
         }
       ]
     }
@@ -204,7 +204,7 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证393440.00(+-43.00%)、深成1361767.00(+-77.00%)、创业板333842.00(+-49.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
@@ -212,12 +212,53 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4361.20(+-1.55%)、WTI原油102.98(+12.57%)。"
+      "d": "现货黄金4419.50(+0.58%)、WTI原油99.43(+6.88%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: GameStop, Oracle, Adobe, RH & more",
+      "d": "Stocks making the biggest moves premarket: GameStop, Oracle, Adobe, RH & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "A Chinese humanoid startup flips 'distillation' claim on OpenAI as it releases a new robotics model",
+      "d": "A Chinese humanoid startup flips 'distillation' claim on OpenAI as it releases a new robotics model",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "The iPhone Duo enters China’s crowded foldable market — and faces a price test",
+      "d": "The iPhone Duo enters China’s crowded foldable market — and faces a price test",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "OpenAI targets work of Wall Street junior bankers with new ChatGPT for Financial Services",
@@ -231,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "commodity",
       "t": "Kalshi launches ‘perps’ for gold and silver following CFTC approval, expanding futures offerings",
@@ -244,21 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Macy's, Meta, Apple, Novartis and more",
-      "d": "Stocks making the biggest moves premarket: Macy's, Meta, Apple, Novartis and more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Ant International partners with Visa, Mastercard on developing AI payments",
@@ -266,34 +293,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
-      "d": "Adani Enterprises shares jump as airport unit enters into $1 billion fundraising deal",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China's EV makers shift gears to focus on humanoids as car market slows",
-      "d": "China's EV makers shift gears to focus on humanoids as car market slows",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4361.20(+-1.55%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4419.50(+0.58%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
