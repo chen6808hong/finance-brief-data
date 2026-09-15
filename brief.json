@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-14",
-  "updated": "2026-09-14 15:21(云端快照)",
-  "weekday": "星期一",
+  "date": "2026-09-15",
+  "updated": "2026-09-15 00:45(云端快照)",
+  "weekday": "星期二",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52348.38",
-          "c": "+-2.00%",
+          "v": "52421.20",
+          "c": "+-1.86%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26118.71",
-          "c": "+-1.46%",
+          "v": "26186.41",
+          "c": "+-1.21%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29038.17",
-          "c": "+-1.71%",
+          "v": "29127.16",
+          "c": "+-1.41%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7604.12",
-          "c": "+-1.48%",
+          "v": "7619.98",
+          "c": "+-1.28%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11159.45",
-          "c": "+-4.91%",
+          "v": "11131.28",
+          "c": "+-5.15%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "17.39",
-          "c": "+10.62%",
+          "v": "17.10",
+          "c": "+8.78%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.80",
-          "c": "+-5.05%",
+          "v": "4.79",
+          "c": "+-4.75%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.98",
-          "c": "+-3.64%",
+          "v": "4.96",
+          "c": "+-3.23%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.56",
-          "c": "+0.80%",
+          "v": "99.54",
+          "c": "+0.78%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "107.67",
-          "c": "+6.38%",
+          "v": "107.08",
+          "c": "+5.80%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4322.70",
-          "c": "+-2.11%",
+          "v": "4324.80",
+          "c": "+-2.07%",
           "d": -1
         }
       ]
@@ -208,16 +208,58 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26118.71(+-1.46%)、费城半导体11159.45(+-4.91%)，数据来自 Yahoo Finance。"
+      "d": "纳指26186.41(+-1.21%)、费城半导体11131.28(+-5.15%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4322.70(+-2.11%)、WTI原油102.71(+6.93%)。"
+      "d": "现货黄金4324.80(+-2.07%)、WTI原油102.77(+7.00%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Bank of America expects third-quarter investment banking fees to fall more than 10%; shares slide",
+      "d": "Bank of America expects third-quarter investment banking fees to fall more than 10%; shares slide",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
+      "d": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves midday: Zscaler, CrowdStrike, Marvell Technology, Rum Group & more",
+      "d": "Stocks making the biggest moves midday: Zscaler, CrowdStrike, Marvell Technology, Rum Group & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Prediction market traders think gas prices will hit new highs for the year",
@@ -231,21 +273,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Intel, Marvell, CrowdStrike & more",
-      "d": "Stocks making the biggest moves premarket: Intel, Marvell, CrowdStrike & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "China says AI CEOs' call for a slowdown is 'fear mongering'",
@@ -259,38 +287,11 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Prediction markets are becoming more professionalized, but also harder to beat",
       "d": "Prediction markets are becoming more professionalized, but also harder to beat",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Goldman picks China healthcare stocks for a post-AI trade",
-      "d": "Goldman picks China healthcare stocks for a post-AI trade",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "NFL and midterm elections set up prediction markets for a critical fall season",
-      "d": "NFL and midterm elections set up prediction markets for a critical fall season",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -316,7 +317,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4322.70(+-2.11%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4324.80(+-2.07%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -327,7 +328,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11159.45(+-4.91%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11131.28(+-5.15%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
