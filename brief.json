@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-16",
-  "updated": "2026-09-16 13:49(云端快照)",
-  "weekday": "星期三",
+  "date": "2026-09-17",
+  "updated": "2026-09-17 00:45(云端快照)",
+  "weekday": "星期四",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52016.51",
-          "c": "+-0.70%",
+          "v": "51461.90",
+          "c": "+-1.75%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26139.21",
-          "c": "+-0.43%",
+          "v": "25978.42",
+          "c": "+-1.05%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29135.13",
-          "c": "+-0.97%",
+          "v": "28945.06",
+          "c": "+-1.62%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7607.16",
-          "c": "+-0.38%",
+          "v": "7551.81",
+          "c": "+-1.11%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11370.74",
-          "c": "+-4.70%",
+          "v": "11246.11",
+          "c": "+-5.74%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "16.80",
-          "c": "+-5.83%",
+          "v": "17.71",
+          "c": "+-0.73%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.79",
-          "c": "+-1.31%",
+          "v": "4.86",
+          "c": "+-2.66%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.97",
-          "c": "+-0.55%",
+          "v": "5.01",
+          "c": "+-1.25%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "99.69",
-          "c": "+0.57%",
+          "v": "100.28",
+          "c": "+1.17%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "107.25",
-          "c": "+2.52%",
+          "v": "104.90",
+          "c": "+0.28%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4387.80",
-          "c": "+-0.48%",
+          "v": "4323.60",
+          "c": "+-1.93%",
           "d": -1
         }
       ]
@@ -208,16 +208,72 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26139.21(+-0.43%)、费城半导体11370.74(+-4.70%)，数据来自 Yahoo Finance。"
+      "d": "纳指25978.42(+-1.05%)、费城半导体11246.11(+-5.74%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4387.80(+-0.48%)、WTI原油103.59(+3.54%)。"
+      "d": "现货黄金4323.60(+-1.93%)、WTI原油101.45(+1.40%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "macro",
+      "t": "Here are five key takeaways from Wednesday's Fed rate hike",
+      "d": "Here are five key takeaways from Wednesday's Fed rate hike",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "Here is what changed in the new Fed statement under Warsh",
+      "d": "Here is what changed in the new Fed statement under Warsh",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "macro",
+      "t": "Fed approves interest rate hike, signals one more to come this year",
+      "d": "Fed approves interest rate hike, signals one more to come this year",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
+      "t": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
+      "d": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: SK Hynix, J.B. Hunt, Expedia & more",
@@ -231,7 +287,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "China's AI leaders keep quiet despite U.S. 'publicity' on tech risks",
@@ -239,61 +295,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
-      "imp": 2,
-      "c": "intl",
-      "t": "China's August retail sales miss forecast while investment slump deepens, piling pressure on Beijing",
-      "d": "China's August retail sales miss forecast while investment slump deepens, piling pressure on Beijing",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Bank of America expects third-quarter investment banking fees to fall more than 10%; shares slide",
-      "d": "Bank of America expects third-quarter investment banking fees to fall more than 10%; shares slide",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "macro",
-      "t": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
-      "d": "Warsh's credibility is on the line this week as Trump policies put pressure on Fed to hike",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Prediction market traders think gas prices will hit new highs for the year",
-      "d": "Prediction market traders think gas prices will hit new highs for the year",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4387.80(+-0.48%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4323.60(+-1.93%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +327,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11370.74(+-4.70%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11246.11(+-5.74%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
