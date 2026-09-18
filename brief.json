@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-17",
-  "updated": "2026-09-17 13:52(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-09-18",
+  "updated": "2026-09-18 00:34(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51766.69",
-          "c": "+-0.57%",
+          "v": "51778.04",
+          "c": "+-0.55%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26323.15",
-          "c": "+0.93%",
+          "v": "26418.30",
+          "c": "+1.29%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "29370.00",
-          "c": "+0.92%",
+          "v": "29446.98",
+          "c": "+1.18%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7625.80",
-          "c": "+0.45%",
+          "v": "7637.76",
+          "c": "+0.61%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "11622.48",
-          "c": "+0.07%",
-          "d": 1
+          "v": "11599.49",
+          "c": "+-0.13%",
+          "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.69",
-          "c": "+-0.95%",
+          "v": "15.44",
+          "c": "+-2.53%",
           "d": -1
         }
       ]
@@ -120,19 +120,19 @@
         {
           "n": "5年美债收益率",
           "v": "4.80",
-          "c": "+-0.13%",
+          "c": "+-0.21%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
           "v": "4.95",
-          "c": "+0.48%",
+          "c": "+0.56%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "100.14",
-          "c": "+0.69%",
+          "v": "100.22",
+          "c": "+0.77%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "103.50",
-          "c": "+-2.06%",
+          "v": "103.81",
+          "c": "+-1.77%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4400.70",
-          "c": "+1.12%",
+          "v": "4395.00",
+          "c": "+0.99%",
           "d": 1
         }
       ]
@@ -208,11 +208,11 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26323.15(+0.93%)、费城半导体11622.48(+0.07%)，数据来自 Yahoo Finance。"
+      "d": "纳指26418.30(+1.29%)、费城半导体11599.49(+-0.13%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4400.70(+1.12%)、WTI原油101.12(+-0.27%)。"
+      "d": "现货黄金4395.00(+0.99%)、WTI原油100.87(+-0.51%)。"
     }
   ],
   "items": [
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Generac, Lennar, Nike & more",
-      "d": "Stocks making the biggest moves premarket: Generac, Lennar, Nike & more",
+      "t": "Securitize jumps after regulators greenlight some tokenized U.S. stock trading",
+      "d": "Securitize jumps after regulators greenlight some tokenized U.S. stock trading",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,6 +234,34 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
+      "t": "Stocks making the biggest moves midday: Workday, Generac, Vital Farms, Vicor, Tower Semi & more",
+      "d": "Stocks making the biggest moves midday: Workday, Generac, Vital Farms, Vicor, Tower Semi & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "A Chinese AI company just connected its model to Wall Street's leading data providers",
+      "d": "A Chinese AI company just connected its model to Wall Street's leading data providers",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
       "t": "OpenAI and Anthropic are making 10 times more revenue than all Chinese AI models combined, research group Rhodium says",
       "d": "OpenAI and Anthropic are making 10 times more revenue than all Chinese AI models combined, research group Rhodium says",
       "g": 0,
@@ -244,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "macro",
       "t": "Here are five key takeaways from Wednesday's Fed rate hike",
@@ -258,7 +286,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "Here is what changed in the new Fed statement under Warsh",
@@ -268,34 +296,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "macro",
-      "t": "Fed approves interest rate hike, signals one more to come this year",
-      "d": "Fed approves interest rate hike, signals one more to come this year",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
-      "d": "Senate is still a toss-up, but Democrats now have slight edge, prediction market traders think",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -316,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4400.70(+1.12%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4395.00(+0.99%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -327,7 +327,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11622.48(+0.07%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11599.49(+-0.13%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
