@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-24",
-  "updated": "2026-09-24 13:52(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-09-25",
+  "updated": "2026-09-25 00:39(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51317.38",
-          "c": "+-0.89%",
+          "v": "51349.98",
+          "c": "+-0.83%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26757.58",
-          "c": "+1.28%",
+          "v": "26939.37",
+          "c": "+1.97%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "30287.24",
-          "c": "+2.85%",
+          "v": "30478.85",
+          "c": "+3.50%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7680.63",
-          "c": "+0.56%",
+          "v": "7704.13",
+          "c": "+0.87%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12377.90",
-          "c": "+6.71%",
+          "v": "12492.54",
+          "c": "+7.70%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "15.78",
-          "c": "+6.55%",
+          "v": "15.67",
+          "c": "+5.81%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.97",
-          "c": "+-2.27%",
+          "v": "5.03",
+          "c": "+-3.48%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.10",
-          "c": "+-1.96%",
+          "v": "5.16",
+          "c": "+-3.28%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.31",
-          "c": "+0.87%",
+          "v": "101.29",
+          "c": "+0.85%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "100.01",
-          "c": "+-0.33%",
-          "d": -1
+          "v": "105.89",
+          "c": "+5.53%",
+          "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4306.10",
-          "c": "+-1.77%",
+          "v": "4304.20",
+          "c": "+-1.82%",
           "d": -1
         }
       ]
@@ -204,20 +204,47 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证—(—)、深成1331697.00(+-234.00%)、创业板328895.00(+-268.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26757.58(+1.28%)、费城半导体12377.90(+6.71%)，数据来自 Yahoo Finance。"
+      "d": "纳指26939.37(+1.97%)、费城半导体12492.54(+7.70%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4306.10(+-1.77%)、WTI原油94.30(+-1.55%)。"
+      "d": "现货黄金4304.20(+-1.82%)、WTI原油93.81(+-2.06%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Here's who is attending the Trump-Xi state dinner",
+      "d": "Here's who is attending the Trump-Xi state dinner",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
+      "d": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: MGM, Darden Restaurants, Meta, BlackBerry & more",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "China confirms first AI talks with U.S. have taken place, hints at trade truce extension",
@@ -244,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "U.S.-China trade truce extended for two months, Bessent says, as Xi begins state visit",
@@ -257,38 +284,11 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Trump-Xi meeting: Why China's self-sufficiency changes the calculus",
       "d": "Trump-Xi meeting: Why China's self-sufficiency changes the calculus",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "CFTC says prediction markets' 'mentions' contracts present a higher risk of manipulation",
-      "d": "CFTC says prediction markets' 'mentions' contracts present a higher risk of manipulation",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Kalshi asks CFTC to allow margin trading on its platform, letting users buy with borrowed funds",
-      "d": "Kalshi asks CFTC to allow margin trading on its platform, letting users buy with borrowed funds",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -313,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4306.10(+-1.77%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4304.20(+-1.82%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -324,7 +324,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12377.90(+6.71%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12492.54(+7.70%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
