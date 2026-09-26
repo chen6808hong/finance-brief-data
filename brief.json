@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-25",
-  "updated": "2026-09-25 14:15(云端快照)",
-  "weekday": "星期五",
+  "date": "2026-09-26",
+  "updated": "2026-09-26 00:45(云端快照)",
+  "weekday": "星期六",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,39 +78,39 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51465.26",
-          "c": "+-0.42%",
-          "d": -1
+          "v": "51828.62",
+          "c": "+0.28%",
+          "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "26913.21",
-          "c": "+1.47%",
+          "v": "27068.72",
+          "c": "+2.06%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "30465.37",
-          "c": "+2.77%",
+          "v": "30608.13",
+          "c": "+3.25%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7701.70",
-          "c": "+0.67%",
+          "v": "7743.41",
+          "c": "+1.21%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12589.54",
-          "c": "+5.60%",
+          "v": "12668.93",
+          "c": "+6.27%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "15.22",
-          "c": "+2.35%",
-          "d": 1
+          "v": "14.87",
+          "c": "+0.00%",
+          "d": 0
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.04",
-          "c": "+-4.24%",
+          "v": "5.01",
+          "c": "+-3.58%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.20",
-          "c": "+-4.74%",
+          "v": "5.18",
+          "c": "+-4.45%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.00",
-          "c": "+0.57%",
+          "v": "101.03",
+          "c": "+0.60%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "99.05",
-          "c": "+-1.29%",
+          "v": "97.47",
+          "c": "+-2.86%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4292.60",
-          "c": "+-2.08%",
+          "v": "4320.50",
+          "c": "+-1.45%",
           "d": -1
         }
       ]
@@ -204,15 +204,15 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证388837.00(+-122.00%)、深成1331697.00(+-234.00%)、创业板328895.00(+-268.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成1331697.00(+-234.00%)、创业板328895.00(+-268.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26913.21(+1.47%)、费城半导体12589.54(+5.60%)，数据来自 Yahoo Finance。"
+      "d": "纳指27068.72(+2.06%)、费城半导体12668.93(+6.27%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4292.60(+-2.08%)、WTI原油93.71(+-2.16%)。"
+      "d": "现货黄金4320.50(+-1.45%)、WTI原油92.44(+-3.49%)。"
     }
   ],
   "items": [
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Akamai, Synopsys, Nike & more",
-      "d": "Stocks making the biggest moves premarket: Akamai, Synopsys, Nike & more",
+      "t": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
+      "d": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,6 +234,20 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
+      "t": "Stocks making the biggest moves midday: Akamai Technologies, Genius Sports, People Inc & more",
+      "d": "Stocks making the biggest moves midday: Akamai Technologies, Genius Sports, People Inc & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
       "t": "Crypto platform Bitget suspects North Korea is responsible for $352 million hack",
       "d": "Crypto platform Bitget suspects North Korea is responsible for $352 million hack",
       "g": 0,
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "China's Xi urges U.S. to cooperate on AI",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Here's who attended the Trump-Xi state dinner",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "Philadelphia Fed's Anna Paulson says 'modest' rate moves likely ahead to tame inflation",
@@ -281,19 +295,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China confirms first AI talks with U.S. have taken place, hints at trade truce extension",
-      "d": "China confirms first AI talks with U.S. have taken place, hints at trade truce extension",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -314,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4292.60(+-2.08%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4320.50(+-1.45%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12589.54(+5.60%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12668.93(+6.27%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
