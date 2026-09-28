@@ -1,6 +1,6 @@
 {
   "date": "2026-09-28",
-  "updated": "2026-09-28 00:59(云端快照)",
+  "updated": "2026-09-28 17:07(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -8,44 +8,44 @@
       "items": [
         {
           "n": "上证指数",
-          "v": "388807.00",
-          "c": "+-1.00%",
+          "v": "382362.00",
+          "c": "+-167.00%",
           "d": -1
         },
         {
           "n": "深证成指",
-          "v": "1331697.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1285875.00",
+          "c": "+-344.00%",
+          "d": -1
         },
         {
           "n": "创业板指",
-          "v": "328895.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "313982.00",
+          "c": "+-453.00%",
+          "d": -1
         },
         {
           "n": "科创50",
-          "v": "162187.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "155598.00",
+          "c": "+-406.00%",
+          "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1221628.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1149717.00",
+          "c": "+-589.00%",
+          "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "0.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1589305.00",
+          "c": "+-464.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "443865.00",
-          "c": "+-1.00%",
+          "v": "434076.00",
+          "c": "+-222.00%",
           "d": -1
         }
       ]
@@ -55,9 +55,9 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2451009.00",
-          "c": "+-101.00%",
-          "d": -1
+          "v": "2464251.00",
+          "c": "+54.00%",
+          "d": 1
         },
         {
           "n": "恒生科技",
@@ -78,39 +78,39 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51828.62",
-          "c": "+0.28%",
-          "d": 1
+          "v": "51580.03",
+          "c": "+-0.90%",
+          "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "27068.72",
-          "c": "+2.06%",
-          "d": 1
+          "v": "26867.80",
+          "c": "+-0.94%",
+          "d": -1
         },
         {
           "n": "纳指100",
-          "v": "30608.13",
-          "c": "+3.25%",
-          "d": 1
+          "v": "30298.90",
+          "c": "+-0.60%",
+          "d": -1
         },
         {
           "n": "标普500",
-          "v": "7743.41",
-          "c": "+1.21%",
-          "d": 1
+          "v": "7696.82",
+          "c": "+-0.87%",
+          "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "12668.93",
-          "c": "+6.27%",
-          "d": 1
+          "v": "12432.24",
+          "c": "+-0.01%",
+          "d": -1
         },
         {
           "n": "VIX",
-          "v": "14.87",
-          "c": "+0.00%",
-          "d": 0
+          "v": "16.00",
+          "c": "+12.60%",
+          "d": 1
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.01",
-          "c": "+-3.58%",
+          "v": "5.08",
+          "c": "+-4.85%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.18",
-          "c": "+-4.45%",
+          "v": "5.25",
+          "c": "+-5.70%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.03",
-          "c": "+0.43%",
+          "v": "101.16",
+          "c": "+0.06%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "98.12",
-          "c": "+-1.14%",
+          "v": "97.85",
+          "c": "+-5.07%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4269.40",
-          "c": "+-2.44%",
+          "v": "4161.10",
+          "c": "+-3.64%",
           "d": -1
         }
       ]
@@ -204,20 +204,60 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证388807.00(+-1.00%)、深成1331697.00(+0.00%)、创业板328895.00(+0.00%)，数据来自公开市场接口。"
+      "d": "上证382362.00(+-167.00%)、深成1285875.00(+-344.00%)、创业板313982.00(+-453.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指27068.72(+2.06%)、费城半导体12668.93(+6.27%)，数据来自 Yahoo Finance。"
+      "d": "纳指26867.80(+-0.94%)、费城半导体12432.24(+-0.01%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4269.40(+-2.44%)、WTI原油93.05(+-1.63%)。"
+      "d": "现货黄金4161.10(+-3.64%)、WTI原油92.92(+0.82%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Meta Platforms, United Airlines, Nvidia & more",
+      "d": "Stocks making the biggest moves premarket: Meta Platforms, United Airlines, Nvidia & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "U.S., China to lower tariffs on $60 billion of goods. Here's what qualifies",
+      "d": "U.S., China to lower tariffs on $60 billion of goods. Here's what qualifies",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Trump-Xi summit analysis: 'Tangible outcomes' needed for U.S.-China truce to hold",
+      "d": "Trump-Xi summit analysis: 'Tangible outcomes' needed for U.S.-China truce to hold",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Debt-hungry AI companies face increased risk as bond yields spike",
@@ -231,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "This may be the ‘missing piece’ for investors looking to boost AI exposure",
@@ -244,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "The 10-year Treasury yield is at its highest in nearly two decades. How we got here",
@@ -254,47 +294,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Why Xi believes the U.S. and China can overcome the 'Thucydides Trap'",
-      "d": "Why Xi believes the U.S. and China can overcome the 'Thucydides Trap'",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
-      "d": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves midday: Akamai Technologies, Genius Sports, People Inc & more",
-      "d": "Stocks making the biggest moves midday: Akamai Technologies, Genius Sports, People Inc & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -315,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4269.40(+-2.44%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4161.10(+-3.64%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12668.93(+6.27%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12432.24(+-0.01%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
