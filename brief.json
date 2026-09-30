@@ -1,6 +1,6 @@
 {
   "date": "2026-09-30",
-  "updated": "2026-09-30 01:24(云端快照)",
+  "updated": "2026-09-30 15:26(云端快照)",
   "weekday": "星期三",
   "marketGroups": [
     {
@@ -8,45 +8,45 @@
       "items": [
         {
           "n": "上证指数",
-          "v": "383045.00",
-          "c": "+18.00%",
+          "v": "384219.00",
+          "c": "+31.00%",
           "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1290195.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1288762.00",
+          "c": "+-11.00%",
+          "d": -1
         },
         {
           "n": "创业板指",
-          "v": "314256.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "313528.00",
+          "c": "+-23.00%",
+          "d": -1
         },
         {
           "n": "科创50",
-          "v": "156933.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "153001.00",
+          "c": "+-251.00%",
+          "d": -1
         },
         {
           "n": "国证算力",
-          "v": "1158254.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1135454.00",
+          "c": "+-197.00%",
+          "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "0.00",
-          "c": "+0.00%",
-          "d": 0
+          "v": "1548903.00",
+          "c": "+-326.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "434441.00",
-          "c": "+-2.00%",
-          "d": -1
+          "v": "435762.00",
+          "c": "+29.00%",
+          "d": 1
         }
       ]
     },
@@ -55,9 +55,9 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2439388.00",
-          "c": "+-53.00%",
-          "d": -1
+          "v": "2461327.00",
+          "c": "+37.00%",
+          "d": 1
         },
         {
           "n": "恒生科技",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51349.92",
-          "c": "+-0.99%",
+          "v": "51350.43",
+          "c": "+-0.31%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "26797.54",
-          "c": "+-1.64%",
-          "d": -1
+          "v": "27037.06",
+          "c": "+0.38%",
+          "d": 1
         },
         {
           "n": "纳指100",
-          "v": "30339.33",
-          "c": "+-1.28%",
-          "d": -1
+          "v": "30554.17",
+          "c": "+0.28%",
+          "d": 1
         },
         {
           "n": "标普500",
-          "v": "7670.84",
-          "c": "+-1.21%",
-          "d": -1
+          "v": "7709.85",
+          "c": "+0.05%",
+          "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12629.16",
-          "c": "+-0.48%",
-          "d": -1
+          "v": "12594.64",
+          "c": "+0.48%",
+          "d": 1
         },
         {
           "n": "VIX",
-          "v": "16.04",
-          "c": "+5.67%",
+          "v": "15.87",
+          "c": "+1.28%",
           "d": 1
         }
       ]
@@ -120,19 +120,19 @@
         {
           "n": "5年美债收益率",
           "v": "5.06",
-          "c": "+-1.32%",
+          "c": "+-0.78%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.25",
-          "c": "+-2.76%",
+          "v": "5.28",
+          "c": "+-2.21%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.40",
-          "c": "+0.11%",
+          "v": "101.26",
+          "c": "+0.29%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "96.33",
-          "c": "+-9.63%",
+          "v": "98.97",
+          "c": "+-5.13%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4204.40",
-          "c": "+-2.18%",
+          "v": "4192.80",
+          "c": "+-2.97%",
           "d": -1
         }
       ]
@@ -204,20 +204,74 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证—(—)、深成1290195.00(+0.00%)、创业板314256.00(+0.00%)，数据来自公开市场接口。"
+      "d": "上证384219.00(+31.00%)、深成1288762.00(+-11.00%)、创业板313528.00(+-23.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26797.54(+-1.64%)、费城半导体12629.16(+-0.48%)，数据来自 Yahoo Finance。"
+      "d": "纳指27037.06(+0.38%)、费城半导体12594.64(+0.48%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4204.40(+-2.18%)、WTI原油89.48(+-5.42%)。"
+      "d": "现货黄金4192.80(+-2.97%)、WTI原油91.67(+-0.80%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Kalshi, Polymarket trading volumes on some products raises questions amid massive growth",
+      "d": "Kalshi, Polymarket trading volumes on some products raises questions amid massive growth",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Robinhood, Boeing, Moderna & more",
+      "d": "Stocks making the biggest moves premarket: Robinhood, Boeing, Moderna & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Singapore's Temasek to expand Middle East presence, open Abu Dhabi, Riyadh offices",
+      "d": "Singapore's Temasek to expand Middle East presence, open Abu Dhabi, Riyadh offices",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
+      "t": "Beijing warns of retaliation if Europe imposes curbs on Chinese businesses",
+      "d": "Beijing warns of retaliation if Europe imposes curbs on Chinese businesses",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 5,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman Sachs CEO succession planning faces one big problem",
@@ -230,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Prediction market traders think the U.S. added more jobs in September than economists estimate",
@@ -239,60 +293,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 3,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Polymarket taps Goldman Sachs veteran Lisa Mantil to attract Wall Street liquidity",
-      "d": "Polymarket taps Goldman Sachs veteran Lisa Mantil to attract Wall Street liquidity",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Fair Isaac, SpaceX, AMD & more",
-      "d": "Stocks making the biggest moves premarket: Fair Isaac, SpaceX, AMD & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "macro",
-      "t": "Trump’s municipal bond portfolio reaches as much as $1 billion as policy overlaps mount",
-      "d": "Trump’s municipal bond portfolio reaches as much as $1 billion as policy overlaps mount",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China has three new criteria for humanoid robot IPOs. Few, if any, meet them",
-      "d": "China has three new criteria for humanoid robot IPOs. Few, if any, meet them",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4204.40(+-2.18%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4192.80(+-2.97%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12629.16(+-0.48%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12594.64(+0.48%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
