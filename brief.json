@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-30",
-  "updated": "2026-09-30 15:26(云端快照)",
-  "weekday": "星期三",
+  "date": "2026-10-01",
+  "updated": "2026-10-01 01:23(云端快照)",
+  "weekday": "星期四",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51350.43",
-          "c": "+-0.31%",
+          "v": "50906.05",
+          "c": "+-1.18%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "27037.06",
-          "c": "+0.38%",
-          "d": 1
+          "v": "26861.06",
+          "c": "+-0.28%",
+          "d": -1
         },
         {
           "n": "纳指100",
-          "v": "30554.17",
-          "c": "+0.28%",
-          "d": 1
+          "v": "30408.50",
+          "c": "+-0.20%",
+          "d": -1
         },
         {
           "n": "标普500",
-          "v": "7709.85",
-          "c": "+0.05%",
-          "d": 1
+          "v": "7651.54",
+          "c": "+-0.71%",
+          "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "12594.64",
-          "c": "+0.48%",
+          "v": "12628.62",
+          "c": "+0.75%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "15.87",
-          "c": "+1.28%",
+          "v": "16.34",
+          "c": "+4.28%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.06",
-          "c": "+-0.78%",
+          "v": "5.09",
+          "c": "+-1.27%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.28",
-          "c": "+-2.21%",
+          "v": "5.29",
+          "c": "+-2.54%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.26",
-          "c": "+0.29%",
+          "v": "101.48",
+          "c": "+0.51%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "98.97",
-          "c": "+-5.13%",
+          "v": "97.81",
+          "c": "+-6.24%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4192.80",
-          "c": "+-2.97%",
+          "v": "4189.60",
+          "c": "+-3.05%",
           "d": -1
         }
       ]
@@ -208,25 +208,25 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指27037.06(+0.38%)、费城半导体12594.64(+0.48%)，数据来自 Yahoo Finance。"
+      "d": "纳指26861.06(+-0.28%)、费城半导体12628.62(+0.75%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4192.80(+-2.97%)、WTI原油91.67(+-0.80%)。"
+      "d": "现货黄金4189.60(+-3.05%)、WTI原油90.07(+-2.53%)。"
     }
   ],
   "items": [
     {
       "id": 1,
       "imp": 2,
-      "c": "intl",
-      "t": "Kalshi, Polymarket trading volumes on some products raises questions amid massive growth",
-      "d": "Kalshi, Polymarket trading volumes on some products raises questions amid massive growth",
+      "c": "macro",
+      "t": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
+      "d": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
       "g": 0,
       "lv": "全球级",
       "s": [
-        "美股",
-        "全球"
+        "宏观",
+        "利率"
       ],
       "src": "CNBC"
     },
@@ -234,8 +234,8 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Robinhood, Boeing, Moderna & more",
-      "d": "Stocks making the biggest moves premarket: Robinhood, Boeing, Moderna & more",
+      "t": "Stocks making the biggest moves midday: Rogers, United Therapeutics, Moderna, FormFactor & more",
+      "d": "Stocks making the biggest moves midday: Rogers, United Therapeutics, Moderna, FormFactor & more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -248,6 +248,20 @@
       "id": 3,
       "imp": 2,
       "c": "intl",
+      "t": "Kalshi, Polymarket trading volumes on some products raise questions amid massive growth",
+      "d": "Kalshi, Polymarket trading volumes on some products raise questions amid massive growth",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
+      "c": "intl",
       "t": "Singapore's Temasek to expand Middle East presence, open Abu Dhabi, Riyadh offices",
       "d": "Singapore's Temasek to expand Middle East presence, open Abu Dhabi, Riyadh offices",
       "g": 0,
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Beijing warns of retaliation if Europe imposes curbs on Chinese businesses",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman Sachs CEO succession planning faces one big problem",
@@ -280,20 +294,6 @@
       "lv": "全球级",
       "s": [
         "商品"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Prediction market traders think the U.S. added more jobs in September than economists estimate",
-      "d": "Prediction market traders think the U.S. added more jobs in September than economists estimate",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -314,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4192.80(+-2.97%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4189.60(+-3.05%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12594.64(+0.48%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12628.62(+0.75%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
