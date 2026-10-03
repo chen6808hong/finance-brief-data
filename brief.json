@@ -1,6 +1,6 @@
 {
   "date": "2026-10-03",
-  "updated": "2026-10-03 01:16(云端快照)",
+  "updated": "2026-10-03 14:02(云端快照)",
   "weekday": "星期六",
   "marketGroups": [
     {
@@ -142,15 +142,15 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "102.70",
-          "c": "+-2.45%",
+          "v": "102.25",
+          "c": "+-2.88%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4172.10",
-          "c": "+0.09%",
-          "d": 1
+          "v": "4162.30",
+          "c": "+-0.15%",
+          "d": -1
         }
       ]
     }
@@ -212,12 +212,26 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4172.10(+0.09%)、WTI原油91.26(+-1.45%)。"
+      "d": "现货黄金4162.30(+-0.15%)、WTI原油91.11(+-1.61%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
+      "d": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: Tesla, Broadcom, Nike, ON Semiconductor & more",
@@ -231,7 +245,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "macro",
       "t": "Traders now see little chance of a Fed rate hike in October after weak jobs report",
@@ -245,7 +259,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "'The hottest skill on Wall Street’: Demand for this AI ability jumped 1,721% as banks embrace agents",
@@ -259,7 +273,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "How AI is redefining Wall Street jobs — and boosting demand for this new 'hottest skill' by 1,721%",
@@ -273,7 +287,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Bitget 'not expecting to recover a lot' from $388 million hack, CEO tells CNBC",
@@ -282,20 +296,6 @@
       "lv": "全球级",
       "s": [
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
-      "d": "Fed's Kashkari says inflation is 'still too high' even after softer-than-expected PCE data, labor market is 'pretty good'",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
@@ -316,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4172.10(+0.09%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4162.30(+-0.15%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
