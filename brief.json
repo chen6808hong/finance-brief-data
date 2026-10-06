@@ -1,6 +1,6 @@
 {
   "date": "2026-10-06",
-  "updated": "2026-10-06 02:23(云端快照)",
+  "updated": "2026-10-06 15:31(云端快照)",
   "weekday": "星期二",
   "marketGroups": [
     {
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2424519.00",
-          "c": "+85.00%",
+          "v": "2428056.00",
+          "c": "+100.00%",
           "d": 1
         },
         {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51264.60",
-          "c": "+-0.42%",
-          "d": -1
+          "v": "51635.92",
+          "c": "+0.56%",
+          "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "27477.31",
-          "c": "+2.45%",
+          "v": "27700.14",
+          "c": "+3.37%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "31076.44",
-          "c": "+2.64%",
+          "v": "31326.14",
+          "c": "+3.25%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7773.95",
-          "c": "+1.17%",
+          "v": "7839.63",
+          "c": "+2.20%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "13172.74",
-          "c": "+5.68%",
+          "v": "13279.74",
+          "c": "+5.15%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "15.52",
-          "c": "+-3.24%",
+          "v": "15.34",
+          "c": "+-6.12%",
           "d": -1
         }
       ]
@@ -119,21 +119,21 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.07",
-          "c": "+-0.06%",
-          "d": -1
+          "v": "5.01",
+          "c": "+1.47%",
+          "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.31",
-          "c": "+-1.07%",
-          "d": -1
+          "v": "5.26",
+          "c": "+0.62%",
+          "d": 1
         },
         {
           "n": "美元指数",
-          "v": "102.16",
-          "c": "+0.70%",
-          "d": 1
+          "v": "101.81",
+          "c": "+-0.29%",
+          "d": -1
         }
       ]
     },
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "100.65",
-          "c": "+-2.78%",
+          "v": "98.30",
+          "c": "+-3.92%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4156.40",
-          "c": "+-0.72%",
+          "v": "4191.20",
+          "c": "+-0.26%",
           "d": -1
         }
       ]
@@ -208,16 +208,43 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指27477.31(+2.45%)、费城半导体13172.74(+5.68%)，数据来自 Yahoo Finance。"
+      "d": "纳指27700.14(+3.37%)、费城半导体13279.74(+5.15%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4156.40(+-0.72%)、WTI原油89.63(+-0.87%)。"
+      "d": "现货黄金4191.20(+-0.26%)、WTI原油88.05(+-5.19%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Constellation Energy, Option Care Health, Lennar, P&G and more",
+      "d": "Stocks making the biggest moves premarket: Constellation Energy, Option Care Health, Lennar, P&G and more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Goldman: Diesel prices set to stay high through 2027 as refineries struggle to meet demand",
+      "d": "Goldman: Diesel prices set to stay high through 2027 as refineries struggle to meet demand",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "House Democrat targets candidate prediction market trades after opponent’s Kalshi penalty",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Cocoa prices are climbing again. Here’s why this time is different",
@@ -244,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Brazilian stocks jump as Bolsonaro now seen as heavy favorite to win presidency",
@@ -258,21 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: DraftKings, Itau Unibanco, PTC & more",
-      "d": "Stocks making the biggest moves premarket: DraftKings, Itau Unibanco, PTC & more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Sports betting is increasingly the norm for Gen Z. Here’s why some financial and mental health experts are worried",
@@ -280,20 +293,6 @@
       "g": 0,
       "lv": "全球级",
       "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
-      "d": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4156.40(+-0.72%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4191.20(+-0.26%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体13172.74(+5.68%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体13279.74(+5.15%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
