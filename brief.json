@@ -1,6 +1,6 @@
 {
   "date": "2026-10-07",
-  "updated": "2026-10-07 01:42(云端快照)",
+  "updated": "2026-10-07 15:52(云端快照)",
   "weekday": "星期三",
   "marketGroups": [
     {
@@ -55,8 +55,8 @@
       "items": [
         {
           "n": "恒生指数",
-          "v": "2415128.00",
-          "c": "+-53.00%",
+          "v": "2413050.00",
+          "c": "+-62.00%",
           "d": -1
         },
         {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51521.28",
-          "c": "+0.33%",
+          "v": "51058.43",
+          "c": "+0.30%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "27599.89",
-          "c": "+2.99%",
+          "v": "27493.79",
+          "c": "+2.36%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "31224.69",
-          "c": "+2.92%",
+          "v": "31120.03",
+          "c": "+2.34%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7818.93",
-          "c": "+1.93%",
+          "v": "7791.48",
+          "c": "+1.83%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "13217.82",
-          "c": "+4.66%",
+          "v": "13000.00",
+          "c": "+2.94%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "15.01",
-          "c": "+-8.14%",
+          "v": "15.48",
+          "c": "+-5.55%",
           "d": -1
         }
       ]
@@ -119,21 +119,21 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.03",
-          "c": "+1.20%",
-          "d": 1
+          "v": "5.04",
+          "c": "+-0.72%",
+          "d": -1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.27",
-          "c": "+0.45%",
-          "d": 1
+          "v": "5.31",
+          "c": "+-1.34%",
+          "d": -1
         },
         {
           "n": "美元指数",
-          "v": "101.97",
-          "c": "+-0.13%",
-          "d": -1
+          "v": "102.34",
+          "c": "+0.40%",
+          "d": 1
         }
       ]
     },
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "101.54",
-          "c": "+-0.75%",
+          "v": "101.16",
+          "c": "+-1.07%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4182.10",
-          "c": "+-0.48%",
+          "v": "4133.50",
+          "c": "+-0.69%",
           "d": -1
         }
       ]
@@ -204,20 +204,47 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证384219.00(+31.00%)、深成1288762.00(+-11.00%)、创业板313528.00(+-23.00%)，数据来自公开市场接口。"
+      "d": "上证384219.00(+31.00%)、深成—(—)、创业板313528.00(+-23.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指27599.89(+2.99%)、费城半导体13217.82(+4.66%)，数据来自 Yahoo Finance。"
+      "d": "纳指27493.79(+2.36%)、费城半导体13000.00(+2.94%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4182.10(+-0.48%)、WTI原油90.32(+-2.75%)。"
+      "d": "现货黄金4133.50(+-0.69%)、WTI原油89.21(+-2.09%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Stocks making the biggest moves premarket: Constellation Brands, Flutter Entertainment, Neogen & more",
+      "d": "Stocks making the biggest moves premarket: Constellation Brands, Flutter Entertainment, Neogen & more",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
+      "t": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
+      "d": "Why AI is both the hope and the hazard for world leaders, according to IMF chief Georgieva",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Chart: A look at the S&P 500's remarkable and defiant trip to a new record",
@@ -231,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "How event contract bundles are boosting volume on prediction markets",
@@ -245,21 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
-      "imp": 2,
-      "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Constellation Energy, Option Care Health, Lennar, P&G and more",
-      "d": "Stocks making the biggest moves premarket: Constellation Energy, Option Care Health, Lennar, P&G and more",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "commodity",
       "t": "Goldman: Diesel prices set to stay high through 2027 as refineries struggle to meet demand",
@@ -272,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "House Democrat targets candidate prediction market trades after opponent’s Kalshi penalty",
@@ -281,19 +294,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Cocoa prices are climbing again. Here’s why this time is different",
-      "d": "Cocoa prices are climbing again. Here’s why this time is different",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4182.10(+-0.48%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4133.50(+-0.69%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体13217.82(+4.66%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体13000.00(+2.94%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
