@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-09",
-  "updated": "2026-10-09 15:38(云端快照)",
-  "weekday": "星期五",
+  "date": "2026-10-10",
+  "updated": "2026-10-10 01:50(云端快照)",
+  "weekday": "星期六",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "51469.63",
-          "c": "+0.57%",
+          "v": "51654.95",
+          "c": "+0.93%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "27322.06",
-          "c": "+0.48%",
+          "v": "27366.17",
+          "c": "+0.64%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "30827.17",
-          "c": "+0.06%",
+          "v": "30883.15",
+          "c": "+0.24%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7797.45",
-          "c": "+0.97%",
+          "v": "7811.54",
+          "c": "+1.15%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "12561.35",
-          "c": "+-4.38%",
+          "v": "12572.42",
+          "c": "+-4.30%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "14.93",
-          "c": "+-3.80%",
+          "v": "14.84",
+          "c": "+-4.38%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "5.03",
-          "c": "+0.63%",
+          "v": "5.02",
+          "c": "+0.89%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.26",
-          "c": "+0.94%",
+          "v": "5.24",
+          "c": "+1.26%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "102.28",
-          "c": "+0.11%",
+          "v": "102.23",
+          "c": "+0.06%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "104.66",
-          "c": "+4.33%",
+          "v": "104.43",
+          "c": "+4.10%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4213.90",
-          "c": "+1.37%",
+          "v": "4220.30",
+          "c": "+1.53%",
           "d": 1
         }
       ]
@@ -208,11 +208,11 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指27322.06(+0.48%)、费城半导体12561.35(+-4.38%)，数据来自 Yahoo Finance。"
+      "d": "纳指27366.17(+0.64%)、费城半导体12572.42(+-4.30%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4213.90(+1.37%)、WTI原油91.79(+2.64%)。"
+      "d": "现货黄金4220.30(+1.53%)、WTI原油91.66(+2.49%)。"
     }
   ],
   "items": [
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
-      "d": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
+      "t": "Stocks making the biggest moves midday: T-Mobile, Verizon, AT&T, Crown Castle, Teva & more",
+      "d": "Stocks making the biggest moves midday: T-Mobile, Verizon, AT&T, Crown Castle, Teva & more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,8 +234,8 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Delta Air Lines, SpaceX, T-Mobile, Humana & more",
-      "d": "Stocks making the biggest moves premarket: Delta Air Lines, SpaceX, T-Mobile, Humana & more",
+      "t": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
+      "d": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -317,7 +317,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4213.90(+1.37%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4220.30(+1.53%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -328,7 +328,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体12561.35(+-4.38%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体12572.42(+-4.30%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
