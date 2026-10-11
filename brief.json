@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-10",
-  "updated": "2026-10-10 14:53(云端快照)",
-  "weekday": "星期六",
+  "date": "2026-10-11",
+  "updated": "2026-10-11 01:06(云端快照)",
+  "weekday": "星期日",
   "marketGroups": [
     {
       "name": "A股",
@@ -220,6 +220,19 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
+      "t": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
+      "d": "JPMorgan makes bullish call in fixed income space, suggests it's a once in a generation opportunity",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
       "t": "Stocks making the biggest moves midday: T-Mobile, Verizon, AT&T, Crown Castle, Teva & more",
       "d": "Stocks making the biggest moves midday: T-Mobile, Verizon, AT&T, Crown Castle, Teva & more",
       "g": 0,
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Blockchain.com seeks U.S. approval for prediction markets, crypto derivatives trading",
@@ -245,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Tokenization could unleash tens of billions of dollars in trapped capital, Nasdaq CEO says",
@@ -259,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Little relief expected for gas prices ahead of Election Day, according to prediction markets",
@@ -273,25 +286,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "After a yearslong slump, China's real estate market may be set for a turnaround",
       "d": "After a yearslong slump, China's real estate market may be set for a turnaround",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Huawei doubles down on smartphones as EV sales slow",
-      "d": "Huawei doubles down on smartphones as EV sales slow",
       "g": 0,
       "lv": "全球级",
       "s": [
