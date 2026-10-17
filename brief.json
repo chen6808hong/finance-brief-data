@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-16",
-  "updated": "2026-10-16 13:36(云端快照)",
-  "weekday": "星期五",
+  "date": "2026-10-17",
+  "updated": "2026-10-17 00:40(云端快照)",
+  "weekday": "星期六",
   "marketGroups": [
     {
       "name": "A股",
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52493.91",
-          "c": "+1.62%",
+          "v": "52002.41",
+          "c": "+0.67%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "26606.64",
-          "c": "+-2.78%",
+          "v": "26140.03",
+          "c": "+-4.48%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "29724.47",
-          "c": "+-3.75%",
+          "v": "29187.55",
+          "c": "+-5.49%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7748.28",
-          "c": "+-0.81%",
+          "v": "7659.44",
+          "c": "+-1.95%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "11312.05",
-          "c": "+-10.02%",
+          "v": "11137.29",
+          "c": "+-11.41%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "15.88",
-          "c": "+4.40%",
+          "v": "19.99",
+          "c": "+31.43%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.93",
-          "c": "+1.71%",
+          "v": "4.90",
+          "c": "+2.39%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "5.12",
-          "c": "+2.19%",
+          "v": "5.10",
+          "c": "+2.71%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "101.79",
-          "c": "+-0.77%",
+          "v": "101.78",
+          "c": "+-0.78%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "105.67",
-          "c": "+-0.92%",
-          "d": -1
+          "v": "109.69",
+          "c": "+2.85%",
+          "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "4177.70",
-          "c": "+-0.31%",
+          "v": "4186.70",
+          "c": "+-0.09%",
           "d": -1
         }
       ]
@@ -208,11 +208,11 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指26606.64(+-2.78%)、费城半导体11312.05(+-10.02%)，数据来自 Yahoo Finance。"
+      "d": "纳指26140.03(+-4.48%)、费城半导体11137.29(+-11.41%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4177.70(+-0.31%)、WTI原油95.94(+2.35%)。"
+      "d": "现货黄金4186.70(+-0.09%)、WTI原油99.04(+5.65%)。"
     }
   ],
   "items": [
@@ -220,8 +220,8 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
-      "t": "Stocks making the biggest moves premarket: Tesla, SpaceX, Alcoa, CoreWeave, Travelers & more",
-      "d": "Stocks making the biggest moves premarket: Tesla, SpaceX, Alcoa, CoreWeave, Travelers & more",
+      "t": "Stocks making the biggest moves midday: CoreWeave, Moog, J.B. Hunt, Alcoa & more",
+      "d": "Stocks making the biggest moves midday: CoreWeave, Moog, J.B. Hunt, Alcoa & more",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -234,6 +234,20 @@
       "id": 2,
       "imp": 2,
       "c": "intl",
+      "t": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
+      "d": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
       "t": "People in China are spending nearly as much of their income as Americans on healthcare",
       "d": "People in China are spending nearly as much of their income as Americans on healthcare",
       "g": 0,
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Harvard’s endowment jumps 27% in fiscal 2026, lifted by SpaceX as top holding",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
@@ -271,24 +285,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic's Mythos",
       "d": "Bank of America hired 1,000 contractors to patch software flaws exposed by Anthropic's Mythos",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Morgan Stanley tops estimates as equities trading revenue beats expectations by $909 million",
-      "d": "Morgan Stanley tops estimates as equities trading revenue beats expectations by $909 million",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -313,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4177.70(+-0.31%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4186.70(+-0.09%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -324,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体11312.05(+-10.02%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体11137.29(+-11.41%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
