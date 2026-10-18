@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-17",
-  "updated": "2026-10-17 12:32(云端快照)",
-  "weekday": "星期六",
+  "date": "2026-10-18",
+  "updated": "2026-10-18 00:08(云端快照)",
+  "weekday": "星期日",
   "marketGroups": [
     {
       "name": "A股",
@@ -219,9 +219,23 @@
     {
       "id": 1,
       "imp": 2,
+      "c": "macro",
+      "t": "'Dead money’ for a decade: Why this hedge fund approach may deliver an advantage over bonds",
+      "d": "'Dead money’ for a decade: Why this hedge fund approach may deliver an advantage over bonds",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
       "c": "intl",
-      "t": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
-      "d": "Bending Spoons wants to revive software castoffs. Berkshire is backing the plan",
+      "t": "Software’s new consolidator gets big vote of confidence from Berkshire",
+      "d": "Software’s new consolidator gets big vote of confidence from Berkshire",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -230,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves midday: CoreWeave, Moog, J.B. Hunt, Alcoa & more",
@@ -244,7 +258,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "U.S. presses China on Mastercard, Citigroup market access in bilateral Bangkok talks, official says",
@@ -258,7 +272,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "People in China are spending nearly as much of their income as Americans on healthcare",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Harvard’s endowment jumps 27% in fiscal 2026, lifted by SpaceX as top holding",
@@ -280,19 +294,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
-      "d": "China indicates rare earths will keep flowing to EU, regardless of U.S. trade deal expiration",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
