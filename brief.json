@@ -1,6 +1,6 @@
 {
   "date": "2026-11-07",
-  "updated": "2026-11-07 02:07(云端快照)",
+  "updated": "2026-11-07 15:15(云端快照)",
   "weekday": "星期六",
   "marketGroups": [
     {
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "97.76",
-          "c": "+-6.69%",
+          "v": "98.32",
+          "c": "+-6.16%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "4079.50",
-          "c": "+2.77%",
+          "v": "4074.90",
+          "c": "+2.65%",
           "d": 1
         }
       ]
@@ -212,12 +212,26 @@
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金4079.50(+2.77%)、WTI原油90.34(+-6.34%)。"
+      "d": "现货黄金4074.90(+2.65%)、WTI原油90.83(+-5.84%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
+      "d": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "macro",
       "t": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
@@ -231,7 +245,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "macro",
       "t": "The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%",
@@ -245,7 +259,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: Moderna, Airbnb, Cloudflare, Affirm & more",
@@ -259,7 +273,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Nasdaq drops into correction territory — here’s what typically happens next",
@@ -273,7 +287,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
@@ -282,20 +296,6 @@
       "lv": "全球级",
       "s": [
         "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "macro",
-      "t": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-      "d": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "宏观",
-        "利率"
       ],
       "src": "CNBC"
     }
@@ -316,7 +316,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金4079.50(+2.77%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金4074.90(+2.65%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
