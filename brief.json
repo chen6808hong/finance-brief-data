@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-07",
-  "updated": "2026-11-07 15:15(云端快照)",
-  "weekday": "星期六",
+  "date": "2026-11-08",
+  "updated": "2026-11-08 01:40(云端快照)",
+  "weekday": "星期日",
   "marketGroups": [
     {
       "name": "A股",
@@ -220,6 +220,20 @@
       "id": 1,
       "imp": 2,
       "c": "intl",
+      "t": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
+      "d": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "intl",
       "t": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
       "d": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
       "g": 0,
@@ -231,7 +245,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "macro",
       "t": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
@@ -245,7 +259,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%",
@@ -259,7 +273,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Stocks making the biggest moves premarket: Moderna, Airbnb, Cloudflare, Affirm & more",
@@ -273,7 +287,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Nasdaq drops into correction territory — here’s what typically happens next",
@@ -282,19 +296,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
-      "d": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
