@@ -1,51 +1,51 @@
 {
-  "date": "2026-11-12",
-  "updated": "2026-11-12 17:12(云端快照)",
-  "weekday": "星期四",
+  "date": "2026-11-13",
+  "updated": "2026-11-13 02:44(云端快照)",
+  "weekday": "星期五",
   "marketGroups": [
     {
       "name": "A股",
       "items": [
         {
           "n": "上证指数",
-          "v": "365583.00",
-          "c": "+-67.00%",
-          "d": -1
+          "v": "366456.00",
+          "c": "+24.00%",
+          "d": 1
         },
         {
           "n": "深证成指",
-          "v": "1119798.00",
-          "c": "+-168.00%",
+          "v": "1115311.00",
+          "c": "+-40.00%",
           "d": -1
         },
         {
           "n": "创业板指",
-          "v": "250943.00",
-          "c": "+-244.00%",
+          "v": "247933.00",
+          "c": "+-120.00%",
           "d": -1
         },
         {
           "n": "科创50",
-          "v": "130984.00",
-          "c": "+73.00%",
+          "v": "131169.00",
+          "c": "+14.00%",
           "d": 1
         },
         {
           "n": "国证算力",
-          "v": "854966.00",
-          "c": "+-76.00%",
+          "v": "839107.00",
+          "c": "+-185.00%",
           "d": -1
         },
         {
           "n": "国证芯片",
-          "v": "1300723.00",
-          "c": "+142.00%",
-          "d": 1
+          "v": "1300393.00",
+          "c": "+-3.00%",
+          "d": -1
         },
         {
           "n": "沪深300",
-          "v": "404393.00",
-          "c": "+-78.00%",
+          "v": "404195.00",
+          "c": "+-5.00%",
           "d": -1
         }
       ]
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "52683.12",
-          "c": "+2.25%",
+          "v": "52297.09",
+          "c": "+1.50%",
           "d": 1
         },
         {
           "n": "纳斯达克",
-          "v": "25474.40",
-          "c": "+4.77%",
+          "v": "25366.09",
+          "c": "+4.32%",
           "d": 1
         },
         {
           "n": "纳指100",
-          "v": "28393.65",
-          "c": "+6.62%",
+          "v": "28289.19",
+          "c": "+6.23%",
           "d": 1
         },
         {
           "n": "标普500",
-          "v": "7632.02",
-          "c": "+3.78%",
+          "v": "7592.40",
+          "c": "+3.25%",
           "d": 1
         },
         {
           "n": "费城半导体",
-          "v": "10509.45",
-          "c": "+16.63%",
+          "v": "10506.67",
+          "c": "+16.60%",
           "d": 1
         },
         {
           "n": "VIX",
-          "v": "17.56",
-          "c": "+-31.51%",
+          "v": "18.70",
+          "c": "+-27.07%",
           "d": -1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.94",
-          "c": "+-6.28%",
+          "v": "4.95",
+          "c": "+-6.39%",
           "d": -1
         },
         {
           "n": "10年美债收益率",
           "v": "5.10",
-          "c": "+-4.90%",
+          "c": "+-5.02%",
           "d": -1
         },
         {
           "n": "美元指数",
-          "v": "103.16",
-          "c": "+1.48%",
+          "v": "103.17",
+          "c": "+1.50%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "94.01",
-          "c": "+1.56%",
+          "v": "95.92",
+          "c": "+3.62%",
           "d": 1
         },
         {
           "n": "现货黄金",
-          "v": "3881.00",
-          "c": "+-5.68%",
+          "v": "3916.40",
+          "c": "+-4.81%",
           "d": -1
         }
       ]
@@ -204,24 +204,51 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证365583.00(+-67.00%)、深成1119798.00(+-168.00%)、创业板250943.00(+-244.00%)，数据来自公开市场接口。"
+      "d": "上证366456.00(+24.00%)、深成1115311.00(+-40.00%)、创业板247933.00(+-120.00%)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指25474.40(+4.77%)、费城半导体10509.45(+16.63%)，数据来自 Yahoo Finance。"
+      "d": "纳指25366.09(+4.32%)、费城半导体10506.67(+16.60%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金3881.00(+-5.68%)、WTI原油87.13(+0.32%)。"
+      "d": "现货黄金3916.40(+-4.81%)、WTI原油88.60(+2.01%)。"
     }
   ],
   "items": [
     {
       "id": 1,
       "imp": 2,
+      "c": "intl",
+      "t": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
+      "d": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "macro",
+      "t": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+      "d": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "宏观",
+        "利率"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
       "c": "commodity",
-      "t": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
-      "d": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+      "t": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
+      "d": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -230,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "China's Ministry of State Security thrust into the spotlight by Nvidia CEO affair",
@@ -243,7 +270,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
@@ -257,7 +284,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
@@ -267,32 +294,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
-      "d": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "U.S. gas prices fall below $4 for the first time since July",
-      "d": "U.S. gas prices fall below $4 for the first time since July",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
       ],
       "src": "CNBC"
     }
@@ -313,7 +314,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金3881.00(+-5.68%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金3916.40(+-4.81%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -324,7 +325,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体10509.45(+16.63%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体10506.67(+16.60%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
