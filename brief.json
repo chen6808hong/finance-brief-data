@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-14",
-  "updated": "2026-11-14 15:23(云端快照)",
-  "weekday": "星期六",
+  "date": "2026-11-15",
+  "updated": "2026-11-15 02:01(云端快照)",
+  "weekday": "星期日",
   "marketGroups": [
     {
       "name": "A股",
@@ -219,6 +219,19 @@
     {
       "id": 1,
       "imp": 2,
+      "c": "commodity",
+      "t": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+      "d": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
       "c": "intl",
       "t": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
       "d": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
@@ -230,7 +243,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has deep ties to the chipmaker",
@@ -243,7 +256,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "macro",
       "t": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
@@ -257,7 +270,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
@@ -270,7 +283,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "macro",
       "t": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
@@ -280,19 +293,6 @@
       "s": [
         "宏观",
         "利率"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "commodity",
-      "t": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-      "d": "Oil prices rise after Trump says no Iran deal needed: 'We've got their Strait'",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "商品"
       ],
       "src": "CNBC"
     }
