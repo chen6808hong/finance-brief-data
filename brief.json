@@ -1,6 +1,6 @@
 {
   "date": "2026-11-19",
-  "updated": "2026-11-19 03:45(云端快照)",
+  "updated": "2026-11-19 17:48(云端快照)",
   "weekday": "星期四",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "50198.17",
-          "c": "+-4.36%",
+          "v": "49466.19",
+          "c": "+-5.41%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "24429.88",
-          "c": "+-4.07%",
+          "v": "24215.98",
+          "c": "+-4.53%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "27116.26",
-          "c": "+-4.43%",
+          "v": "26857.82",
+          "c": "+-5.06%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7323.63",
-          "c": "+-3.88%",
+          "v": "7251.25",
+          "c": "+-4.49%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "9652.80",
-          "c": "+-8.63%",
+          "v": "9562.96",
+          "c": "+-8.98%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "24.56",
-          "c": "+31.34%",
+          "v": "25.79",
+          "c": "+33.63%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.88",
-          "c": "+1.23%",
+          "v": "4.89",
+          "c": "+1.87%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
           "v": "5.07",
-          "c": "+0.73%",
+          "c": "+1.67%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "103.95",
-          "c": "+0.52%",
+          "v": "103.84",
+          "c": "+0.28%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "88.97",
-          "c": "+-7.17%",
+          "v": "90.09",
+          "c": "+-2.54%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "3714.00",
-          "c": "+-4.43%",
+          "v": "3688.50",
+          "c": "+-4.27%",
           "d": -1
         }
       ]
@@ -208,16 +208,29 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指24429.88(+-4.07%)、费城半导体9652.80(+-8.63%)，数据来自 Yahoo Finance。"
+      "d": "纳指24215.98(+-4.53%)、费城半导体9562.96(+-8.98%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金3714.00(+-4.43%)、WTI原油81.83(+-7.60%)。"
+      "d": "现货黄金3688.50(+-4.27%)、WTI原油83.31(+-2.81%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "Trump praises ‘great relationship’ with Putin after meeting, as Ukraine war takes center stage",
+      "d": "Trump praises ‘great relationship’ with Putin after meeting, as Ukraine war takes center stage",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "macro",
       "t": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
@@ -231,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
@@ -244,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Tech outages are causing people to panic-buy. Costco is benefiting, Mizuho says",
@@ -257,7 +270,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "macro",
       "t": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
@@ -271,24 +284,11 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Putin says EU is losing industry, falling behind competition, ahead of meeting with Trump and Xi",
       "d": "Putin says EU is losing industry, falling behind competition, ahead of meeting with Trump and Xi",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Three things to watch as Trump, Xi and Putin meet in China",
-      "d": "Three things to watch as Trump, Xi and Putin meet in China",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -313,7 +313,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金3714.00(+-4.43%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金3688.50(+-4.27%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -324,7 +324,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体9652.80(+-8.63%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体9562.96(+-8.98%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
