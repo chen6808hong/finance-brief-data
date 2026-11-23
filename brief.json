@@ -1,6 +1,6 @@
 {
   "date": "2026-11-23",
-  "updated": "2026-11-23 02:56(云端快照)",
+  "updated": "2026-11-23 20:40(云端快照)",
   "weekday": "星期一",
   "marketGroups": [
     {
@@ -78,38 +78,38 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "48147.33",
-          "c": "+-8.02%",
+          "v": "49682.98",
+          "c": "+-3.73%",
           "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "22617.73",
-          "c": "+-10.02%",
+          "v": "24168.81",
+          "c": "+-1.39%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "25028.98",
-          "c": "+-10.43%",
+          "v": "26823.91",
+          "c": "+-1.37%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "6910.39",
-          "c": "+-8.61%",
+          "v": "7255.91",
+          "c": "+-2.17%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "8408.59",
-          "c": "+-17.13%",
+          "v": "9591.10",
+          "c": "+-0.20%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "35.89",
-          "c": "+85.96%",
+          "v": "26.76",
+          "c": "+5.11%",
           "d": 1
         }
       ]
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.70",
-          "c": "+4.74%",
+          "v": "4.73",
+          "c": "+3.51%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.91",
-          "c": "+4.08%",
+          "v": "4.92",
+          "c": "+3.63%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "103.72",
-          "c": "+0.22%",
+          "v": "104.32",
+          "c": "+0.44%",
           "d": 1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "89.37",
-          "c": "+-4.05%",
+          "v": "86.41",
+          "c": "+-6.03%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "3582.00",
-          "c": "+-7.30%",
+          "v": "3645.70",
+          "c": "+-2.57%",
           "d": -1
         }
       ]
@@ -204,20 +204,34 @@
   "focus": [
     {
       "t": "A股主要宽基收盘表现（自动快照）",
-      "d": "上证348103.00(+-149.00%)、深成1015332.00(+-100.00%)、创业板219638.00(+-71.00%)，数据来自公开市场接口。"
+      "d": "上证—(—)、深成—(—)、创业板—(—)，数据来自公开市场接口。"
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指22617.73(+-10.02%)、费城半导体8408.59(+-17.13%)，数据来自 Yahoo Finance。"
+      "d": "纳指24168.81(+-1.39%)、费城半导体9591.10(+-0.20%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金3582.00(+-7.30%)、WTI原油82.91(+-3.60%)。"
+      "d": "现货黄金3645.70(+-2.57%)、WTI原油79.99(+-3.93%)。"
     }
   ],
   "items": [
     {
       "id": 1,
+      "imp": 2,
+      "c": "intl",
+      "t": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+      "d": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
       "imp": 2,
       "c": "intl",
       "t": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
@@ -230,7 +244,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 3,
       "imp": 2,
       "c": "intl",
       "t": "How China is using summits to expand its global influence",
@@ -243,7 +257,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 4,
       "imp": 2,
       "c": "intl",
       "t": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
@@ -257,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 4,
+      "id": 5,
       "imp": 2,
       "c": "macro",
       "t": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
@@ -271,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 5,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "The bull market has a new problem. The 'smart money' is selling",
@@ -280,19 +294,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-      "d": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -314,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金3582.00(+-7.30%)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金3645.70(+-2.57%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -325,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体8408.59(+-17.13%)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体9591.10(+-0.20%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
