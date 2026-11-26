@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "updated": "2026-11-26 04:14(云端快照)",
+  "updated": "2026-11-26 18:42(云端快照)",
   "weekday": "星期四",
   "marketGroups": [
     {
@@ -78,39 +78,39 @@
       "items": [
         {
           "n": "道琼斯",
-          "v": "50378.69",
-          "c": "+0.36%",
-          "d": 1
+          "v": "50182.95",
+          "c": "+-0.03%",
+          "d": -1
         },
         {
           "n": "纳斯达克",
-          "v": "23569.44",
-          "c": "+-3.52%",
+          "v": "23585.80",
+          "c": "+-3.46%",
           "d": -1
         },
         {
           "n": "纳指100",
-          "v": "25995.71",
-          "c": "+-4.13%",
+          "v": "26046.90",
+          "c": "+-3.94%",
           "d": -1
         },
         {
           "n": "标普500",
-          "v": "7192.52",
-          "c": "+-1.79%",
+          "v": "7182.78",
+          "c": "+-1.92%",
           "d": -1
         },
         {
           "n": "费城半导体",
-          "v": "8662.57",
-          "c": "+-10.26%",
+          "v": "8774.86",
+          "c": "+-9.10%",
           "d": -1
         },
         {
           "n": "VIX",
-          "v": "28.58",
-          "c": "+0.49%",
-          "d": 1
+          "v": "26.80",
+          "c": "+-25.33%",
+          "d": -1
         }
       ]
     },
@@ -119,20 +119,20 @@
       "items": [
         {
           "n": "5年美债收益率",
-          "v": "4.65",
-          "c": "+4.48%",
+          "v": "4.66",
+          "c": "+4.23%",
           "d": 1
         },
         {
           "n": "10年美债收益率",
-          "v": "4.84",
-          "c": "+4.28%",
+          "v": "4.85",
+          "c": "+4.04%",
           "d": 1
         },
         {
           "n": "美元指数",
-          "v": "103.63",
-          "c": "+-0.18%",
+          "v": "103.77",
+          "c": "+-0.04%",
           "d": -1
         }
       ]
@@ -142,14 +142,14 @@
       "items": [
         {
           "n": "布伦特原油",
-          "v": "90.15",
-          "c": "+-2.61%",
+          "v": "91.62",
+          "c": "+-1.03%",
           "d": -1
         },
         {
           "n": "现货黄金",
-          "v": "3561.70",
-          "c": "+1.32%",
+          "v": "3595.60",
+          "c": "+2.28%",
           "d": 1
         }
       ]
@@ -208,20 +208,60 @@
     },
     {
       "t": "美股隔夜与全球风险偏好（自动快照）",
-      "d": "纳指—(—)、费城半导体—(—)，数据来自 Yahoo Finance。"
+      "d": "纳指23585.80(+-3.46%)、费城半导体8774.86(+-9.10%)，数据来自 Yahoo Finance。"
     },
     {
       "t": "商品与避险资产（自动快照）",
-      "d": "现货黄金—(—)、WTI原油—(—)。"
+      "d": "现货黄金3595.60(+2.28%)、WTI原油84.89(+1.08%)。"
     }
   ],
   "items": [
     {
       "id": 1,
       "imp": 2,
+      "c": "intl",
+      "t": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "d": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "美股",
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 2,
+      "imp": 2,
+      "c": "commodity",
+      "t": "Semiconductor chips are the new oil. Here's why",
+      "d": "Semiconductor chips are the new oil. Here's why",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "商品"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 3,
+      "imp": 2,
+      "c": "intl",
+      "t": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+      "d": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+      "g": 0,
+      "lv": "全球级",
+      "s": [
+        "全球"
+      ],
+      "src": "CNBC"
+    },
+    {
+      "id": 4,
+      "imp": 2,
       "c": "macro",
-      "t": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
-      "d": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
+      "t": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
+      "d": "Beware higher correlation but nab high U.S. credit yields, fund managers say",
       "g": 0,
       "lv": "全球级",
       "s": [
@@ -231,7 +271,7 @@
       "src": "CNBC"
     },
     {
-      "id": 2,
+      "id": 5,
       "imp": 2,
       "c": "intl",
       "t": "Prediction markets push OpenAI IPO expectations later into 2027",
@@ -245,7 +285,7 @@
       "src": "CNBC"
     },
     {
-      "id": 3,
+      "id": 6,
       "imp": 2,
       "c": "intl",
       "t": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
@@ -254,46 +294,6 @@
       "lv": "全球级",
       "s": [
         "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 4,
-      "imp": 2,
-      "c": "intl",
-      "t": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-      "d": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 5,
-      "imp": 2,
-      "c": "intl",
-      "t": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
-      "d": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
-        "美股",
-        "全球"
-      ],
-      "src": "CNBC"
-    },
-    {
-      "id": 6,
-      "imp": 2,
-      "c": "intl",
-      "t": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
-      "d": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
-      "g": 0,
-      "lv": "全球级",
-      "s": [
         "全球"
       ],
       "src": "CNBC"
@@ -315,7 +315,7 @@
       "t": "黄金与避险资产（数据驱动）",
       "lv": "关注",
       "lvc": "lv-b",
-      "d": "现货黄金—(—)，地缘与利率预期支撑贵金属中期趋势。",
+      "d": "现货黄金3595.60(+2.28%)，地缘与利率预期支撑贵金属中期趋势。",
       "tags": [
         "黄金",
         "避险"
@@ -326,7 +326,7 @@
       "t": "半导体与算力链（数据驱动）",
       "lv": "主线",
       "lvc": "lv-a",
-      "d": "费城半导体—(—)，全球 AI 算力高景气延续，关注设备与存储链。",
+      "d": "费城半导体8774.86(+-9.10%)，全球 AI 算力高景气延续，关注设备与存储链。",
       "tags": [
         "半导体",
         "算力"
